@@ -68,6 +68,11 @@ nav{
       width: 400px;
       min-width:400px;
     }
+    @include breakpoint(small down) {
+      width: 300px;
+      min-width:300px;
+      margin: 0 auto !important;
+    }
   }
 }
 .client{
@@ -75,6 +80,18 @@ nav{
     font-weight: 700;
     @include breakpoint(medium down) {
       font-size: 20px;
+    }
+  }
+  .helpAlt p{
+    text-align: center;
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+    font-size: 14px;
+    @include breakpoint(medium down) {
+      opacity: 1;
+      visibility: visible;
+      display: block;
     }
   }
   .large-6{
@@ -85,6 +102,9 @@ nav{
     }
     @include breakpoint(medium down) {
       padding-right: 0px;
+    }
+    @include breakpoint(small down) {
+      padding-left: $pad;
     }
     p{
       max-width: 520px;
@@ -97,6 +117,41 @@ nav{
       max-width: 520px;
       font-size: 14px;
       font-weight: 300;
+      @include breakpoint(medium down) {
+        font-size: 12px;
+        opacity: 0;
+        visibility: hidden;
+        // display: none;
+      }
+      @include breakpoint(small down) {
+        font-size: 12px;
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+      }
+    }
+    // p:last-child a{
+    //   font-size: 10px !important;
+    // }
+    button{
+      opacity: 1;
+      visibility: visible;
+      display: block;
+      @include breakpoint(medium down) {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+      }
+    }
+    button.alt{
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+      @include breakpoint(medium down) {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+      }
     }
   }
 }
@@ -352,7 +407,6 @@ nav{
     color: $light-gray;
   }
 }
-
 .helpWrap div:first-child{
   text-align: center;
   font-size: 32px;
@@ -429,7 +483,7 @@ nav{
       }
       a span{
          font-weight: 300;
-         color: $green !important;
+         color: $blue !important;
       }
     }
     @include breakpoint(med-large up) {
@@ -533,7 +587,7 @@ nav{
    margin-bottom: 0px;
 }
 .tweet a:hover{
-   color: $greenLite !important;
+   color: $blueLite !important;
    @include mui-animation(fade);
 }
 
