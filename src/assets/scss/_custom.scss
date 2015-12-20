@@ -43,7 +43,7 @@ nav{
   color: $black !important;
 }
   .top-bar-left img{
-    height: 65px;
+    height: 60px;
   }
   .top-bar-right ul:first-child{
     padding-top: 24px;
@@ -61,19 +61,33 @@ nav{
   background: $test;
   border: $borderTest;
   img{
-    width:670px !important;
-    min-width:670px !important;
+    width:670px;
+    min-width:670px;
     overflow: visible;
+    @include breakpoint(medium down) {
+      width: 400px;
+      min-width:400px;
+    }
   }
 }
 .client{
   h3{
     font-weight: 700;
+    @include breakpoint(medium down) {
+      font-size: 20px;
+    }
   }
   .large-6{
+    padding-left: 0px;
+    @include breakpoint(medium down) {
+      padding-right: 0px;
+    }
     p{
       max-width: 520px;
       font-weight: 300;
+      @include breakpoint(medium down) {
+        font-size: 16px;
+      }
     }
     p:last-child{
       max-width: 520px;
@@ -82,7 +96,6 @@ nav{
     }
   }
 }
-
 
 .clientBottom{
   text-align: right;
@@ -272,9 +285,12 @@ nav{
 }
 #buyBox1, #buyBox2, #buyBox3{
   padding-bottom: $pad;
-  background: $gray;
+  background: $white;
   span button{
     padding-top: $pad * 1.5;
+  }
+  @include breakpoint(medium down) {
+    margin-bottom: $pad;
   }
 }
 #buyBox3 .medium-8{
@@ -282,13 +298,38 @@ nav{
 }
 #buyBar{
   text-align: center;
+  .row{
+    margin-top: $pad;
+    padding-top: $pad / 2;
+    padding-bottom: $pad / 2;
+    background-color: $white;
+    @include breakpoint(medium down) {
+      padding-top: $pad;
+      padding-bottom: $pad / 2;
+  }
+  }
     img{
-    height: 20px;
+    height: 16px;
+    @include breakpoint(medium down) {
+      margin-bottom: $pad / 2;
   }
 }
+  .columns:first-of-type img{
+    // height: 20px;
+    // margin-top: -4px;
+  }
+  .columns:nth-of-type(2) img{
+        height: 19px;
+  }
 
-
-
+  .columns:nth-of-type(4) img{
+        height: 21px;
+  }
+.columns:last-of-type img{
+  height: 23px;
+  margin-top: -4px;
+}
+}
 
 
 
