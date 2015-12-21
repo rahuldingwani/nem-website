@@ -71,6 +71,24 @@ nav{
       padding-top: 0 !important;
     }
   }
+  .top-bar-right ul a{
+    @include breakpoint(medium down) {
+      font-size: 12px;
+    }
+  }
+  .top-bar-right ul a::after{
+    @include breakpoint(medium down) {
+      margin-top: 0 !important;
+    }
+    @include breakpoint(small down) {
+      margin-top: -5px !important;
+    }
+  }
+  .top-bar-right ul a{
+    @include breakpoint(small down) {
+      font-size: 15px;
+    }
+  }
 }
 @include breakpoint(medium up) {
   nav li.menu-text{
@@ -93,6 +111,23 @@ nav{
     padding-right: 1rem !important;
   }
 }
+
+.title-bar{
+  background: $white;
+  .title-bar-title{
+    color: $black;
+  }
+}
+.button{
+  color: red !important;
+}
+
+
+
+
+
+
+
 
 #about{
   background: url(../img/waterFog.jpg);
