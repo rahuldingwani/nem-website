@@ -21,7 +21,7 @@ footer .row .row{
   font-weight: 300;
 }
 p{
-  font-size: 17px;
+  font-size: 16px;
 }
 a{
   color: $blue;
@@ -49,7 +49,9 @@ button:focus{
 }
 nav{
   a{
-  color: $black !important;
+    text-transform: uppercase;
+    color: $black !important;
+    font-size: 15px;
 }
   .top-bar-left img{
     height: 60px;
@@ -57,9 +59,40 @@ nav{
   .top-bar-right ul:first-child{
     padding-top: 24px;
   }
+  .top-bar-left{
+    @include breakpoint(medium down) {
+      display: none;
+      visibility: hidden;
+      position: absolute;
+    }
+  }
+  .top-bar-right ul{
+    @include breakpoint(medium down) {
+      padding-top: 0 !important;
+    }
+  }
 }
-
-
+@include breakpoint(medium up) {
+  nav li.menu-text{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  nav .top-bar{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  nav .last{
+    padding-right: 0 !important;
+  }
+  nav .submenu a{
+      padding-right: $pad / 2 !important;
+  }
+}
+.top-bar-right a{
+  @include breakpoint(med-large down) {
+    padding-right: 1rem !important;
+  }
+}
 
 #about{
   background: url(../img/waterFog.jpg);

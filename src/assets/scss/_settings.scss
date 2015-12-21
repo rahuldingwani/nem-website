@@ -314,7 +314,7 @@ $dropdown-sizes: (
 // -----------------
 
 $dropdownmenu-arrows: true;
-$dropdownmenu-min-width: 200px;
+$dropdownmenu-min-width: 40px;
 $dropdownmenu-background: $white;
 $dropdownmenu-border: 1px solid $medium-gray;
 
@@ -384,7 +384,8 @@ $mediaobject-image-width-stacked: 100%;
 
 $menu-margin: 0;
 $menu-margin-nested: 1rem;
-$menu-item-padding: 0.7rem 1rem;
+// $menu-item-padding: 0.7rem 1rem;
+$menu-item-padding: 1rem 3rem 1rem ($pad / 2);
 $menu-icon-spacing: 0.25rem;
 $menu-expand-max: 6;
 
