@@ -49,9 +49,9 @@ button:focus{
   box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
 }
 nav{
-  background: transparent !important;
+  // background: transparent !important;
   .top-bar, .top-bar-left ul, .top-bar-right ul{
-    background: transparent !important;
+    background: $white;
   }
   a{
     text-transform: uppercase;
@@ -118,18 +118,51 @@ nav{
 }
 
 .title-bar{
-  background: $white;
   box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
-  .title-bar-title{
-    color: $black;
-  }
 }
-.button{
-  color: red !important;
+nav .submenu li{
+  // box-shadow: 0 10px 6px -6px #777;
+  border-bottom: 1px solid $light-gray;
+
+
 }
-
-
-
+nav .submenu li:last-child{
+  border-bottom: 0px solid $light-gray;
+}
+// nav .submenu li
+// {
+//   position: relative;
+// }
+// nav .submenu li:before, nav .submenu li:after
+// {
+//   z-index: -1;
+//   position: absolute;
+//   content: "";
+//   bottom: 25px;
+//   left: 10px;
+//   width: 50%;
+//   top: 80%;
+//   max-width:300px;
+//   background: #777;
+//   -webkit-box-shadow: 0 35px 20px #777;
+//   -moz-box-shadow: 0 35px 20px #777;
+//   box-shadow: 0 35px 20px #777;
+//   -webkit-transform: rotate(-8deg);
+//   -moz-transform: rotate(-8deg);
+//   -o-transform: rotate(-8deg);
+//   -ms-transform: rotate(-8deg);
+//   transform: rotate(-8deg);
+// }
+// nav .submenu li:after
+// {
+//   -webkit-transform: rotate(8deg);
+//   -moz-transform: rotate(8deg);
+//   -o-transform: rotate(8deg);
+//   -ms-transform: rotate(8deg);
+//   transform: rotate(8deg);
+//   right: 10px;
+//   left: auto;
+// }
 
 
 

@@ -300,7 +300,7 @@ $drilldown-background: $white;
 // ------------
 
 $dropdown-padding: 1rem;
-$dropdown-border: 1px solid $medium-gray;
+$dropdown-border: 1px solid $light-gray;
 $dropdown-font-size: 16rem;
 $dropdown-width: 300px;
 $dropdown-radius: $global-radius;
@@ -316,7 +316,7 @@ $dropdown-sizes: (
 $dropdownmenu-arrows: true;
 $dropdownmenu-min-width: 40px;
 $dropdownmenu-background: $white;
-$dropdownmenu-border: 1px solid $medium-gray;
+$dropdownmenu-border: 1px solid $light-gray;
 
 // 18. Flex Video
 // --------------
@@ -387,7 +387,7 @@ $menu-margin-nested: 1rem;
 // $menu-item-padding: 0.7rem 1rem;
 $menu-item-padding: 1rem 3rem 1rem ($pad / 2);
 $menu-icon-spacing: 0.25rem;
-$menu-expand-max: 6;
+$menu-expand-max: 7;
 
 // 23. Off-canvas
 // --------------
@@ -532,12 +532,12 @@ $thumbnail-radius: $global-radius;
 // 33. Title Bar
 // -------------
 
-$titlebar-background: $black;
-$titlebar-color: $white;
+$titlebar-background: $white;
+$titlebar-color: $blue;
 $titlebar-padding: 0.5rem;
-$titlebar-text-font-weight: bold;
-$titlebar-icon-color: $white;
-$titlebar-icon-color-hover: $medium-gray;
+$titlebar-text-font-weight: 500;
+$titlebar-icon-color: $blue;
+$titlebar-icon-color-hover: $blueLite;
 $titlebar-icon-spacing: 0.25rem;
 
 // 34. Tooltip
