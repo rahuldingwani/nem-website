@@ -45,9 +45,14 @@ button:focus{
 
 
 .navWrap{
-  background: $test;
+  background: $white;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
 }
 nav{
+  background: transparent !important;
+  .top-bar, .top-bar-left ul, .top-bar-right ul{
+    background: transparent !important;
+  }
   a{
     text-transform: uppercase;
     color: $black !important;
@@ -114,6 +119,7 @@ nav{
 
 .title-bar{
   background: $white;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
   .title-bar-title{
     color: $black;
   }
@@ -145,7 +151,7 @@ nav{
   }
   .column{
     background-color: #fabe00;
-    border: $borderTest;
+    // border: $borderTest;
     border-radius: 100px;
     width: 150px;
     height: 150px;
@@ -156,6 +162,9 @@ nav{
     // margin: 20px;
     @include centerChildren;
     text-align:center;
+    color: $white;
+    font-weight: 900;
+    text-transform: uppercase;
   }
   .column.secondary{
     background-color: #86c0ea;
@@ -256,6 +265,7 @@ nav{
     }
   }
   button:nth-child(3){
+            margin-top: -$pad * 3;
       @include breakpoint(xlarge down) {
         width: 200px;
         max-width: 200px;
@@ -339,8 +349,8 @@ nav{
   background-size: cover;
 }
 .client .columns{
-  background: $test;
-  border: $borderTest;
+  // background: $test;
+  // border: $borderTest;
   img{
     width:670px;
     min-width:670px;
@@ -446,8 +456,8 @@ nav{
   .columns{
     margin-top: 50px;
     margin-bottom: 50px;
-    background: $test;
-    border: $borderTest;
+    // background: $test;
+    // border: $borderTest;
   }
 }
 .client .row.align-middle{
@@ -695,7 +705,10 @@ nav{
   }
 }
 #newsFeed{
+  ul li{
+      position: relative;
 
+  }
 }
 .user a span:first-of-type {
    display:none;
@@ -714,8 +727,11 @@ nav{
    margin-top: 60px;
 }
 .timePosted{
-   text-align: right;
+  position: absolute;
+   bottom: 0;
+   right: 0;
    font-weight: 300;
+   padding-right: $pad;
    a{
      color: $black;
    }
@@ -886,3 +902,21 @@ a .btn-1e:hover:after {
    opacity: 1;
 }
 /* BUTTON STYLING END */
+
+
+
+
+
+
+
+// INSTALL page
+#install{
+  text-align: center;
+  background: url(../img/concrete_seamless.png);
+  .column{
+    background: $white;
+  }
+  .column:first-of-type{
+    margin-right: $pad;
+  }
+}
