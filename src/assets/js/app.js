@@ -40,6 +40,12 @@ $.i18n.init({
 		$('#navbuy').text($.t('nav.buy'));
 		$('#blog').text($.t('nav.blog'));
 		$('#test123').i18n();
+    <!-- ABOUT SECTION -->
+    $('.multisig').text($.t('multisig'));
+    $('.multisig2').text($.t('multisig2'));
+    $('.apps').text($.t('apps'));
+    $('.reputation').text($.t('reputation'));
+
 });
 // i18nextJquery.init(i18nextInstance, $, {
 //   tName: 't', // --> appends $.t = i18next.t

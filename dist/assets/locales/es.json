@@ -1,6 +1,7 @@
 {
- "!test": "es",
  "fir": "holaFirst",
+ "lang": "si",
+ "multisig": "rancho",
  "sec": "holaSecond",
- "yes.test": "si"
+ "update": "es"
 }
