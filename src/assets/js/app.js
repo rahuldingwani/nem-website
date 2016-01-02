@@ -18,43 +18,76 @@ var config1 = {
 };
 twitterFetcher.fetch(config1);
 
-// given registered post processor
-// i18n.addPostProcessor("markdown", function(val, key, opts) {
-//    return require("markdown").markdown.toHTML(val);
-// });
-
 
 $.i18n.init({
-		ns: { namespaces: ['en', 'es'], defaultNs: 'en'},
+		ns: { namespaces: ['en', 'cn', 'ja', 'fi'], defaultNs: 'en'},
 		useLocalStorage: false,
 		fallbackLng: 'en',
     resGetPath: 'assets/locales/__lng__.json',
-    // postProcess: 'markdown',
 		debug: true
 	}, function(t) {
-		$('#add').text($.t('ns.common:add'));
-		$('#appname').text($.t('app.name'));
-		$('#appclient').text($.t('app.client'));
+		// $('#add').text($.t('ns.common:add'));
+		// $('#appname').text($.t('app.name'));
+		// $('#appclient').text($.t('app.client'));
+
 		<!-- OURNEM HOMEPAGE -->
-		$('#navclient').text($.t('sec'));
-		$('#navbuy').text($.t('nav.buy'));
-		$('#blog').text($.t('nav.blog'));
-		$('#test123').i18n();
+		// $('#navclient').text($.t('sec'));
+		// $('#navbuy').text($.t('nav.buy'));
+		// $('#blog').text($.t('nav.blog'));
+		// $('#test123').i18n();
+
+
+
+		<!-- NAVIGATION -->
+    $('#navClient').text($.t('navClient'));
+    $('#navBuy').text($.t('navBuy'));
+    $('#navSupport').text($.t('navSupport'));
+    $('#navSupportFaq').text($.t('navSupportFaq'));
+    $('#navSupportTutorial').text($.t('navSupportTutorial'));
+    $('#navSupportForum').text($.t('navSupportForum'));
+    $('#navUpdates').text($.t('navUpdates'));
+    $('#navBlog').text($.t('navBlog'));
+    $('#navLang').i18n();
+
     <!-- ABOUT SECTION -->
+    $('.multisigTitle').text($.t('multisigTitle'));
+    $('.appsTitle').text($.t('appsTitle'));
+    $('.reputationTitle').text($.t('reputationTitle'));
+    $('.messagingTitle').text($.t('messagingTitle'));
+    $('.architectureTitle').text($.t('architectureTitle'));
+    $('.harvestingTitle').text($.t('harvestingTitle'));
+    $('.delegatedTitle').text($.t('delegatedTitle'));
+    $('.mosaicTitle').text($.t('mosaicTitle'));
+    $('.videoTitle').text($.t('videoTitle'));
+    $('.nccTitle').text($.t('nccTitle'));
+    $('.nisTitle').text($.t('nisTitle'));
+    $('.consensusTitle').text($.t('consensusTitle'));
+    $('.newcodeTitle').text($.t('newcodeTitle'));
+    $('.blocktimesTitle').text($.t('blocktimesTitle'));
+    $('.xemTitle').text($.t('xemTitle'));
+    $('.namespaceTitle').text($.t('namespaceTitle'));
+    $('.spamTitle').text($.t('spamTitle'));
+
     $('.multisig').text($.t('multisig'));
     $('.multisig2').text($.t('multisig2'));
     $('.apps').text($.t('apps'));
     $('.reputation').text($.t('reputation'));
+    $('.messaging').text($.t('messaging'));
+    $('.architecture').text($.t('architecture'));
+    $('.harvesting').text($.t('harvesting'));
+    $('.delegated').text($.t('delegated'));
+    $('.mosaic').text($.t('mosaic'));
+    $('.mosaic2').text($.t('mosaic2'));
+    $('.ncc').text($.t('ncc'));
+    $('.nis').text($.t('nis'));
+    $('.consensus').text($.t('consensus'));
+    $('.consensus2').text($.t('consensus2'));
+    $('.newcode').text($.t('newcode'));
+    $('.blocktimes').text($.t('blocktimes'));
+    $('.xem').text($.t('xem'));
+    $('.namespace').text($.t('namespace'));
+    $('.namespace2').text($.t('namespace2'));
+    $('.namespace3').text($.t('namespace3'));
+    $('.spam').text($.t('spam'));
 
 });
-// i18nextJquery.init(i18nextInstance, $, {
-//   tName: 't', // --> appends $.t = i18next.t
-//   i18nName: 'i18n', // --> appends $.i18n = i18next
-//   handleName: 'localize', // --> appends $(selector).localize(opts);
-//   selectorAttr: 'data-i18n', // selector for translating elements
-//   targetAttr: 'data-i18n-target', // element attribute to grab target element to translate (if diffrent then itself)
-//   optionsAttr: 'data-i18n-options', // element attribute that contains options, will load/set if useOptionsAttr = true
-//   useOptionsAttr: false, // see optionsAttr
-//   parseDefaultValueFromContent: true // parses default values from content ele.val or ele.text
-//   });
-      // $(".nav").localize();
