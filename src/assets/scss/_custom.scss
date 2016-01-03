@@ -656,18 +656,19 @@ nav .submenu li:last-child{
   #newsFeed ul{
     @include grid-row();
     li{
-      // margin-right: $pad;
-      // margin-left: -$pad;
+      position: relative;
       background-color: $white;
       @include grid-column(4);
-      // padding-right: $pad;
-      .tweet{
-       font-weight: 300;
-       overflow: hidden !important;
-      }
+      // -- Twitter Handle -- //
       a span{
          font-weight: 300;
          color: $blue !important;
+      }
+      // -- Twitter Content -- //
+      .tweet{
+        margin-top: $pad * 3;
+       font-weight: 300;
+       overflow: hidden !important;
       }
     }
     @include breakpoint(med-large up) {
@@ -712,15 +713,8 @@ nav .submenu li:last-child{
   }
   li:last-of-type{
     width: calc(100%);
-
   }
 }
-  }
-}
-#newsFeed{
-  ul li{
-      position: relative;
-
   }
 }
 .user a span:first-of-type {
@@ -736,11 +730,8 @@ nav .submenu li:last-child{
    color: $dark-gray !important;
    font-weight: 500 !important;
 }
-.tweet{
-   margin-top: 60px;
-}
 .timePosted{
-  position: absolute;
+   position: absolute;
    bottom: 0;
    right: 0;
    font-weight: 300;
@@ -764,22 +755,22 @@ nav .submenu li:last-child{
    font-weight: 300;
 }
 .tweet{
-   color: $light-gray !important;
+  //  color: $light-gray !important;
 }
-.tweet a > span:before {
-   background-color: transparent !important;
-   height: 0px;
-   margin-bottom: 0px;
-}
-.tweet a > span:after {
-   background-color: blue !important;
-   height: 0px;
-   margin-bottom: 0px;
-}
-.tweet a:hover{
-   color: $blueLite !important;
-   @include mui-animation(fade);
-}
+// .tweet a > span:before {
+//    background-color: transparent !important;
+//    height: 0px;
+//    margin-bottom: 0px;
+// }
+// .tweet a > span:after {
+//    background-color: blue !important;
+//    height: 0px;
+//    margin-bottom: 0px;
+// }
+// .tweet a:hover{
+//    color: $blueLite !important;
+//    @include mui-animation(fade);
+// }
 
 
 
