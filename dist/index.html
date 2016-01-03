@@ -269,30 +269,36 @@
         </div>
         <div class="large-1 medium-1 small-12 columns"></div>
         <div class="large-6 columns">
-          <h3>NEM Community Client</h3>
-          <p id="test123" data-i18n="[html]sec"></p>
-          <a href="#"><button class="btn btn-1e">install nem community client</button></a>
-          <a href="#"><button class="btn btn-1e alt">install nem client</button></a>
-          <p>Need help with installing the NEM Client? <a href="#">Follow our easy guide</a></p>
+          <h3 id="clientHeader">NEM Community Client</h3>
+          <p id="clientContent" data-i18n="[html]client"></p>
+          <a href="#"><button id="clientClick" class="btn btn-1e">install nem community client</button></a>
+          <a href="#"><button id="clientClickAlt" class="btn btn-1e alt">install nem client</button></a>
+          <p id="clientHelp" data-i18n="[html]help">Need help with installing the NEM Client? <a href="#">Follow our easy guide</a></p>
         </div>
       </div>
       <div class="row">
         <div class="small-12 columns helpAlt">
-          <p>Need help with installing the NEM Client? <a href="#">Follow our easy guide</a></p>
+          <p id="clientHelp2" data-i18n="[html]help">Need help with installing the NEM Client? <a href="#">Follow our easy guide</a></p>
         </div>
       </div>
       <div class="row align-middle clientBottom">
         <div class="large-5 med-large-6 small-12 columns" id="support">
-          <h3>Streamlined NEM Mobile Client</h3>
-          <p>
+          <h3 id="clientHeader2">Streamlined NEM Mobile Client</h3>
+          <p id="clientAbout">
             Install the NEM Mobile Client, it has all the core NEM features, with ease of use in mind.
           </p>
+          <span href="#">
+            <button class="coming btn btn-1e">COMING SOON</button>
+          </span>
         </div>
       </div>
     </div>
     
     
     <section id="buy">
+      <div id="buyHeaderWrap" class="row align-middle">
+        <h2 id="buyHeader" class="small-12 columns">Buy or use XEM</h2>
+      </div>
       <div class="row align-stretch">
         <div class="small-12 columns">
           <div id="buyWrap" class="row">
@@ -309,7 +315,7 @@
                 </div>
               </div>
               <div class="row align-center">
-                  <div class="medium-8 column">
+                  <div id="buyHere" class="medium-8 column">
                     Buy XEM at one of these exchanges
                   </div>
               </div>
@@ -353,14 +359,14 @@
                   </div>
                 </div>
                 <div class="row align-center">
-                    <div class="medium-8 column">
+                    <div id="spendHere" class="medium-8 column">
                       Spend XEM anywhere that you can spend Bitcoin
                     </div>
                 </div>
                 <div class="row align-center">
                     <div class="small-10 column">
                       <span href="#">
-                        <button class="btn btn-1e">COMING SOON</button>
+                        <button class="coming btn btn-1e">COMING SOON</button>
                       </span>
                     </div>
                 </div>
@@ -378,7 +384,7 @@
                 </div>
               </div>
               <div class="row align-center">
-                  <div class="medium-8 column">
+                  <div id="xemCash" class="medium-8 column">
                     Buy XEM directly with cash
                   </div>
               </div>
@@ -430,21 +436,21 @@
     </div>
     <section id="help">
       <div class="helpWrap row align-center align-middle">
-        <div class="column small-12 medium-9 med-large-4 large-3">
+        <div id="helpHeader" class="column small-12 medium-9 med-large-4 large-3">
           Still need Help?
         </div>
         <div class="column small-12 medium-12 med-large-7 large-7">
-      <uL class="">
+      <ul>
         <li class="align-left">
           <span class="fa-stack fa-2x">
             <i class="fa fa-square fa-stack-2x fa-inverse"></i>
             <i class="fa fa-question-circle fa-stack-1x"></i>
           </span>
           <a href="#">
-            <span class="helpText">
+            <span id="faq" class="helpText">
               Read the in-depth FAQ section
             </span>
-            <span class="helpTextAlt2">
+            <span id="faqAlt" class="helpTextAlt2">
               Read the FAQ
             </span>
           </a>
@@ -455,44 +461,44 @@
             <i class="fa fa-keyboard-o fa-stack-1x"></i>
           </span>
           <a href="#">
-            <span class="helpText hasAlt">
+            <span id="forum" class="helpText hasAlt">
               Learn more about NEM through our community on our Forum
             </span>
-            <span class="helpTextAlt">
+            <span id="forumAlt" class="helpTextAlt">
               join the NEM community on our Forum
             </span>
-            <span class="helpTextAlt2">
+            <span id="forumAlt2" class="helpTextAlt2">
               join the NEM Forum
             </span>
           </a>
-      </li>
-      <li>
-        <span class="fa-stack fa-2x">
-          <i class="fa fa-square fa-stack-2x fa-inverse"></i>
-          <i class="fa fa-comments fa-stack-1x"></i>
-        </span>
-        <a href="#">
-          <span class="helpText">
-            Check out our list of NEM related tutorials
+        </li>
+        <li>
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-comments fa-stack-1x"></i>
           </span>
-          <span class="helpTextAlt2">
-            Read our Tutorials
-          </span>
-        </a>
-      </li>
-      <li>
+          <a href="#">
+            <span id="tutorials" class="helpText">
+              Check out our list of NEM related tutorials
+            </span>
+            <span id="tutorialsAlt" class="helpTextAlt2">
+              Read our Tutorials
+            </span>
+          </a>
+        </li>
+        <li>
         <span class="fa-stack fa-2x">
           <i class="fa fa-square fa-stack-2x fa-inverse"></i>
           <i class="fa fa-users fa-stack-1x"></i>
         </span>
         <a href="#">
-          <span class="helpText hasAlt">
+          <span id="chat" class="helpText hasAlt">
           Join our telegram channels and interact with the developers
           </span>
-          <span class="helpTextAlt">
+          <span id="chatAlt" class="helpTextAlt">
             join our chat and talk to the developers
           </span>
-          <span class="helpTextAlt2">
+          <span id="chatAlt2" class="helpTextAlt2">
             Chat on Telegram
           </span>
         </a>`
@@ -512,8 +518,8 @@
       <div class="upperFooter row align-justify align-middle">
         <div class="small-12 medium-12 med-large-4 large-4 column">
           <img src="assets/img/nemLogoWhite.svg"/>
-          <p>
-            NEM is a movement which aims to create a new economy based
+          <p id="footerText">
+            nem is a movement which aims to create a new economy based
             on the principles of decentralization, financial freedom,
             and equality of opportunity.
           </p>
@@ -523,7 +529,7 @@
             <div class="large-4 columns">
               <ul class="">
                 <li>
-                  <h6>Resources</h6>
+                  <h6 id="resources">resources</h6>
                 <li>
                   <a href="https://github.com/NewEconomyMovement">Github Repos</a>
                 </li>
@@ -539,9 +545,9 @@
               </ul>
             </div>
             <div class="columns">
-              <ul class="">
+              <ul>
                 <li>
-                  <h6>Articles</h6>
+                  <h6 id="articles">articles</h6>
                 <li>
                   <a href="http://www.reuters.com/article/dragonfly-fintech-idUSnPn1Ptv6F+91+PRN20151216">Reuters</a>
                 </li>
@@ -560,9 +566,9 @@
               </ul>
             </div>
             <div class="columns">
-              <ul class="">
+              <ul>
                 <li>
-                  <h6>blog posts</h6>
+                  <h6 id="posts">blog posts</h6>
                 <li>
                   <a href="#">resource</a>
                 </li>

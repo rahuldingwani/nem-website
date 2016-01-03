@@ -32,15 +32,22 @@ button:focus{
   background-image: none;
   outline: none;
 }
+
 @mixin centerChildren {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-
-
+@mixin comingButton{
+  font-weight: 500;
+  font-size: 14px;
+}
+@mixin sectionBottomPad{
+  padding-bottom: $pad * 6;
+}
+@mixin sectionTopPad{
+    padding-top: $pad * 4;
+}
 
 
 
@@ -348,6 +355,8 @@ nav .submenu li:last-child{
 .client{
   background: url(../img/clientBackground.jpg);
   background-size: cover;
+  @include sectionTopPad;
+  @include sectionBottomPad;
 }
 .client .columns{
   // background: $test;
@@ -422,9 +431,6 @@ nav .submenu li:last-child{
         display: none;
       }
     }
-    // p:last-child a{
-    //   font-size: 10px !important;
-    // }
     button{
       opacity: 1;
       visibility: visible;
@@ -455,10 +461,11 @@ nav .submenu li:last-child{
     margin: 0 0 0 auto;
   }
   .columns{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    // background: $test;
-    // border: $borderTest;
+    margin-top: $pad * (5 / 2);
+  }
+  span button{
+    margin-top: $pad / 2;
+    @include comingButton;
   }
 }
 .client .row.align-middle{
@@ -468,12 +475,18 @@ nav .submenu li:last-child{
 
 
 
-
-
+#buyHeaderWrap h2{
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+#buyHeaderWrap{
+  height: 200px;
+}
 #buy{
   background: url(../img/geometry.png);
-  padding-top: $pad * 6;
-  padding-bottom: $pad * 6;
+  // padding-top: $pad * 6;
+  @include sectionBottomPad;
   // margin-bottom: -45px;
 
 }
@@ -512,8 +525,7 @@ nav .submenu li:last-child{
   margin-top: $pad * 3;
   min-height: 48px;
   span{
-    font-weight: 500;
-    font-size: 14px;
+    @include comingButton;
   }
 }
 #buyBox1, #buyBox2, #buyBox3{

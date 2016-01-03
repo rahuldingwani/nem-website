@@ -31,10 +31,6 @@ $.i18n.init({
 		// $('#appclient').text($.t('app.client'));
 
 		<!-- OURNEM HOMEPAGE -->
-		// $('#navclient').text($.t('sec'));
-		// $('#navbuy').text($.t('nav.buy'));
-		// $('#blog').text($.t('nav.blog'));
-		// $('#test123').i18n();
 
 
 
@@ -90,4 +86,45 @@ $.i18n.init({
     $('.namespace3').text($.t('namespace3'));
     $('.spam').text($.t('spam'));
 
+    <!-- CLIENT SECTION -->
+    $('#clientHeader').text($.t('header'));
+    $('#clientContent').i18n();
+    $('#clientClick').text($.t('click'));
+    $('#clientClickAlt').text($.t('clickAlt'));
+    $('#clientHelp').i18n();
+    $('#clientHelpAlt').i18n();
+
+    $('#clientHeader2').text($.t('header2'));
+    $('#clientAbout').text($.t('about2'));
+    $('#clientHelp2').i18n();
+
+    <!-- BUY SECTION -->
+    $('#buyHeader').text($.t('buyHeader'));
+    $('#buyHere').text($.t('buyHere'));
+    $('#spendHere').text($.t('spendHere'));
+    $('#xemCash').text($.t('xemCash'));
+
+    <!-- HELP SECTION -->
+    $('#helpHeader').text($.t('helpHeader'));
+    $('#faq').text($.t('faq'));
+    $('#faqAlt').text($.t('faqAlt'));
+    $('#forum').text($.t('forum'));
+    $('#forumAlt').text($.t('forumAlt'));
+    $('#forumAlt2').text($.t('forumAlt2'));
+    $('#tutorials').text($.t('tutorials'));
+    $('#tutorialsAlt').text($.t('tutorialsAlt'));
+    $('#chat').text($.t('chat'));
+    $('#chatAlt').text($.t('chatAlt'));
+    $('#chatAlt2').text($.t('chatAlt2'));
+
+    <!-- FOOTER SECTION -->
+    $('#footerText').text($.t('footerText'));
+    $('#resources').text($.t('resources'));
+    $('#articles').text($.t('articles'));
+    $('#posts').text($.t('posts'));
+
+
+
+    $('.coming').text($.t('coming'));
+    $('.more').text($.t('more'));
 });
