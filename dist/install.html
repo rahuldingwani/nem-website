@@ -57,11 +57,55 @@
     
 
     <section id="install">
+    
       <div class="row align-center">
-        <div class="column small-4">Aligned to</div>
-        <div class="column small-4">the middle</div>
+        <div class="column small-12">
+          <h2 id="installers">Installers</h2>
+        </div>
+        <div class="windows column small-4">
+          <!-- <img src="/assets/img/windows.png" /> -->
+          <h4 id="windowsInstall">Windows Installer</h4>
+        </div>
+        <div class="mac column small-4">
+          <!-- <img src="/assets/img/mac.png" /> -->
+          <h4 id="macInstall">Mac Installer</h4>
+        </div>
       </div>
+      <hr>
+    
+      <div class="row align-center">
+        <div class="column small-12">
+          <h3 id="standalone">Standalone Client</h3>
+          <h5 id="installOptions">For 32/64 Linux, 32-bit Windows, and 32-bit Mac</h5>
+        </div>
+        <div class="nisncc column small-4">
+          <h5 id="tgzClient">NIS/NCC Standalone (.tgz)</h5>
+          <p id="tgzSig">NIS/NCC Signature (.tgz)</p>
+        </div>
+        <div class="nccnis column small-4">
+          <h5 id="zipClient">NIS/NCC Standalone (.zip)</h5>
+          <p id="zipSig">NIS/NCC Signature (.zip)</p>
+        </div>
+      </div>
+      <hr>
+    
+      <div class="row align-center">
+        <div class="column small-12">
+          <h5 id="backup">Backup Client Resource</h5>
+        </div>
+        <div class="backup column small-12 large-5">
+          <p id="ifIssues" data-i18n="[html]ifIssues">
+            If you are having issues downloading from the links above, download them directly from our download page at <a href="http://download.nem.io/">download.nem.io</a>
+          </p>
+          <p id="or">OR</p>
+          <p id="sisterSite" data-i18n="[html]sisterSite">
+            Download them directly from our sister-site at <a href="http://bob.nem.ninja/">bob.nem.ninja</a>
+          </p>
+        </div>
+      </div>
+    
     </section>
+    
     
     
     <div id="newsWrap">
@@ -166,7 +210,26 @@
     </footer>
     
     
+    <!-- put version number in download links -->
+    <script>
+    
+       function callback(data) {
+          // console.log(data);
+          // alert(data.testing);
+          link = "<a href=\"http://download.nem.io/";
+          document.getElementById("windowsInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-windows-installer.exe\"><img src=\"/assets/img/windows.png\"/><br><br>Windows Installer</a>";
+          document.getElementById("macInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-osx-installer.app.tgz\"><img src=\"/assets/img/mac.png\"/><br><br>Mac Installer</a>";
+          document.getElementById("tgzClient").innerHTML=link+"nis-ncc-"+data.stable+".tgz\">NIS/NCC Standalone (.tgz)</a>";
+          document.getElementById("tgzSig").innerHTML=link+"nis-ncc-"+data.stable+".tgz.sig\">NIS/NCC Signature (.tgz)</a>";
+          document.getElementById("zipClient").innerHTML=link+"nis-ncc-"+data.stable+".zip\">NIS/NCC Standalone (.zip)</a>";
+          document.getElementById("zipSig").innerHTML=link+"nis-ncc-"+data.stable+".zip.sig\">NIS/NCC Signature (.zip)</a>";
+        }
+    </script>
+    <!-- get client version number from download.nem.io -->
+    <script src="http://download.nem.io/version_p.js"></script>
+    
 
     <script src="assets/js/app.js"></script>
+
   </body>
 </html>

@@ -1,5 +1,7 @@
 $(document).foundation();
 
+
+
 //**## NEM NEWS FEED ##**/
 //Pulls twitter feed using twitter fetcher.
 // Also automatically hyperlinks URLS and user mentions and hashtags.
@@ -123,8 +125,17 @@ $.i18n.init({
     $('#articles').text($.t('articles'));
     $('#posts').text($.t('posts'));
 
+    <!-- INSTALL SECTION -->
+    $('#installers').text($.t('installers'));
+    $('#standalone').text($.t('standalone'));
+    $('#installOptions').text($.t('installOptions'));
+    $('#backup').text($.t('backup'));
+    $('#ifIssues').i18n();
+    $('#or').text($.t('or'));
+    $('#sisterSite').i18n();
 
 
+    <!-- GENERIC -->
     $('.coming').text($.t('coming'));
     $('.more').text($.t('more'));
 });

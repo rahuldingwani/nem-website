@@ -917,10 +917,49 @@ a .btn-1e:hover:after {
 #install{
   text-align: center;
   background: url(../img/concrete_seamless.png);
-  .column{
+  @include sectionTopPad;
+  @include sectionBottomPad;
+  hr{
+    border: 1px solid $gray;
+    width: 20%;
+  }
+  .row .column{
     background: $white;
   }
-  .column:first-of-type{
-    margin-right: $pad;
+  .row .column:first-of-type {
+    background: transparent;
+    margin-top: $pad * 2;
+    h2, h3, h4, h5{
+      font-weight: 300;
+    }
+  }
+  img{
+   margin-top: $pad * 2;
+  //  margin-bottom: $pad;
+   max-height: $pad * 5;
+  }
+  .windows{
+    margin-right: $pad / 2;
+    padding-bottom: $pad;
+  }
+  .mac{
+    margin-left: $pad / 2;
+    padding-bottom: $pad;
+  }
+  .nisncc, .nccnis{
+    padding-top: $pad;
+    p{
+      margin-bottom: $pad;
+    }
+  }
+  .nisncc{
+    margin-right: $pad / 2;
+  }
+  .nccnis{
+    margin-left: $pad / 2;
+  }
+  .backup{
+    padding-top: $pad;
+    margin-bottom: $pad;
   }
 }
