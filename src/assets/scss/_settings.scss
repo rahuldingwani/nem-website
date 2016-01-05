@@ -71,7 +71,7 @@ $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
-$rem-base: 16px;
+// $rem-base: 16px; removed in 6.1
 
 $yellow: #ffb52f;
 $green: #43c5b5;
@@ -104,7 +104,7 @@ $breakpoint-classes: (small medium med-large large);
 
 $grid-row-width: $global-width;
 $grid-column-count: 12;
-$grid-column-gutter: 30px;
+$grid-column-gutter: null;
 $grid-column-align-edge: true;
 $block-grid-max: 8;
 
@@ -216,6 +216,7 @@ $accordion-content-padding: 1rem;
 // -----------------
 
 $accordionmenu-arrows: true;
+$accordionmenu-arrow-color: $anchor-color;
 
 // 9. Badge
 // --------
@@ -242,7 +243,7 @@ $breadcrumbs-item-slash: true;
 // ----------
 
 $button-padding: 0.85em 1em;
-$button-margin: 0 $global-margin $global-margin 0;
+$button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
@@ -295,6 +296,7 @@ $closebutton-color-hover: $black;
 $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
 $drilldown-background: $white;
+$drilldown-arrow-color: $anchor-color;
 
 // 16. Dropdown
 // ------------
@@ -317,6 +319,7 @@ $dropdownmenu-arrows: true;
 $dropdownmenu-min-width: 40px;
 $dropdownmenu-background: $white;
 $dropdownmenu-border: 1px solid $light-gray;
+$dropdownmenu-arrow-color: $anchor-color;
 
 // 18. Flex Video
 // --------------
@@ -345,7 +348,7 @@ $form-label-color: $black;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
-$select-background: #fafafa;
+$select-background: $white;
 $select-triangle-color: #333;
 $select-radius: $global-radius;
 $input-color: $black;
@@ -556,6 +559,6 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: #eee;
-$topbar-link-color: #fff;
+$topbar-background: $light-gray;
+$topbar-link-color: $primary-color;
 $topbar-input-width: 200px;
