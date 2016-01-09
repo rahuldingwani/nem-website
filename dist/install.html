@@ -54,13 +54,19 @@
         </div>
       </nav>
     </div>
+    <div class="banner">
+      <div class="row">
+        <h1 class="">NEM Clients</h2>
+      </div>
+      <!-- <img src="/assets/img/banner1600.png" /> -->
+    </div>
     
 
     <section id="install">
     
       <div class="row align-center">
         <div class="column small-12">
-          <h2 id="installers">Installers</h2>
+          <h2 id="installers">Installer (NCC &amp; NIS)</h2>
         </div>
         <div class="windows column small-4">
           <!-- <img src="/assets/img/windows.png" /> -->
@@ -69,6 +75,24 @@
         <div class="mac column small-4">
           <!-- <img src="/assets/img/mac.png" /> -->
           <h4 id="macInstall">Mac Installer</h4>
+        </div>
+      </div>
+      <hr>
+    
+      <div class="row align-center">
+        <div class="column small-12">
+          <h2 id="lightweight">Lightweight Clients (remote NIS)</h2>
+        </div>
+        <div class="windows column small-4">
+          <!-- <img src="/assets/img/nginx.png" /> -->
+          <h4 id="nginxInstall">Lightweight (nginx)</h4>
+          <h5 id="nginxSig">Lightweight Signature (tornado)</h5>
+    
+        </div>
+        <div class="mac column small-4">
+          <!-- <img src="/assets/img/tornado.jpg" /> -->
+          <h4 id="tornadoInstall">Lightweight (tornado)</h4>
+          <h5 id="tornadoSig">Lightweight Signature (tornado)</h5>
         </div>
       </div>
       <hr>
@@ -212,13 +236,16 @@
     
     <!-- put version number in download links -->
     <script>
-    
        function callback(data) {
           // console.log(data);
           // alert(data.testing);
           link = "<a href=\"http://download.nem.io/";
           document.getElementById("windowsInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-windows-installer.exe\"><img src=\"/assets/img/windows.png\"/><br><br>Windows Installer</a>";
           document.getElementById("macInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-osx-installer.app.tgz\"><img src=\"/assets/img/mac.png\"/><br><br>Mac Installer</a>";
+          document.getElementById("nginxInstall").innerHTML=link+"lightwallet-standalone-1.1-cdn-nginx1.8.zip\"><img src=\"/assets/img/nginx.png\"/><br><br>Lightweight (nginx)</a>";
+          document.getElementById("tornadoInstall").innerHTML=link+"lightwallet-standalone-1.1-cdn-pytornado.zip\"><img src=\"/assets/img/tornado.jpg\"/><br><br>Lightweight (tornado)</a>";
+          document.getElementById("nginxSig").innerHTML=link+"lightwallet-standalone-1.1-cdn-nginx1.8.zip.sig\">Lightweight Signature (nginx)</a>";
+          document.getElementById("tornadoSig").innerHTML=link+"lightwallet-standalone-1.1-cdn-pytornado.zip.sig\">lightweight Signature (tornado)</a>";
           document.getElementById("tgzClient").innerHTML=link+"nis-ncc-"+data.stable+".tgz\">NIS/NCC Standalone (.tgz)</a>";
           document.getElementById("tgzSig").innerHTML=link+"nis-ncc-"+data.stable+".tgz.sig\">NIS/NCC Signature (.tgz)</a>";
           document.getElementById("zipClient").innerHTML=link+"nis-ncc-"+data.stable+".zip\">NIS/NCC Standalone (.zip)</a>";

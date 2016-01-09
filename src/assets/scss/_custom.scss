@@ -138,6 +138,25 @@ nav .submenu li:last-child{
 }
 
 
+.banner{
+  background: url(../img/banner1600.png);
+  // background-size: cover;
+  height: 200px;
+  .row{
+    height: 200px;
+  }
+  h1{
+    text-align: center;
+    margin-bottom: 0;
+    color: $medium-gray;
+    @include flex-grid-column(12);
+    @include flex-grid-column-align(middle);
+  }
+}
+
+
+
+
 
 
 
