@@ -1,5 +1,6 @@
 $(document).foundation();
 
+// var elem = new Foundation.Magellan(first);
 
 
 //**## NEM NEWS FEED ##**/

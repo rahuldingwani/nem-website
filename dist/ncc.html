@@ -56,7 +56,7 @@
     </div>
     
 
-    <div class="large-3 columns" data-sticky-container>
+    <!-- <div class="large-3 columns" data-sticky-container>
       <nav class="columns" data-sticky data-anchor="exampleId" data-sticky-on="large">
         <ul class="vertical menu" data-magellan>
           <li><a href="#first">First Arrival</a></li>
@@ -64,11 +64,9 @@
           <li><a href="#third">Third Arrival</a></li>
         </ul>
       </nav>
-    </div>
+    </div> -->
     
-    
-    
-    <div data-sticky-container>
+    <!-- <div data-sticky-container>
       <div class="sticky" id="example" data-sticky data-margin-top="0" style="width:100%;" data-margin-bottom="0" data-top-anchor="topAnchorExample" data-btm-anchor="bottomOfContentId:bottom">
         <nav data-magellan>
           <ul class="horizontal menu expanded">
@@ -78,8 +76,8 @@
           </ul>
         </nav>
       </div>
-    </div>
-    <div id="try">
+    </div> -->
+    <!-- <div id="try">
       <nav class="sticky-container" data-sticky-container>
         <div class="sticky" data-sticky data-top-anchor="try" data-btm-anchor="destroy:bottom" data-margin-top="0" data-margin-bottom="0">
         <div class="row columns">
@@ -94,22 +92,32 @@
             </div>
         </div>
         </div>
-    </nav>
+    </nav> -->
+    <div id="first" data-magellan-target="first">first</div>
+    <div id="newsWrap">
+        <div id="newsFeed"></div>
+    </div>
+    
+    <div class="large-3 columns" data-sticky-container>
+      <nav class="columns" data-sticky data-anchor="exampleId" data-sticky-on="large">
+        <ul class="vertical menu" data-magellan>
+          <li><a href="#first">First Arrival</a></li>
+          <li><a href="#second">Second Arrival</a></li>
+          <li><a href="#third">Third Arrival</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="newsWrap">
+        <div id="newsFeed"></div>
+    </div>
+    
+    <div id="second" data-magellan-target="second">second</div>
     
     <div id="newsWrap">
         <div id="newsFeed"></div>
     </div>
     
-    
-    <div id="newsWrap">
-        <div id="newsFeed"></div>
-    </div>
-    
-    
-    <div id="newsWrap">
-        <div id="newsFeed"></div>
-    </div>
-    
+    <div id="third" data-magellan-target="third">third</div>
     
     <div id="newsWrap">
         <div id="newsFeed"></div>
@@ -215,6 +223,5 @@
     
 
     <script src="assets/js/app.js"></script>
-
   </body>
 </html>
