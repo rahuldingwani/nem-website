@@ -1,7 +1,6 @@
 $(document).foundation();
 
-// var elem = new Foundation.Magellan(first);
-
+smoothScroll.init();
 
 //**## NEM NEWS FEED ##**/
 //Pulls twitter feed using twitter fetcher.
@@ -104,7 +103,7 @@ $.i18n.init({
     <!-- BUY SECTION -->
     $('#buyHeader').text($.t('buyHeader'));
     $('#buyHere').text($.t('buyHere'));
-    $('#spendHere').text($.t('spendHere'));
+    $('#xemFaucet').text($.t('xemFaucet'));
     $('#xemCash').text($.t('xemCash'));
 
     <!-- HELP SECTION -->
@@ -139,4 +138,5 @@ $.i18n.init({
     <!-- GENERIC -->
     $('.coming').text($.t('coming'));
     $('.more').text($.t('more'));
+    $('.getXem').text($.t('getXem'));
 });

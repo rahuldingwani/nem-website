@@ -57,6 +57,7 @@ var PATHS = {
     // Path to non-foundation JS components
     'bower_components/twitter-fetcher/js/twitterFetcher.js',
     'bower_components/i18next/i18next.js',
+    'bower_components/smooth-scroll/dist/js/smooth-scroll.js',
     // 'bower_components/jquery-i18next/i18next-jquery.min.js',
 
     'src/assets/js/!(app.js)**/*.js',

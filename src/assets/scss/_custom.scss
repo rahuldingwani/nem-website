@@ -137,11 +137,11 @@ nav .submenu li:last-child{
   border-bottom: 0px solid $light-gray;
 }
 
-
 .banner{
   background: url(../img/banner1600.png);
   // background-size: cover;
   height: 200px;
+  text-transform: capitalize;
   .row{
     height: 200px;
   }
@@ -772,6 +772,9 @@ nav .submenu li:last-child{
 .user a > span {
    float:left;
    font-weight: 300;
+}
+.user a img {
+   display: none;
 }
 .tweet{
   //  color: $light-gray !important;

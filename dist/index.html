@@ -14,6 +14,7 @@
       <button class="menu-icon" type="button" data-toggle></button>
       <div class="title-bar-title">Menu</div>
     </div>
+    <div>
     <div class="navWrap">
       <nav class="row">
         <div class="12-small columns">
@@ -21,24 +22,28 @@
     
             <div class="top-bar-left">
               <ul class="dropdown menu" data-dropdown-menu>
-                <li class="menu-text"><img src="/assets/img/nemLogo.png"/></li>
+                <li class="menu-text">
+                  <a href="http://nem.io/">
+                    <img src="/assets/img/nemLogo.png"/>
+                  </a>
+                </li>
               </ul>
             </div>
     
             <div class="top-bar-right">
               <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
-                <li><a id="navClient" href="#">client</a></li>
-                <li><a href="#">buy xem</a></li>
+                <li><a data-scroll href="#client" id="navClient">client</a></li>
+                <li><a href="/buy.html">buy xem</a></li>
                 <li class="has-submenu">
                   <a href="#">support</a>
                   <ul class="submenu menu vertical" data-submenu>
-                    <li><a href="#">faq's</a></li>
-                    <li><a href="#">Tutorial</a></li>
-                    <li><a href="#">forum</a></li>
+                    <li><a href="/faq.html">Faq's</a></li>
+                    <li><a href="http://blog.nem.io/nem-tutorial-list/">Tutorial</a></li>
+                    <li><a href="https://forum.nem.io/">Forum</a></li>
                   </ul>
                 </li>
-                <li><a href="#">updates</a></li>
-                <li><a href="#">blog</a></li>
+                <li><a data-scroll href="#newsWrap">updates</a></li>
+                <li><a href="http://blog.nem.io/">blog</a></li>
                 <li class="has-submenu">
                   <a href="#" id="navLang" class="last" data-i18n="[html]navLang"></a>
                   <ul class="submenu menu vertical" data-submenu>
@@ -54,11 +59,6 @@
         </div>
       </nav>
     </div>
-    <div class="banner">
-      <div class="row">
-        <h1 class="">NEM Clients</h2>
-      </div>
-      <!-- <img src="/assets/img/banner1600.png" /> -->
     </div>
     
 
@@ -268,7 +268,7 @@
     </div>
     
     
-    <div class="client">
+    <div class="client" id="client">
       <div class="row align-middle">
         <div class="large-5 columns">
           <img src="assets/img/laptopNEM.png"/>
@@ -300,141 +300,6 @@
       </div>
     </div>
     
-    
-    <section id="buy">
-      <div id="buyHeaderWrap" class="row align-middle">
-        <h2 id="buyHeader" class="small-12 columns">Buy or use XEM</h2>
-      </div>
-      <div class="row align-stretch">
-        <div class="small-12 columns">
-          <div id="buyWrap" class="row">
-            <div id="buyBox1" class="small-12 med-large-expand columns">
-              <div class="row icons align-center">
-                <div class="small-4 columns">
-                  <img src="/assets/img/nemx64.png"/>
-                </div>
-                <div class="small-4 columns arrows">
-                  <img src="/assets/img/arrows.png"/>
-                </div>
-                <div class="small-4 columns">
-                  <img src="/assets/img/bitcoin.svg"/>
-                </div>
-              </div>
-              <div class="row align-center">
-                  <div id="buyHere" class="medium-8 column">
-                    Buy XEM at one of these exchanges
-                  </div>
-              </div>
-              <div class="row align-center">
-                  <div class="medium-5 column">
-                    <li>
-                      <a href="#">POLONIEX</a>
-                    </li>
-                    <li>
-                      <a href="#">BTC38</a>
-                    </li>
-                    <li>
-                      <a href="#">BITCOIN.co.id</a>
-                    </li>
-                  </div>
-                  <div class="medium-5 column">
-                    <ul>
-                      <li>
-                        <a href="#">BITTREX</a>
-                      </li>
-                      <li>
-                        <a href="#">BTER</a>
-                      </li>
-                      <!-- <li>
-                        <a href="#">poloniex</a>
-                      </li> -->
-                    </ul>
-                  </div>
-              </div>
-            </div>
-              <div id="buyBox2" class="small-12 med-large-expand columns">
-                <div class="row icons align-center">
-                  <div class="small-4 columns">
-                    <img src="/assets/img/nemx64.png"/>
-                  </div>
-                  <div class="small-4 columns arrows">
-                    <img src="/assets/img/arrows.png"/>
-                  </div>
-                  <div class="small-4 columns">
-                    <img src="/assets/img/shopping109.svg"/>
-                  </div>
-                </div>
-                <div class="row align-center">
-                    <div id="spendHere" class="medium-8 column">
-                      Spend XEM anywhere that you can spend Bitcoin
-                    </div>
-                </div>
-                <div class="row align-center">
-                    <div class="small-10 column">
-                      <span href="#">
-                        <button class="coming btn btn-1e">COMING SOON</button>
-                      </span>
-                    </div>
-                </div>
-              </div>
-            <div id="buyBox3" class="small-12 med-large-expand columns">
-              <div class="row icons align-center">
-                <div class="small-4 columns">
-                  <img src="/assets/img/nemx64.png"/>
-                </div>
-                <div class="small-4 columns arrows">
-                  <img src="/assets/img/arrows.png"/>
-                </div>
-                <div class="small-4 columns">
-                  <img src="/assets/img/money.png"/>
-                </div>
-              </div>
-              <div class="row align-center">
-                  <div id="xemCash" class="medium-8 column">
-                    Buy XEM directly with cash
-                  </div>
-              </div>
-              <div class="row align-center">
-                  <div class="small-10 column">
-                    <a href="#">
-                      <button class="btn btn-1e">MORE INFO</button>
-                    </a>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="buyBar">
-        <div class="row align-center">
-          <div class="small-4 med-large-expand columns">
-            <a href="https://poloniex.com/exchange#btc_xem">
-              <img height="16px" src="/assets/img/poloniexSat.png"/ alt="Poloniex cryptocurrency exchange">
-            </a>
-          </div>
-          <div class="small-4 med-large-expand columns">
-            <a href="https://bittrex.com/Market/Index?MarketName=BTC-XEM">
-              <img height="20px" src="/assets/img/bittrexSat.png" alt="bittrex cryptocurrency exchange"/>
-            </a>
-          </div>
-          <div class="small-4 med-large-expand columns">
-            <a href="http://btc38.com/trade.html?mk_type=btc&btc38_trade_coin_name=xem">
-              <img height="16px" src="/assets/img/btc38Sat.png" alt="btc38 cryptocurrency exchange"/>
-            </a>
-          </div>
-          <div class="small-4 med-large-expand columns">
-            <a href="https://vip.bitcoin.co.id/nembtc">
-              <img height="20px" src="/assets/img/bitcoincoid.png" alt="bitcoin cryptocurrency exchange"/>
-            </a>
-          </div>
-          <div class="small-4 med-large-expand columns">
-            <a href="https://bter.com/trade/XEM_BTC">
-              <img src="/assets/img/bterSat.png" alt="bter cryptocurrency exchange"/>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
     
     
     <div class="divTopper">
