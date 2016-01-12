@@ -2,6 +2,18 @@ $(document).foundation();
 
 smoothScroll.init();
 
+// $.ajax({
+//   url: "http://nem.servehttp.com:7890/node/peer-list/all",
+//   dataType: "json",
+//   success: function(response) {
+//     $.each(response.Users, function(item) {
+//       informationArray.push(item);
+//     });
+//     informationArray.push("success");
+//     alert(data)
+//   }
+// });
+
 //**## NEM NEWS FEED ##**/
 //Pulls twitter feed using twitter fetcher.
 // Also automatically hyperlinks URLS and user mentions and hashtags.

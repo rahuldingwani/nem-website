@@ -371,6 +371,40 @@ nav .submenu li:last-child{
 
 
 
+
+
+#stats{
+  background: $medium-gray;
+}
+
+.statsInside{
+  text-align: center;
+  @include flex-grid-row(null, 1400px);
+  @include flex-grid-row-align(spaced, middle);
+}
+#dataWrap1, #dataWrap2, #dataWrap3, #dataWrap4{
+  // text-align: center;
+  @include flex-grid-column();
+  background: $borderTest;
+}
+#data1, #data2, #data3, #data4{
+  color: $blue;
+  font-size: 100px !important;
+  font-weight: 300;
+  // font-stretch: extra-condensed;
+}
+#dataText1, #dataText2, #dataText3, #dataText4{
+  color: $white;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
 .client{
   background: url(../img/clientBackground.jpg);
   background-size: cover;

@@ -40,7 +40,7 @@
  "forumAlt": "Join the NEM community on our Forum",
  "forumAlt2": "Join the NEM Forum",
  "getStarted": "",
- "getXem": "get xem",
+ "getXem": "get XEM",
  "harvesting": "In NEM harvesting is the act of forming blocks (mining/forging). A harvester must have at least 10,000 vested XEM in their account and be running an active and synced node. Once a block is formed by that harvester, a new block is added to the chain and all the fees collected from that block will be delivered to the harvester’s account.\n",
  "harvestingTitle": "Harvesting",
  "header": "NEM Community Client",

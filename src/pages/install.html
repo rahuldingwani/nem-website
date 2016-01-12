@@ -68,6 +68,7 @@
 
 
 
+
 {{!-- NEM news feed pulling from twitter --}}
 {{> newsFeed}}
 
@@ -80,6 +81,7 @@
       // console.log(data);
       // alert(data.testing);
       link = "<a href=\"http://download.nem.io/";
+      // document.getElementById("windowsInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-windows-installer.exe\"><img src=\"{{root}}/assets/img/windows.png\"/><br><br>Windows Installer</a>";
       document.getElementById("windowsInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-windows-installer.exe\"><img src=\"{{root}}/assets/img/windows.png\"/><br><br>Windows Installer</a>";
       document.getElementById("macInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-osx-installer.app.tgz\"><img src=\"{{root}}/assets/img/mac.png\"/><br><br>Mac Installer</a>";
       document.getElementById("nginxInstall").innerHTML=link+"lightwallet-standalone-1.1-cdn-nginx1.8.zip\"><img src=\"{{root}}/assets/img/nginx.png\"/><br><br>Lightweight (nginx)</a>";
