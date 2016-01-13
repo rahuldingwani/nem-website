@@ -2,19 +2,19 @@
   <div class="statsInside">
     <div id="dataWrap1">
       <div id="data1"></div>
-      <div id="dataText1">nodes online</div>
+      <h5 id="dataText1">nodes online</h5>
     </div>
     <div id="dataWrap2">
       <div id="data2"></div>
-      <div id="dataText2">block height</div>
+      <h5 id="dataText2">block height</h5>
     </div>
     <div id="dataWrap3">
       <div id="data3"></div>
-      <div id="dataText3">nodes online</div>
+      <h5 id="dataText3">price (satoshis)</h5>
     </div>
     <div id="dataWrap4">
       <div id="data4"></div>
-      <div id="dataText4">price (satoshis)</div>
+      <h5 id="dataText4">latest nis version</h5>
     </div>
   </div>
 </section>
@@ -23,8 +23,8 @@
   function call(data2) {
     document.getElementById("data1").innerHTML=data2.nodes;
     document.getElementById("data2").innerHTML=data2.chainHeight.height;
-    document.getElementById("data3").innerHTML=data2.nodes;
-    document.getElementById("data4").innerHTML=data2.xemSatoshis;
+    document.getElementById("data4").innerHTML=data2.version;
+    document.getElementById("data3").innerHTML=data2.xemSatoshis;
   }
 </script>
 <script src="http://localhost:1122/?callback=call"></script>
