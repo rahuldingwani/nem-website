@@ -2,17 +2,10 @@ $(document).foundation();
 
 smoothScroll.init();
 
-// $.ajax({
-//   url: "http://nem.servehttp.com:7890/node/peer-list/all",
-//   dataType: "json",
-//   success: function(response) {
-//     $.each(response.Users, function(item) {
-//       informationArray.push(item);
-//     });
-//     informationArray.push("success");
-//     alert(data)
-//   }
-// });
+// remove stats section if stats are null
+if ($('#data1').is(':empty')) {
+    $('#stats').remove();
+}
 
 //**## NEM NEWS FEED ##**/
 //Pulls twitter feed using twitter fetcher.
@@ -99,6 +92,13 @@ $.i18n.init({
     $('.namespace2').text($.t('namespace2'));
     $('.namespace3').text($.t('namespace3'));
     $('.spam').text($.t('spam'));
+
+    <!-- STATS SECTION -->
+    $('#dataText1').text($.t('data1'));
+    $('#dataText2').text($.t('data2'));
+    $('#dataText3').text($.t('data3'));
+    $('#dataText4').text($.t('data4'));
+
 
     <!-- CLIENT SECTION -->
     $('#clientHeader').text($.t('header'));

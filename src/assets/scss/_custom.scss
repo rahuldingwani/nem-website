@@ -380,22 +380,20 @@ nav .submenu li:last-child{
 
 .statsInside{
   text-align: center;
-  @include flex-grid-row(null, 1400px);
   height: 250px;
+  @include flex-grid-row(null, 1400px);
   @include flex-grid-row-align(justify, middle);
 }
 #dataWrap1, #dataWrap2, #dataWrap3, #dataWrap4{
   @include flex-grid-column();
   @include breakpoint(medium down) {
     @include flex-grid-column(6);
-
   }
 }
 #data1, #data2, #data3, #data4{
   color: $blue;
   font-size: 54px;
   font-weight: 300;
-  // font-stretch: extra-condensed;
 }
 #dataText1, #dataText2, #dataText3, #dataText4{
   color: $white;
@@ -404,6 +402,9 @@ nav .submenu li:last-child{
   margin-top: -12px;
 }
 
+// #dataText4{
+//   display: none;
+// }
 
 
 
@@ -544,7 +545,7 @@ nav .submenu li:last-child{
 }
 #buy{
   background: url(../img/geometry.png);
-  // padding-top: $pad * 6;
+  padding-top: $pad * 6;
   @include sectionBottomPad;
   // margin-bottom: -45px;
 
