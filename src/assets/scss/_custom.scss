@@ -1027,6 +1027,8 @@ a .btn-1e:hover:after {
   }
 }
 
+
+
 // ncc page
 #first.active{
   color: pink;
@@ -1035,4 +1037,43 @@ a .btn-1e:hover:after {
 #second.active{
   color: pink;
   background: pink;
+}
+
+
+
+
+// faq page
+#outerWrap{
+  background: url(../img/geometry.png);
+  background-repeat: repeat;
+}
+#innerWrap{
+  @include flex-grid-row(collapse, 1000px, 48, true);
+  @include flex-grid-row-align(justify);
+
+
+
+  hr{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    // align: left;
+    border: 1px solid $gray;
+  }
+}
+#faqNav{
+  @include flex-grid-column(16);
+  background: $test;
+  li:first-child a{
+    font-weight: 700;
+  }
+  a.active{
+    color: red;
+    background: pink;
+  }
+
+}
+#faqContent{
+  @include flex-grid-column(31);
+  background: $test;
 }

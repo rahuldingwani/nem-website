@@ -1,6 +1,7 @@
 $(document).foundation();
 
 smoothScroll.init();
+gumshoe.init();
 
 // remove stats section if stats are null
 if ($('#data1').is(':empty')) {

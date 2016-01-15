@@ -43,7 +43,7 @@ var PATHS = {
     'bower_components/foundation-sites/js/foundation.dropdownMenu.js',
     'bower_components/foundation-sites/js/foundation.equalizer.js',
     'bower_components/foundation-sites/js/foundation.interchange.js',
-    'bower_components/foundation-sites/js/foundation.magellan.js',
+    // 'bower_components/foundation-sites/js/foundation.magellan.js',
     'bower_components/foundation-sites/js/foundation.offcanvas.js',
     'bower_components/foundation-sites/js/foundation.orbit.js',
     'bower_components/foundation-sites/js/foundation.responsiveMenu.js',
@@ -58,7 +58,7 @@ var PATHS = {
     'bower_components/twitter-fetcher/js/twitterFetcher.js',
     'bower_components/i18next/i18next.js',
     'bower_components/smooth-scroll/dist/js/smooth-scroll.js',
-    // 'bower_components/jquery-i18next/i18next-jquery.min.js',
+    'bower_components/gumshoe/dist/js/gumshoe.js',
 
     'src/assets/js/!(app.js)**/*.js',
     'src/assets/js/app.js'

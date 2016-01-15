@@ -56,7 +56,7 @@
  "howHarvest": "",
  "ifIssues": "If you are having issues downloading from the links above, download them directly from our download page at <a href=\"http://download.nem.io/\">download.nem.io</a>",
  "INSTALL SECTION": "install section below",
- "installers": "Installer (NCC &amp; NIS)",
+ "installers": "Installer (NCC & NIS)",
  "installJava": "How do I install Java?",
  "installJavaContent": "Check your java version https://www.java.com/en/download/installed.jsp If you are using Java Version 8, update 25 or above, you are ready to install the NEM client.",
  "installOptions": "For 32/64 Linux, 32-bit Windows, and 32-bit Mac",
