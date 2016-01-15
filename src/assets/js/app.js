@@ -1,7 +1,15 @@
 $(document).foundation();
 
 smoothScroll.init();
-gumshoe.init();
+gumshoe.init({
+      offset: 10, // Distance in pixels to offset calculations
+});
+
+$(document).ready(function(){
+  $("#sticker").sticky({
+    topSpacing:20
+  });
+});
 
 // remove stats section if stats are null
 if ($('#data1').is(':empty')) {

@@ -1044,15 +1044,13 @@ a .btn-1e:hover:after {
 
 // faq page
 #outerWrap{
+  padding-top: $pad * 5;
   background: url(../img/geometry.png);
   background-repeat: repeat;
 }
 #innerWrap{
   @include flex-grid-row(collapse, 1000px, 48, true);
   @include flex-grid-row-align(justify);
-
-
-
   hr{
     width: 80%;
     margin-top: 20px;
@@ -1061,9 +1059,11 @@ a .btn-1e:hover:after {
     border: 1px solid $gray;
   }
 }
-#faqNav{
+#faqNavWrap{
+  // margin-top: 400px;
   @include flex-grid-column(16);
-  background: $test;
+  background: $white;
+  z-index: 1000;
   li:first-child a{
     font-weight: 700;
   }
@@ -1075,5 +1075,5 @@ a .btn-1e:hover:after {
 }
 #faqContent{
   @include flex-grid-column(31);
-  background: $test;
+  background: $white;
 }

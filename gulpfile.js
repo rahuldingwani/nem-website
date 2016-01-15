@@ -59,6 +59,7 @@ var PATHS = {
     'bower_components/i18next/i18next.js',
     'bower_components/smooth-scroll/dist/js/smooth-scroll.js',
     'bower_components/gumshoe/dist/js/gumshoe.js',
+    'bower_components/jquery-sticky/jquery.sticky.js',
 
     'src/assets/js/!(app.js)**/*.js',
     'src/assets/js/app.js'
