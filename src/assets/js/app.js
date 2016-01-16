@@ -23,7 +23,7 @@ if ($('#data1').is(':empty')) {
 var config1 = {
   "id": '474290838172749825',
   "domId": 'newsFeed',
-  "maxTweets": 3,
+  "maxTweets": 8,
   "enableLinks": true,
   "showUser": true,
   "showImages": true,
