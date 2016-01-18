@@ -7,7 +7,8 @@ gumshoe.init({
 
 $(document).ready(function(){
   $("#sticker").sticky({
-    topSpacing:20
+    topSpacing:20,
+    bottomSpacing: 800
   });
 });
 
