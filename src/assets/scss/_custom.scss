@@ -139,7 +139,7 @@ nav .submenu li:last-child{
 
 .banner{
   background: url(../img/banner1600.png);
-  // background-size: cover;
+  background-size: cover;
   height: 200px;
   text-transform: capitalize;
   .row{
@@ -1099,6 +1099,7 @@ a .btn-1e:hover:after {
 // faq page
 #outerWrap{
   padding-top: $pad * 5;
+  padding-bottom: $pad * 5;
   background: url(../img/geometry.png);
   background-repeat: repeat;
 }
@@ -1130,4 +1131,6 @@ a .btn-1e:hover:after {
 #faqContent{
   @include flex-grid-column(31);
   background: $white;
+  padding: $pad;
+
 }

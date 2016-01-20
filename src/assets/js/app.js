@@ -147,7 +147,8 @@ $.i18n.init({
     $('#articles').text($.t('articles'));
     $('#posts').text($.t('posts'));
 
-    <!-- INSTALL SECTION -->
+    <!-- INSTALL PAGE -->
+    $('.getClient').text($.t('getClient'));
     $('#installers').text($.t('installers'));
     $('#standalone').text($.t('standalone'));
     $('#installOptions').text($.t('installOptions'));
@@ -156,6 +157,8 @@ $.i18n.init({
     $('#or').text($.t('or'));
     $('#sisterSite').i18n();
 
+    <!-- FAQ -->
+    $('.faqHeader').text($.t('faqBanner'));
 
     <!-- GENERIC -->
     $('.coming').text($.t('coming'));
