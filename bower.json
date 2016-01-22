@@ -20,10 +20,10 @@
     "twitter-fetcher": "~14.0.0",
     "font-awesome": "fontawesome#~4.5.0",
     "i18next": "~1.11.1",
-    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#~7.1.1",
     "gumshoe": "https://github.com/cferdinandi/gumshoe.git#~3.0.0",
     "skrollr": "~0.6.30",
-    "skrollr-stylesheets": "~1.0.0"
+    "skrollr-stylesheets": "~1.0.0",
+    "skrollr-menu": "~1.0.3"
   },
   "private": true,
   "resolutions": {
