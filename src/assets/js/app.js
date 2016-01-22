@@ -4,6 +4,7 @@ smoothScroll.init();
 gumshoe.init({
       offset: 10, // Distance in pixels to offset calculations
 });
+skrollr.init();
 
 $(document).ready(function(){
   $("#sticker").sticky({
@@ -11,6 +12,13 @@ $(document).ready(function(){
     bottomSpacing: 800
   });
 });
+
+// var p = new Parallax('.parallax', {
+//   offsetYBounds: 20,
+//   intensity: 60,
+//   center: 4
+// }).init()
+
 
 // remove stats section if stats are null
 if ($('#data1').is(':empty')) {

@@ -22,7 +22,8 @@
     "i18next": "~1.11.1",
     "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#~7.1.1",
     "gumshoe": "https://github.com/cferdinandi/gumshoe.git#~3.0.0",
-    "jquery-sticky": "~1.0.3"
+    "skrollr": "~0.6.30",
+    "skrollr-stylesheets": "~1.0.0"
   },
   "private": true,
   "resolutions": {

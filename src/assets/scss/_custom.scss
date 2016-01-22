@@ -137,6 +137,10 @@ nav .submenu li:last-child{
   border-bottom: 0px solid $light-gray;
 }
 
+// figure{
+//   // background-size: cover;
+// margin: 0;
+// }
 .banner{
   background: url(../img/banner1600.png);
   background-size: cover;
@@ -151,6 +155,7 @@ nav .submenu li:last-child{
     color: $medium-gray;
     @include flex-grid-column(12);
     @include flex-grid-column-align(middle);
+    z-index: 100000;
   }
 }
 
@@ -1133,4 +1138,10 @@ a .btn-1e:hover:after {
   background: $white;
   padding: $pad;
 
+}
+
+
+header.band {
+    background-image:url(../img/banner1600.png);
+    background-size: 100%;
 }
