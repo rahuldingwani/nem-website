@@ -65,9 +65,15 @@ nav{
     color: $black !important;
     font-size: 15px;
 }
-  .top-bar-left img{
+  .top-bar-left {
+    li{
+      padding: 0;
+    }
+    img{
     height: 60px;
+
   }
+}
   .top-bar-right ul:first-child{
     padding-top: 24px;
   }
