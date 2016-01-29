@@ -7,6 +7,11 @@ footer .row .row{
   margin-left: 0px;
   margin-right: 0px;
 }
+// fix menu dropdown placement bug
+.is-dropdown-submenu{
+  top: inherit !important;
+  left: inherit !important;
+}
 // preset margins suck, need to fix that
 #buyWrap .small-12.med-large-expand, .small-4, .medium-5, .medium-5 ul{
   padding-left: 0 !important;

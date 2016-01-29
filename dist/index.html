@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>NEM - Network Exchange Map</title>
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
-  <body>
+  <body id="body">
 
     <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="med-large">
       <button class="menu-icon" type="button" data-toggle></button>
@@ -85,7 +85,7 @@
       </div>
     
       <div class="bubbleWrap row row2 align-justify">
-        <button data-open="delegated" class="delegatedTitle med-large-3 large-2 column tertiary">
+        <button data-open="delegated" data-0="background-position:0px 0px;" class="delegatedTitle med-large-3 large-2 column tertiary">
                 delegated harvesting
         </button>
         <button data-open="mosaic" class="mosaicTitle med-large-3 large-2 column">
@@ -125,7 +125,7 @@
     </section>
     
     
-    <div class="reveal" id="multisig" data-reveal>
+    <div class="full reveal" id="multisig" data-reveal>
       <h1>Multisig</h1>
       <p class="lead">Lead text, use if you want</p>
       <p class="multisig">NEM's multisig solution is on blockchain. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
@@ -268,6 +268,18 @@
     </div>
     
     
+    
+    <!-- Odometr includes -->
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-minimal.css" />
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+    
+    <!-- Extra styles for this example -->
+    <style>
+    .odometer {
+        font-size: 100px;
+    }
+    </style>
+    
     <section id="stats">
       <div class="statsInside">
         <div id="dataWrap1">
@@ -298,6 +310,11 @@
       }
     </script>
     <script src="http://localhost:1122/?callback=call"></script>
+    <script>
+    // setTimeout(function(){
+    //     odometer.innerHTML = data1.innerHTML;
+    // }, 1000);
+    </script>
     
     
     <div class="client" id="client">
@@ -516,4 +533,5 @@
 
     <script src="assets/js/app.js"></script>
   </body>
+
 </html>

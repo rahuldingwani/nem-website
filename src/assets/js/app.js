@@ -4,8 +4,10 @@ $(document).foundation();
 gumshoe.init({
   offset: 10, // Distance in pixels to offset calculations
 });
+
+//parrallax scrolling
 var s = skrollr.init(/*other stuff*/);
-//The options (second parameter) are all optional. The values shown are the default values.
+// The options (second parameter) are all optional. The values shown are the default values.
 skrollr.menu.init(s, {
     //skrollr will smoothly animate to the new position using `animateTo`.
     animate: true,
@@ -16,9 +18,9 @@ skrollr.menu.init(s, {
     //How long the animation should take in ms.
     duration: function(currentTop, targetTop) {
         //By default, the duration is hardcoded at 500ms.
-        return 500;
+        // return 500;
         //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
-        //return Math.abs(currentTop - targetTop) * 10;
+        // return Math.abs(currentTop - targetTop) * 10;
     },
     //By default skrollr-menu will only react to links whose href attribute contains a hash and nothing more, e.g. `href="#foo"`.
     //If you enable `complexLinks`, skrollr-menu also reacts to absolute and relative URLs which have a hash part.
@@ -26,15 +28,21 @@ skrollr.menu.init(s, {
     //http://example.com/currentPage/#foo
     //http://example.com/currentDir/currentPage.html?foo=bar#foo
     ///?foo=bar#foo
-    complexLinks: true,
+    complexLinks: false,
     //This event is triggered right before we jump/animate to a new hash.
-    change: function(newHash, newTopPosition) {
-        //Do stuff
-    },
+    // change: function(newHash, newTopPosition) {
+    //     //Do stuff
+    // },
     //Add hash link (e.g. `#foo`) to URL or not.
     updateUrl: true //defaults to `true`.
 });
 
+// fixes bug that messed up Foundation Reveal while skrollr was active.
+// This could make more bugs though so let's see....
+var div = document.getElementById("body");
+div.style.height = "0px";
+
+// Make elements stick function calls
 $(document).ready(function(){
   $("#sticker").sticky({
     topSpacing:20,
@@ -42,22 +50,15 @@ $(document).ready(function(){
   });
 });
 
-// var p = new Parallax('.parallax', {
-//   offsetYBounds: 20,
-//   intensity: 60,
-//   center: 4
-// }).init()
-
-
 // remove stats section if stats are null
 if ($('#data1').is(':empty')) {
     $('#stats').remove();
 }
 
-//**## NEM NEWS FEED ##**/
-//Pulls twitter feed using twitter fetcher.
-// Also automatically hyperlinks URLS and user mentions and hashtags.
-//@nemcoin
+// //**## NEM NEWS FEED ##**/
+// //Pulls twitter feed using twitter fetcher.
+// // Also automatically hyperlinks URLS and user mentions and hashtags.
+// //@nemcoin
 var config1 = {
   "id": '474290838172749825',
   "domId": 'newsFeed',
