@@ -23,8 +23,7 @@
     "gumshoe": "https://github.com/cferdinandi/gumshoe.git#~3.0.0",
     "skrollr": "~0.6.30",
     "skrollr-stylesheets": "~1.0.0",
-    "skrollr-menu": "~1.0.3",
-    "odometer": "~0.4.7"
+    "skrollr-menu": "~1.0.3"
   },
   "private": true,
   "resolutions": {
