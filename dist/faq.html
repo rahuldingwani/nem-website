@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEM - Network Exchange Map</title>
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/app.css" data-skrollr-stylesheet>
   </head>
   <body id="body">
 
@@ -41,7 +41,7 @@
                 <li><a href="/install.html" id="navClient">client</a></li>
                 <li><a href="/buy.html">buy xem</a></li>
                 <li class="has-submenu">
-                  <a href="#">support</a>
+                  <a href="#" id="supportDropdown">support</a>
                   <ul class="submenu menu vertical" data-submenu>
                     <li><a href="/faq.html">Faq's</a></li>
                     <li><a href="http://blog.nem.io/nem-tutorial-list/">Tutorial</a></li>
@@ -67,17 +67,25 @@
     </div>
     </div>
     
-    <header class="banner" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;">
-          <div class="row">
-              <h1 class="faqHeader" data-0="opacity: 1" data-160="opacity: 0">faq</h1>
-          </div>
-    </header>
     
-    <!-- <div class="banner">
-      <div class="row">
-        <h1 class="faqHeader">nem faq's</h2>
-      </div>
+    <!--
+    <div id="mainContent">
+        <div id="mainContentc1" data-scroll-reveal="wait 0.5s, then enter top and move 200px over 1s">
+            Design. Develop. Market.
+        </div>
+        <div id="mainContentc2" data-scroll-reveal="wait 0.5s, then enter bottom and move 200px over 1s">
+            We're a full service digital agency, specialising in website <br /> design, development, branding and SEO.
+        </div>
+    </div>
+    <div id="secondContent" data-scroll-reveal="wait 0.5s, then enter bottom and move 10px over 1s">
+        HELLO THERE
     </div> -->
+    
+    <div class="banner">
+      <div class="row">
+        <h1 id="bannerHeader" class="faqHeader">nem faq's</h2>
+      </div>
+    </div>
       <!-- <ul data-gumshoe>
         <li class="active"><a class="active" data-scroll href="#general">General Questions</a></li>
         <li><a data-scroll href="#eenie">Is NEM a cryptocurrency?</a></li>
@@ -122,6 +130,7 @@
         <!-- <hr> -->
         <article id="eenie">
           <h3>Is NEM a cryptocurrency?</h3>
+          <div id="foo">stuff</div>
           eenie Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis enim sit illum molestiae debitis facilis placeat exercitationem! Sint, molestiae. Officiis culpa repellat iusto laboriosam adipisci eaque, fuga magnam ut!
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis enim sit illum molestiae debitis facilis placeat exercitationem! Sint, molestiae. Officiis culpa repellat iusto laboriosam adipisci eaque, fuga magnam ut!
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis enim sit illum molestiae debitis facilis placeat exercitationem! Sint, molestiae. Officiis culpa repellat iusto laboriosam adipisci eaque, fuga magnam ut!
@@ -143,6 +152,16 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis enim sit illum molestiae debitis facilis placeat exercitationem! Sint, molestiae. Officiis culpa repellat iusto laboriosam adipisci eaque, fuga magnam ut!
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero repudiandae, laudantium sequi eum reprehenderit. Sequi corporis veritatis, minus, porro nam laudantium corrupti incidunt sunt, ipsam laboriosam ipsum. Eligendi, rem, quod.
         </article>
+        <header data--100-top="background-color:rgb(0,0,255);" data-0-bottom-center="background-color:rgb(255,0,0);">
+              <div>
+                  <h1>faq</h1>
+              </div>
+        </header>
+        <header id="testFaq">
+              <div>
+                  <h1>faq</h1>
+              </div>
+        </header>
         <article id="minnie">
           minnieLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis enim sit illum molestiae debitis facilis placeat exercitationem! Sint, molestiae. Officiis culpa repellat iusto laboriosam adipisci eaque, fuga magnam ut!
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis enim sit illum molestiae debitis facilis placeat exercitationem! Sint, molestiae. Officiis culpa repellat iusto laboriosam adipisci eaque, fuga magnam ut!

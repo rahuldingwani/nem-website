@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEM - Network Exchange Map</title>
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/app.css" data-skrollr-stylesheet>
   </head>
   <body id="body">
 
@@ -35,7 +35,7 @@
                 <li><a href="#client" id="navClient">client</a></li>
                 <li><a href="/buy.html">buy xem</a></li>
                 <li class="has-submenu">
-                  <a href="#">support</a>
+                  <a href="#" id="supportDropdown">support</a>
                   <ul class="submenu menu vertical" data-submenu>
                     <li><a href="/faq.html">Faq's</a></li>
                     <li><a href="http://blog.nem.io/nem-tutorial-list/">Tutorial</a></li>
@@ -125,7 +125,7 @@
     </section>
     
     
-    <div class="full reveal" id="multisig" data-reveal>
+    <div class="reveal" id="multisig" data-reveal>
       <h1>Multisig</h1>
       <p class="lead">Lead text, use if you want</p>
       <p class="multisig">NEM's multisig solution is on blockchain. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
@@ -320,7 +320,7 @@
     <div class="client" id="client">
       <div class="row align-middle">
         <div class="large-5 columns">
-          <img src="assets/img/laptopNEM.png"/>
+          <img id="laptop" src="assets/img/laptopNEM.png"/>
         </div>
         <div class="large-1 medium-1 small-12 columns"></div>
         <div class="large-6 columns">
