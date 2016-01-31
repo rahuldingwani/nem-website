@@ -1306,3 +1306,38 @@ $faqEnd: $faqStart + $faqDuration;
 #secondContent {
     margin-top: 100px;
 }
+
+// underline links
+
+a > span {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  // margin: 0px !important;
+
+}
+
+a > span:hover {
+  color: #000;
+}
+
+a > span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: #000;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+a > span:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
