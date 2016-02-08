@@ -41,8 +41,8 @@ sudo pip install virtualenv
     virtualenv nemio
     cd nemio
     source bin/activate
-    git clone the_repo_you_are_reading_this_at
-    cd the_repo_you_are_reading_this_at
+    git clone https://github.com/NewEconomyMovement/nem-website.git
+    cd nem-website
     bower install
     npm install
 ```
