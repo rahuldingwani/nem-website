@@ -57,7 +57,9 @@ I will fix this in the future so it can be built without worrying about the `con
 ##### After the config file is in place
 
 ```
-foundation watch
+foundation watch 
+or
+npm start
 ```
 Now you should have a webpage that opened to `localhost:8760`.
 This port can be changed in `gulpfile.js`.
