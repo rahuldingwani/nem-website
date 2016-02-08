@@ -8,23 +8,28 @@ Open xcode once it is installed, open xcode, agree to license agreements, then c
 
 2. Install Homebrew
 Open up a terminal window, and paste this in :
-``` ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 3. Install Github Desktop - 
 [Github](https://desktop.github.com)
 
 4. Install nodejs and npm
-``` brew install node
-
+```
+brew install node
+```
 5. Install bower
-``` npm install -g bower
-
+``` 
+npm install -g bower
+```
 6. Install pip
-``` sudo easy_install pip
-
+``` 
+sudo easy_install pip
+```
 7. install virtualenv
-``` sudo pip install virtualenv
-
+``` 
+sudo pip install virtualenv
+```
 * [NodeJS](https://nodejs.org/en/)
 * [Git](https://git-scm.com/)
 * bower package manager
