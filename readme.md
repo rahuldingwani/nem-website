@@ -1,7 +1,29 @@
 
 ## Build Instructions
 
-##### You will need to install these, and should probably do so globally.
+##### You will need to install these, and should probably do so globally. (These instructions are for a fresh install of OSX El Capitan)
+1. Install xcode:
+[xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
+Open xcode once it is installed, open xcode, agree to license agreements, then close xcode.
+
+2. Install Homebrew
+Open up a terminal window, and paste this in :
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+3. Install Github Desktop
+[Github](https://desktop.github.com)
+
+4. Install nodejs and npm
+    brew install node
+
+5. Install bower
+    npm install -g bower
+
+6. Install pip
+    sudo easy_install pip
+
+7. install virtualenv
+    sudo pip install virtualenv
 
 * [NodeJS](https://nodejs.org/en/)
 * [Git](https://git-scm.com/)
