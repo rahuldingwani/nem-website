@@ -326,7 +326,7 @@ nav .submenu li:last-child{
 }
 .bubbleWrap.row2{
   button:nth-child(1){
-     margin-top: $pad;
+     margin-top: -$pad * 3;
      margin-left: $pad * 6;
      @include breakpoint(xlarge down) {
        margin-left: $pad / 2;
@@ -1206,12 +1206,14 @@ header.band {
     -skrollr-animation-name:animation3;
 }
 #laptop {
-  -skrollr-animation-name:animation4;
+    -skrollr-animation-name:animation4;
 }
 #testFaq {
-  -skrollr-animation-name:animation5;
+    -skrollr-animation-name:animation5;
 }
-
+.appsTitle{
+    -skrollr-animation-name:appTitle1;
+}
 $laptopStart: 0;
 $laptopDuration: 500;
 $laptopEnd: $laptopStart + $laptopDuration;
@@ -1227,6 +1229,21 @@ $bannerTextEnd: $bannerTextStart + $bannerTextDuration;
 $faqStart: 100;
 $faqDuration: 0;
 $faqEnd: $faqStart + $faqDuration;
+
+$appStart: 0;
+$appDuration: 500;
+$appEnd: $appStart + $appDuration;
+
+@-skrollr-keyframes appTitle1{
+    skrollr-#{0} {
+        background-color:rgb(0,0,255);
+        opacity: 1;
+    }
+    skrollr-#{500} {
+        background-color:rgb(255,0,0);
+        opacity: 0;
+    }
+}
 
 @-skrollr-keyframes animation5 {
     skrollr--#{$faqStart} {

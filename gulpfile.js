@@ -179,10 +179,10 @@ gulp.task('build', function(done) {
 // Pulls columns from gspreadsheet and puts each column in seperate json file.
 gulp.src('src/*')
 .pipe(i18n({
-    private_key_id: (config.privateKeyId),
-    private_key: (config.privateKey),
-    client_email: (config.clientEmail),
-    client_id: (config.clientId),
+    private_key_id: (config.private_key_id),
+    private_key: (config.private_key),
+    client_email: (config.client_email),
+    client_id: (config.client_id),
     type: 'service_account',
     document_key: '1dCO6KpecxgB577Fd0Gk0W-h9NuwTwPyDB7lysiNSZ34',
     default_locale: 'en',
