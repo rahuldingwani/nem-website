@@ -197,6 +197,18 @@ $.i18n.init({
 
     <!-- FAQ -->
     $('.faqHeader').text($.t('faqBanner'));
+    $('#getStarted').text($.t('getStarted'));
+    $('#nemSoftware').text($.t('nemSoftware'));
+    $('#checkJava8').text($.t('checkJava8'));
+    $('#toInstall').text($.t('toInstall'));
+    $('#downloadUnzip').i18n();
+    $('#runIt').i18n();
+    $('#for32Java').text($.t('for32Java'));
+    $('#windows32').i18n();
+    $('#ubuntu32').i18n();
+    $('#outsideLan').i18n();
+
+
 
     <!-- GENERIC -->
     $('.coming').text($.t('coming'));

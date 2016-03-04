@@ -21,6 +21,7 @@ footer .row .row{
 // FOUNDATION OVERRIDES --END
 
 *{
+  list-style-type: decimal !important;
   margin: 0;
   list-style-type: none;
   font-weight: 300;
@@ -1153,6 +1154,7 @@ a .btn-1e:hover:after {
 
 // faq page
 #outerWrapFaq{
+  list-style-type: decimal !important;
   padding-top: $pad * 5;
   padding-bottom: $pad * 5;
   background: url(../img/geometry.png);
