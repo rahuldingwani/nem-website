@@ -81,7 +81,7 @@ if ($('#data1').is(':empty')) {
 var config1 = {
   "id": '474290838172749825',
   "domId": 'newsFeed',
-  "maxTweets": 8,
+  "maxTweets": 3,
   "enableLinks": true,
   "showUser": true,
   "showImages": true,
@@ -216,7 +216,59 @@ $.i18n.init({
 
     <!-- FAQ -->
     $('.faqHeader').text($.t('faqBanner'));
+    $('#faqGeneral').text($.t('faqGeneral'));
+
+    $('#nemCrypto').text($.t('nemCrypto'));
+    $('#nemCryptoContent').text($.t('nemCryptoContent'));
+
+    $('#whyNem').text($.t('whyNem'));
+    $('#whyNemContent').text($.t('whyNemContent'));
+    $('#whyNemContent2').text($.t('whyNemContent2'));
+    $('#whyNemContent3').text($.t('whyNemContent3'));
+    $('#whyNemContent4').text($.t('whyNemContent4'));
+    $('#whyNemContent5').text($.t('whyNemContent5'));
+    $('#whyNemContent6').text($.t('whyNemContent6'));
+    $('#whyNemContent7').text($.t('whyNemContent7'));
+    $('#whyNemContent8').text($.t('whyNemContent8'));
+    $('#whyNemContent9').text($.t('whyNemContent9'));
+    $('#whyNemContent10').text($.t('whyNemContent10'));
+    $('#whyNemContent11').text($.t('whyNemContent11'));
+
+    $('#doWith').text($.t('doWith'));
+    $('#doWithContent').text($.t('doWith'));
+
+    $('#whatsXem').text($.t('whatsXem'));
+    $('#whatsXemContent').text($.t('whatsXemContent'));
+
+    $('#technicalReference').text($.t('technicalReference'));
+    $('#technicalReferenceContent').i18n();
+
     $('#getStarted').text($.t('getStarted'));
+
+    $('#osSupport').text($.t('osSupport'));
+    $('#osSupportContent').text($.t('osSupportContent'));
+
+    $('#installJava').text($.t('installJava'));
+    $('#installJavaContent').i18n();
+    $('#installJavaContent2').text($.t('installJavaContent2'));
+    $('#installJavaContent3').i18n();
+    $('#installJavaContent4').i18n();
+    $('#installJavaContent5').i18n();
+    $('#installJavaContent6').text($.t('installJavaContent6'));
+    $('#installJavaContent7').i18n();
+    $('#installJavaContent8').i18n();
+    $('#installJavaContent9').i18n();
+    $('#installJavaContent10').text($.t('installJavaContent10'));
+    $('#installJavaContent11').i18n();
+    $('#installJavaContent12').i18n();
+
+    $('#nemWallet').text($.t('nemWallet'));
+    $('#nemWalletContent').i18n();
+    $('#nemWalletContent2').i18n();
+
+    $('#strongPassword').text($.t('strongPassword'));
+    $('#strongPassword').i18n();
+
     $('#nemSoftware').text($.t('nemSoftware'));
     $('#checkJava8').text($.t('checkJava8'));
     $('#toInstall').text($.t('toInstall'));
@@ -227,6 +279,26 @@ $.i18n.init({
     $('#ubuntu32').i18n();
     $('#outsideLan').i18n();
 
+    $('#howGetXem').text($.t('howGetXem'));
+    $('#howGetXemContent').i18n();
+    $('#howGetXemContent2').i18n();
+    $('#howGetXemContent3').i18n();
+    $('#howGetXemContent4').i18n();
+    $('#howGetXemContent5').i18n();
+    $('#howGetXemContent6').i18n();
+    $('#howGetXemContent7').i18n();
+    $('#howGetXemContent8').i18n();
+
+    $('#nccAndNis').text($.t('nccAndNis'));
+    $('#nccAndNisContent').i18n();
+    $('#nccAndNisContent2').i18n();
+
+/* NCC and NIS system requirments go here */
+/* NCC and NIS system requirments go here */
+/* NCC and NIS system requirments go here */
+/* NCC and NIS system requirments go here */
+
+$('#lightWallet').text($.t('lightWallet'));
 
 
     <!-- GENERIC -->
