@@ -293,12 +293,52 @@ $.i18n.init({
     $('#nccAndNisContent').i18n();
     $('#nccAndNisContent2').i18n();
 
-/* NCC and NIS system requirments go here */
-/* NCC and NIS system requirments go here */
-/* NCC and NIS system requirments go here */
-/* NCC and NIS system requirments go here */
+    /* NCC and NIS system requirments go here */
+    /* NCC and NIS system requirments go here */
+    /* NCC and NIS system requirments go here */
+    /* NCC and NIS system requirments go here */
 
-$('#lightWallet').text($.t('lightWallet'));
+    $('#lightWallet').text($.t('lightWallet'));
+    $('#lightWalletContent').text($.t('lightWalletContent'));
+    $('#lightWalletContent2').text($.t('lightWalletContent2'));
+    $('#lightWalletContent3').i18n();
+
+    $('#whyLight').text($.t('whyLight'));
+    $('#whyLightContent').text($.t('whyLightContent'));
+    $('#whyLightContent2').text($.t('whyLightContent2'));
+    $('#whyLightContent3').text($.t('whyLightContent3'));
+    $('#whyLightContent4').i18n();
+
+    $('#runNode').text($.t('runNode'));
+    $('#runNodeContent2').i18n();
+    $('#runNodeContent3').i18n();
+    $('#runNodeContent4').i18n();
+
+    $('#nodeRewards').text($.t('nodeRewards'));
+    $('#nodeRewardsContent').i18n();
+    $('#nodeRewardsContent2').i18n();
+
+    $('#mobileWallet').text($.t('mobileWallet'));
+    $('#mobileWalletContent').i18n();
+
+    $('#blockExplore').text($.t('blockExplore'));
+    $('#blockExploreContent').i18n();
+    $('#blockExploreContent2').i18n();
+    $('#blockExploreContent3').i18n();
+    $('#blockExploreContent4').i18n();
+    $('#blockExploreContent5').i18n();
+
+    $('#techBasics').text($.t('techBasics'));
+    $('#whatsPoi').text($.t('whatsPoi'));
+    $('#whatsPoiContent').text($.t('whatsPoiContent'));
+    $('#whatsPoiContent2').i18n();
+
+    $('#MultiAccounts').text($.t('MultiAccounts'));
+    $('#MultiAccountsContent').text($.t('MultiAccountsContent'));
+
+
+
+
 
 
     <!-- GENERIC -->
