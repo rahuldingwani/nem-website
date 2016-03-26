@@ -335,10 +335,129 @@ $.i18n.init({
 
     $('#MultiAccounts').text($.t('MultiAccounts'));
     $('#MultiAccountsContent').text($.t('MultiAccountsContent'));
+    $('#MultiAccountsContent2').text($.t('MultiAccountsContent2'));
+    $('#MultiAccountsContent3').text($.t('MultiAccountsContent3'));
+    $('#MultiAccountsContent4').text($.t('MultiAccountsContent4'));
+    $('#MultiAccountsContent5').text($.t('MultiAccountsContent5'));
+    $('#MultiAccountsContent6').text($.t('MultiAccountsContent6'));
+    $('#MultiAccountsContent7').i18n();
 
+    $('#introMosaic').text($.t('introMosaic'));
+    $('#introMosaicContent').text($.t('introMosaicContent'));
+    $('#introMosaicProperties').text($.t('introMosaicProperties'));
+    $('#introMosaicDescription').text($.t('introMosaicDescription'));
+    $('#introMosaicContent2').text($.t('introMosaicContent2'));
+    $('#introMosaicDivisibilty').text($.t('introMosaicDivisibilty'));
+    $('#introMosaicContent3').text($.t('introMosaicContent3'));
+    $('#introMosaicInfo').text($.t('introMosaicInfo'));
+    $('#introMosaicContent4').text($.t('introMosaicContent4'));
+    $('#introMosaicDomain').text($.t('introMosaicDomain'));
+    $('#introMosaicContent5').text($.t('introMosaicContent5'));
+    $('#introMosaicName').text($.t('introMosaicName'));
+    $('#introMosaicContent6').text($.t('introMosaicContent6'));
+    $('#introMosaicMutable').text($.t('introMosaicMutable'));
+    $('#introMosaicContent7').text($.t('introMosaicContent7'));
+    $('#introMosaicTransfer').text($.t('introMosaicTransfer'));
+    $('#introMosaicContent8').text($.t('introMosaicContent8'));
+    $('#introMosaicLevy').text($.t('introMosaicLevy'));
+    $('#introMosaicContent9').text($.t('introMosaicContent9'));
+    $('#introMosaicContent10').text($.t('introMosaicContent10'));
 
+    $('#introNamespace').text($.t('introNamespace'));
+    $('#introNamespaceContent').text($.t('introNamespaceContent'));
+    $('#introNamespaceContent2').text($.t('introNamespaceContent2'));
+    $('#introNamespaceHow').text($.t('introNamespaceHow'));
+    $('#introNamespaceExample').text($.t('introNamespaceExample'));
+    $('#introNamespaceExample2').text($.t('introNamespaceExample2'));
+    $('#introNamespaceExample3').text($.t('introNamespaceExample3'));
+    $('#introNamespaceExample4').text($.t('introNamespaceExample4'));
+    $('#introNamespaceMosaicExample').text($.t('introNamespaceMosaicExample'));
+    $('#introNamespaceMosaicExample2').text($.t('introNamespaceMosaicExample2'));
+    $('#introNamespaceMosaicExample3').text($.t('introNamespaceMosaicExample3'));
+    $('#introNamespaceMosaicExample4').text($.t('introNamespaceMosaicExample4'));
+    $('#introNamespaceContent3').i18n();
+    $('#introNamespaceContent4').i18n();
+    $('#introNamespaceContent5').i18n();
+    $('#introNamespaceContent6').i18n();
+    $('#introNamespaceContent7').i18n();
+    $('#introNamespaceContent8').i18n();
+    $('#introNamespaceContent9').i18n();
+    $('#introNamespaceContent10').i18n();
+    $('#introNamespaceContent11').i18n();
+    $('#introNamespaceContent12').i18n();
 
+    $('#whatsHarvesting').text($.t('whatsHarvesting'));
+    $('#whatsHarvestingContent').text($.t('whatsHarvestingContent'));
+    $('#whatsHarvestingContent2').text($.t('whatsHarvestingContent2'));
+    $('#whatsHarvestingContent3').i18n();
 
+    $('#howHarvest').text($.t('howHarvest'));
+    $('#howHarvestContent').text($.t('howHarvestContent'));
+    $('#howHarvestContent2').text($.t('howHarvestContent2'));
+
+    $('#howDelegateHarvest').text($.t('howDelegateHarvest'));
+    $('#howDelegateHarvestContent').text($.t('howDelegateHarvestContent'));
+    $('#howDelegateHarvestContent2').i18n();
+
+    $('#openPort').text($.t('openPort'));
+    $('#openPortContent').i18n();
+    $('#openPortContent2').i18n();
+
+    $('#vestingXem').text($.t('vestingXem'));
+    $('#vestingXemContent').i18n();
+
+    $('#testnetWhat').text($.t('testnetWhat'));
+    $('#testnetWhatContent').i18n();
+
+    $('#deepQuestions').text($.t('deepQuestions'));
+
+    $('#nemFund').text($.t('nemFund'));
+    $('#nemFundContent').i18n();
+
+    $('#nemDistribution').text($.t('nemDistribution'));
+    $('#nemDistributionContent').i18n();
+
+    $('#mijinWhat').text($.t('mijinWhat'));
+    $('#mijinWhatContent').text($.t('mijinWhatContent'));
+    $('#mijinWhatContent2').text($.t('mijinWhatContent2'));
+    $('#mijinWhatContent3').text($.t('mijinWhatContent3'));
+    $('#mijinWhatContent4').text($.t('mijinWhatContent4'));
+    $('#mijinWhatContent5').text($.t('mijinWhatContent5'));
+    $('#mijinWhatContent6').text($.t('mijinWhatContent6'));
+    $('#mijinWhatContent7').text($.t('mijinWhatContent7'));
+    $('#mijinWhatContent8').i18n();
+
+    $('#moreNem').text($.t('moreNem'));
+    $('#moreNemContent').i18n();
+    $('#moreNemContent2').i18n();
+    $('#moreNemContent3').i18n();
+    $('#moreNemContent4').i18n();
+    $('#moreNemContent5').i18n();
+    $('#moreNemContent6').i18n();
+    $('#moreNemContent7').i18n();
+
+    $('#miscQuestions').text($.t('miscQuestions'));
+
+    $('#xemCirculation').text($.t('xemCirculation'));
+    $('#xemCirculationContent').text($.t('xemCirculationContent'));
+
+    $('#nemCreditCards').text($.t('nemCreditCards'));
+    $('#nemCreditCardsContent').i18n();
+
+    $('#nemFaucet').text($.t('nemFaucet'));
+    $('#nemFaucetContent').i18n();
+
+    $('#socialNetwork').text($.t('socialNetwork'));
+    $('#socialNetworkContent').text($.t('socialNetworkContent'));
+    $('#socialNetworkContent2').i18n();
+    $('#socialNetworkContent3').i18n();
+    $('#socialNetworkContent4').i18n();
+    $('#socialNetworkContent5').i18n();
+    $('#socialNetworkContent6').i18n();
+    $('#socialNetworkContent7').i18n();
+    $('#socialNetworkContent8').i18n();
+    $('#socialNetworkContent9').i18n();
+    $('#socialNetworkContent10').i18n();
 
 
     <!-- GENERIC -->
