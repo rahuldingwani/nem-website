@@ -235,7 +235,7 @@ $.i18n.init({
     $('#whyNemContent11').text($.t('whyNemContent11'));
 
     $('#doWith').text($.t('doWith'));
-    $('#doWithContent').text($.t('doWith'));
+    $('#doWithContent').text($.t('doWithContent'));
 
     $('#whatsXem').text($.t('whatsXem'));
     $('#whatsXemContent').text($.t('whatsXemContent'));
