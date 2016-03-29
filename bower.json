@@ -17,7 +17,7 @@
   "dependencies": {
     "foundation-sites": "~6.1.2",
     "motion-ui": "~1.1.0",
-    "twitter-fetcher": "~14.0.0",
+    "twitter-fetcher": "~15.0.1",
     "font-awesome": "fontawesome#~4.5.0",
     "i18next": "~1.11.1",
     "gumshoe": "https://github.com/cferdinandi/gumshoe.git#~3.0.0",
@@ -29,6 +29,6 @@
   "private": true,
   "resolutions": {
     "foundation-sites": "~6.1.1",
-    "twitter-fetcher": "~14.0.0"
+    "twitter-fetcher": "~15.0.1"
   }
 }
