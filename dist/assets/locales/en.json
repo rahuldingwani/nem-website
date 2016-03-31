@@ -34,7 +34,7 @@
  "consensusTitle": "Consensus Mechanism",
  "data1": "Nodes Online",
  "data2": "Block Height",
- "data3": "Price (satoshis)",
+ "data3": "Market Cap (USD)",
  "data4": "Latest NIS Version",
  "deepQuestions": "Deeper Questions",
  "delegated": "This is harvesting (mining/forging) whereby another person’s node can be used to form blocks for your account. All done safely and that other node doesn’t ever get to see any of the fee rewards even though it was the one that pushed the block to the network. It is done by creating a secondary private key that is a delegate key. This delegate key is publicly (blockchain) mapped to the main account and inherits its POI, but has no funds nor assets in it. This delegate private key can then use its borrowed POI to harvest. All fees earned will be transferred directly to the original account, so there is no way for the node to steal your harvested fees.",
