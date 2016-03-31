@@ -217,23 +217,23 @@ $.i18n.init({
     $('#devResourcesContent6').i18n();
     $('#devResourcesContent7').i18n();
 
-    // $('#devGuides').text($.t('devGuides'));
-    // $('#devGuidesContent').i18n();
-    // $('#devGuidesContent2').i18n();
-    // $('#devGuidesContent3').i18n();
-    // $('#devGuidesContent4').i18n();
-    // $('#devGuidesContent5').i18n();
-    // $('#devGuidesContent6').i18n();
-    // $('#devGuidesContent7').i18n();
-    //
-    // $('#topBlogs').text($.t('topBlogs'));
-    // $('#topBlogsContent').i18n();
-    // $('#topBlogsContent2').i18n();
-    // $('#topBlogsContent3').i18n();
-    // $('#topBlogsContent4').i18n();
-    // $('#topBlogsContent5').i18n();
-    // $('#topBlogsContent6').i18n();
-    // $('#topBlogsContent7').i18n();
+    $('#devGuides').text($.t('devGuides'));
+    $('#devGuidesContent').i18n();
+    $('#devGuidesContent2').i18n();
+    $('#devGuidesContent3').i18n();
+    $('#devGuidesContent4').i18n();
+    $('#devGuidesContent5').i18n();
+    $('#devGuidesContent6').i18n();
+    $('#devGuidesContent7').i18n();
+
+    $('#topBlogs').text($.t('topBlogs'));
+    $('#topBlogsContent').i18n();
+    $('#topBlogsContent2').i18n();
+    $('#topBlogsContent3').i18n();
+    $('#topBlogsContent4').i18n();
+    $('#topBlogsContent5').i18n();
+    $('#topBlogsContent6').i18n();
+    $('#topBlogsContent7').i18n();
 
     <!-- INSTALL PAGE -->
     $('.getClient').text($.t('getClient'));
