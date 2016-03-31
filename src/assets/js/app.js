@@ -62,12 +62,12 @@ var div = document.getElementById("body");
 div.style.height = "0px";
 
 // Make elements stick function calls
-$(document).ready(function(){
-  $("#sticker").sticky({
-    topSpacing:20,
-    bottomSpacing: 800
-  });
-});
+// $(document).ready(function(){
+//   $("#sticker").sticky({
+//     topSpacing:20,
+//     bottomSpacing: 800
+//   });
+// });
 
 // remove stats section if stats are null
 if ($('#data1').is(':empty')) {

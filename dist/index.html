@@ -312,14 +312,15 @@
     </section>
     
     <script>
-      function call(data2) {
-        document.getElementById("data1").innerHTML=data2.nodes;
-        document.getElementById("data2").innerHTML=data2.chainHeight.height;
-        document.getElementById("data4").innerHTML=data2.version;
-        document.getElementById("data3").innerHTML=data2.xemSatoshis;
+      function nodeexplorer(data) {
+        document.getElementById("data1").innerHTML=data.nodesOnlineQuantity;
+        document.getElementById("data2").innerHTML=data.currentBlockHeight;
+        document.getElementById("data3").innerHTML=data.marketcapUSD;
+        document.getElementById("data4").innerHTML=data.latestVersion;
       }
+    
     </script>
-    <script src="http://localhost:1122/?callback=call"></script>
+    <script src="http://www.nodeexplorer.com/api_network_status_jsonp?callback=nodeexplorer"></script>
     <script>
     // setTimeout(function(){
     //     odometer.innerHTML = data1.innerHTML;
