@@ -120,6 +120,10 @@ $.i18n.init({
     $('#navLang').i18n();
 
     <!-- ABOUT SECTION -->
+    $('#nemSecurity').text($.t('nemSecurity'));
+    $('#nemCore').text($.t('nemCore'));
+    $('#nemFeatures').text($.t('nemFeatures'));
+
     $('.multisigTitle').text($.t('multisigTitle'));
     $('.appsTitle').text($.t('appsTitle'));
     $('.reputationTitle').text($.t('reputationTitle'));
