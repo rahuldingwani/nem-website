@@ -199,10 +199,41 @@ $.i18n.init({
     $('#chatAlt2').text($.t('chatAlt2'));
 
     <!-- FOOTER SECTION -->
-    $('#footerText').text($.t('footerText'));
-    $('#resources').text($.t('resources'));
-    $('#articles').text($.t('articles'));
-    $('#posts').text($.t('posts'));
+    $('#toolsList').text($.t('toolsList'));
+    $('#toolsContent').i18n();
+    $('#toolsContent2').i18n();
+    $('#toolsContent3').i18n();
+    $('#toolsContent4').i18n();
+    $('#toolsContent5').i18n();
+    $('#toolsContent6').i18n();
+    $('#toolsContent7').i18n();
+
+    $('#devResources').text($.t('devResources'));
+    $('#devResourcesContent').i18n();
+    $('#devResourcesContent2').i18n();
+    $('#devResourcesContent3').i18n();
+    $('#devResourcesContent4').i18n();
+    $('#devResourcesContent5').i18n();
+    $('#devResourcesContent6').i18n();
+    $('#devResourcesContent7').i18n();
+
+    // $('#devGuides').text($.t('devGuides'));
+    // $('#devGuidesContent').i18n();
+    // $('#devGuidesContent2').i18n();
+    // $('#devGuidesContent3').i18n();
+    // $('#devGuidesContent4').i18n();
+    // $('#devGuidesContent5').i18n();
+    // $('#devGuidesContent6').i18n();
+    // $('#devGuidesContent7').i18n();
+    //
+    // $('#topBlogs').text($.t('topBlogs'));
+    // $('#topBlogsContent').i18n();
+    // $('#topBlogsContent2').i18n();
+    // $('#topBlogsContent3').i18n();
+    // $('#topBlogsContent4').i18n();
+    // $('#topBlogsContent5').i18n();
+    // $('#topBlogsContent6').i18n();
+    // $('#topBlogsContent7').i18n();
 
     <!-- INSTALL PAGE -->
     $('.getClient').text($.t('getClient'));
