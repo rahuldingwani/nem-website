@@ -124,6 +124,9 @@ $.i18n.init({
     $('#nemCore').text($.t('nemCore'));
     $('#nemFeatures').text($.t('nemFeatures'));
 
+    $('.supernodesTitle').text($.t('supernodesTitle'));
+    $('.lightwalletTitle').text($.t('lightwalletTitle'));
+    $('.apisTitle').text($.t('apisTitle'));
     $('.multisigTitle').text($.t('multisigTitle'));
     $('.appsTitle').text($.t('appsTitle'));
     $('.reputationTitle').text($.t('reputationTitle'));
@@ -251,12 +254,12 @@ $.i18n.init({
 
     <!-- FAQ -->
     $('.faqHeader').text($.t('faqBanner'));
-    $('#faqGeneral').text($.t('faqGeneral'));
+    $('.faqGeneral').text($.t('faqGeneral'));
 
-    $('#nemCrypto').text($.t('nemCrypto'));
+    $('.nemCrypto').text($.t('nemCrypto'));
     $('#nemCryptoContent').text($.t('nemCryptoContent'));
 
-    $('#whyNem').text($.t('whyNem'));
+    $('.whyNem').text($.t('whyNem'));
     $('#whyNemContent').text($.t('whyNemContent'));
     $('#whyNemContent2').text($.t('whyNemContent2'));
     $('#whyNemContent3').text($.t('whyNemContent3'));
@@ -269,21 +272,21 @@ $.i18n.init({
     $('#whyNemContent10').text($.t('whyNemContent10'));
     $('#whyNemContent11').text($.t('whyNemContent11'));
 
-    $('#doWith').text($.t('doWith'));
+    $('.doWith').text($.t('doWith'));
     $('#doWithContent').text($.t('doWithContent'));
 
-    $('#whatsXem').text($.t('whatsXem'));
+    $('.whatsXem').text($.t('whatsXem'));
     $('#whatsXemContent').text($.t('whatsXemContent'));
 
-    $('#technicalReference').text($.t('technicalReference'));
+    $('.technicalReference').text($.t('technicalReference'));
     $('#technicalReferenceContent').i18n();
 
-    $('#getStarted').text($.t('getStarted'));
+    $('.getStarted').text($.t('getStarted'));
 
-    $('#osSupport').text($.t('osSupport'));
+    $('.osSupport').text($.t('osSupport'));
     $('#osSupportContent').text($.t('osSupportContent'));
 
-    $('#installJava').text($.t('installJava'));
+    $('.installJava').text($.t('installJava'));
     $('#installJavaContent').i18n();
     $('#installJavaWindows').text($.t('installJavaWindows'));
     $('#installJavaContent2').i18n();
@@ -297,14 +300,14 @@ $.i18n.init({
     $('#installJavaContent8').text($.t('installJavaContent8'));
     $('#installJavaContent9').i18n();
 
-    $('#nemWallet').text($.t('nemWallet'));
+    $('.nemWallet').text($.t('nemWallet'));
     $('#nemWalletContent').i18n();
     $('#nemWalletContent2').i18n();
 
-    $('#strongPassword').text($.t('strongPassword'));
+    $('.strongPassword').text($.t('strongPassword'));
     $('#strongPasswordContent').i18n();
 
-    $('#nemSoftware').text($.t('nemSoftware'));
+    $('.nemSoftware').text($.t('nemSoftware'));
     $('#checkJava8').text($.t('checkJava8'));
     $('#toInstall').text($.t('toInstall'));
     $('#downloadUnzip').i18n();
@@ -314,7 +317,7 @@ $.i18n.init({
     $('#ubuntu32').i18n();
     $('#outsideLan').i18n();
 
-    $('#howGetXem').text($.t('howGetXem'));
+    $('.howGetXem').text($.t('howGetXem'));
     $('#howGetXemContent').i18n();
     $('#howGetXemContent2').i18n();
     $('#howGetXemContent3').i18n();
@@ -324,24 +327,24 @@ $.i18n.init({
     $('#howGetXemContent7').i18n();
     $('#howGetXemContent8').i18n();
 
-    $('#nccAbout').text($.t('nccAbout'));
+    $('.nccAbout').text($.t('nccAbout'));
     $('#nccContent').i18n();
 
-    $('#nisAbout').text($.t('nisAbout'));
+    $('.nisAbout').text($.t('nisAbout'));
     $('#nisContent').i18n();
 
-    $('#lightWallet').text($.t('lightWallet'));
+    $('.lightWallet').text($.t('lightWallet'));
     $('#lightWalletContent').text($.t('lightWalletContent'));
     $('#lightWalletContent2').text($.t('lightWalletContent2'));
     $('#lightWalletContent3').i18n();
 
-    $('#whyLight').text($.t('whyLight'));
+    $('.whyLight').text($.t('whyLight'));
     $('#whyLightContent').text($.t('whyLightContent'));
     $('#whyLightContent2').text($.t('whyLightContent2'));
     $('#whyLightContent3').text($.t('whyLightContent3'));
     $('#whyLightContent4').i18n();
 
-    $('#nisReq').text($.t('nisReq'));
+    $('.nisReq').text($.t('nisReq'));
     $('#nisReqContent').text($.t('nisReqContent'));
     $('#nisReqContent2').text($.t('nisReqContent2'));
     $('#nisReqContent3').text($.t('nisReqContent3'));
@@ -350,14 +353,14 @@ $.i18n.init({
     $('#nisReqContent6').i18n();
     $('#nisReqContent7').i18n();
 
-    $('#nccAndNisReq').text($.t('nccAndNisReq'));
+    $('.nccAndNisReq').text($.t('nccAndNisReq'));
     $('#nccAndNisReqContent').text($.t('nccAndNisReqContent'));
     $('#nccAndNisReqContent2').text($.t('nccAndNisReqContent2'));
     $('#nccAndNisReqContent3').text($.t('nccAndNisReqContent3'));
     $('#nccAndNisReqContent4').i18n();
     $('#nccAndNisReqContent5').i18n();
 
-    $('#supernodeReq').text($.t('supernodeReq'));
+    $('.supernodeReq').text($.t('supernodeReq'));
     $('#supernodeReqContent').text($.t('supernodeReqContent'));
     $('#supernodeReqContent2').text($.t('supernodeReqContent2'));
     $('#supernodeReqContent3').text($.t('supernodeReqContent3'));
@@ -365,36 +368,36 @@ $.i18n.init({
     $('#supernodeReqContent5').i18n();
     $('#supernodeReqContent6').i18n();
 
-    $('#runNode').text($.t('runNode'));
+    $('.runNode').text($.t('runNode'));
     $('#runNodeContent').i18n();
     $('#runNodeContent2').text($.t('runNodeContent2'));
     $('#runNodeContent3').i18n();
     $('#runNodeContent4').i18n();
 
-    $('#nodeRewards').text($.t('nodeRewards'));
+    $('.nodeRewards').text($.t('nodeRewards'));
     $('#nodeRewardsContent').i18n();
     $('#nodeRewardsContent2').i18n();
 
-    $('#mobileWallet').text($.t('mobileWallet'));
+    $('.mobileWallet').text($.t('mobileWallet'));
     $('#mobileWalletContent').i18n();
 
-    $('#nemHelp').text($.t('nemHelp'));
+    $('.nemHelp').text($.t('nemHelp'));
     $('#nemHelpContent').i18n();
 
-    $('#blockExplore').text($.t('blockExplore'));
+    $('.blockExplore').text($.t('blockExplore'));
     $('#blockExploreContent').i18n();
     $('#blockExploreContent2').i18n();
     $('#blockExploreContent3').i18n();
     $('#blockExploreContent4').i18n();
     $('#blockExploreContent5').i18n();
 
-    $('#techBasics').text($.t('techBasics'));
+    $('.techBasics').text($.t('techBasics'));
 
-    $('#whatsPoi').text($.t('whatsPoi'));
+    $('.whatsPoi').text($.t('whatsPoi'));
     $('#whatsPoiContent').text($.t('whatsPoiContent'));
     $('#whatsPoiContent2').i18n();
 
-    $('#multiAccounts').text($.t('multiAccounts'));
+    $('.multiAccounts').text($.t('multiAccounts'));
     $('#multiAccountsContent').text($.t('multiAccountsContent'));
     $('#multiAccountsContent2').text($.t('multiAccountsContent2'));
     $('#multiAccountsContent3').text($.t('multiAccountsContent3'));
@@ -403,7 +406,7 @@ $.i18n.init({
     $('#multiAccountsContent6').text($.t('multiAccountsContent6'));
     $('#multiAccountsContent7').i18n();
 
-    $('#introMosaic').text($.t('introMosaic'));
+    $('.introMosaic').text($.t('introMosaic'));
     $('#introMosaicContent').text($.t('introMosaicContent'));
     $('#introMosaicProperties').text($.t('introMosaicProperties'));
     $('#introMosaicDescription').text($.t('introMosaicDescription'));
@@ -424,7 +427,7 @@ $.i18n.init({
     $('#introMosaicContent9').text($.t('introMosaicContent9'));
     $('#introMosaicContent10').text($.t('introMosaicContent10'));
 
-    $('#introNamespace').text($.t('introNamespace'));
+    $('.introNamespace').text($.t('introNamespace'));
     $('#introNamespaceContent').text($.t('introNamespaceContent'));
     $('#introNamespaceContent2').text($.t('introNamespaceContent2'));
     $('#introNamespaceHow').text($.t('introNamespaceHow'));
@@ -447,38 +450,38 @@ $.i18n.init({
     $('#introNamespaceContent11').i18n();
     $('#introNamespaceContent12').i18n();
 
-    $('#whatsHarvesting').text($.t('whatsHarvesting'));
+    $('.whatsHarvesting').text($.t('whatsHarvesting'));
     $('#whatsHarvestingContent').text($.t('whatsHarvestingContent'));
     $('#whatsHarvestingContent2').text($.t('whatsHarvestingContent2'));
     $('#whatsHarvestingContent3').i18n();
 
-    $('#howHarvest').text($.t('howHarvest'));
+    $('.howHarvest').text($.t('howHarvest'));
     $('#howHarvestContent').text($.t('howHarvestContent'));
     $('#howHarvestContent2').text($.t('howHarvestContent2'));
 
-    $('#howDelegateHarvest').text($.t('howDelegateHarvest'));
+    $('.howDelegateHarvest').text($.t('howDelegateHarvest'));
     $('#howDelegateHarvestContent').text($.t('howDelegateHarvestContent'));
     $('#howDelegateHarvestContent2').i18n();
 
-    $('#openPort').text($.t('openPort'));
+    $('.openPort').text($.t('openPort'));
     $('#openPortContent').i18n();
     $('#openPortContent2').i18n();
 
-    $('#vestingXem').text($.t('vestingXem'));
+    $('.vestingXem').text($.t('vestingXem'));
     $('#vestingXemContent').i18n();
 
-    $('#testnetWhat').text($.t('testnetWhat'));
+    $('.testnetWhat').text($.t('testnetWhat'));
     $('#testnetWhatContent').i18n();
 
-    $('#deepQuestions').text($.t('deepQuestions'));
+    $('.deepQuestions').text($.t('deepQuestions'));
 
-    $('#nemFund').text($.t('nemFund'));
+    $('.nemFund').text($.t('nemFund'));
     $('#nemFundContent').i18n();
 
-    $('#nemDistribution').text($.t('nemDistribution'));
+    $('.nemDistribution').text($.t('nemDistribution'));
     $('#nemDistributionContent').i18n();
 
-    $('#mijinWhat').text($.t('mijinWhat'));
+    $('.mijinWhat').text($.t('mijinWhat'));
     $('#mijinWhatContent').text($.t('mijinWhatContent'));
     $('#mijinWhatContent2').text($.t('mijinWhatContent2'));
     $('#mijinWhatContent3').text($.t('mijinWhatContent3'));
@@ -488,7 +491,7 @@ $.i18n.init({
     $('#mijinWhatContent7').text($.t('mijinWhatContent7'));
     $('#mijinWhatContent8').text($.t('mijinWhatContent8'));
 
-    $('#moreNem').text($.t('moreNem'));
+    $('.moreNem').text($.t('moreNem'));
     $('#moreNemContent').i18n();
     $('#moreNemContent2').i18n();
     $('#moreNemContent3').i18n();
@@ -497,18 +500,18 @@ $.i18n.init({
     $('#moreNemContent6').i18n();
     $('#moreNemContent7').i18n();
 
-    $('#miscQuestions').text($.t('miscQuestions'));
+    $('.miscQuestions').text($.t('miscQuestions'));
 
-    $('#xemCirculation').text($.t('xemCirculation'));
+    $('.xemCirculation').text($.t('xemCirculation'));
     $('#xemCirculationContent').text($.t('xemCirculationContent'));
 
-    $('#nemCreditCards').text($.t('nemCreditCards'));
+    $('.nemCreditCards').text($.t('nemCreditCards'));
     $('#nemCreditCardsContent').i18n();
 
-    $('#nemFaucet').text($.t('nemFaucet'));
+    $('.nemFaucet').text($.t('nemFaucet'));
     $('#nemFaucetContent').i18n();
 
-    $('#socialNetwork').text($.t('socialNetwork'));
+    $('.socialNetwork').text($.t('socialNetwork'));
     $('#socialNetworkContent').text($.t('socialNetworkContent'));
     $('#socialNetworkContent2').i18n();
     $('#socialNetworkContent3').i18n();

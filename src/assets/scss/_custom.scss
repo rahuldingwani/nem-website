@@ -36,9 +36,12 @@ footer .row .row{
 // FOUNDATION OVERRIDES --END
 
 *{
-  list-style-type: none;
+  // list-style-type: none;
   margin: 0;
   font-weight: 300;
+}
+#help ul, footer ul, #faqNavWrap ul{
+  list-style-type: none;
 }
 p{
   font-size: 16px;
@@ -230,11 +233,7 @@ nav .submenu li:last-child{
 
 
 
-#about{
-  h1, h2{
-    text-transform: uppercase;
-  }
-}
+
 
 // #about{
 //   background: url(../img/waterFog.jpg);
@@ -793,6 +792,9 @@ nav .submenu li:last-child{
       position: relative;
       background-color: $white;
       @include grid-column(4);
+      .media img, a span:nth-of-type(2){
+        display: none;
+      }
       // -- Twitter Handle -- //
       a span{
          font-weight: 300;
@@ -1215,11 +1217,14 @@ a .btn-1e:hover:after {
 #faqContent{
   @include flex-grid-column(31);
   background: transparent;
-  padding: $pad;
+  // padding: $pad;
   article{
     background: $white;
     padding: 2px 5px 5px 10px;
     margin-bottom: $pad;
+  }
+  article:last-of-type{
+    margin-bottom: 0;
   }
   h2{
     background: $white;
@@ -1410,5 +1415,76 @@ a > span:hover:before {
   article{
     @include flex-grid-column(24);
     background-color: pink;
+  }
+}
+
+
+
+
+
+
+
+#aboutIt{
+  background: url(../img/background2.jpg);
+  background-size: cover;
+  text-align: center !important;
+  .columns{
+    text-align: center;
+    margin: 0 auto;
+  }
+  #aboutWrap1, #aboutWrap2, #aboutWrap3{
+    margin-right: $pad;
+    margin-bottom: $pad * 4;
+    margin-top: $pad * 8;
+    background-color: $darkest-gray;
+    color: $gray;
+  }
+  #aboutWrap3{
+    margin-right: 0;
+  }
+  #about1, #about2, #about3{
+    padding-bottom: $pad * 2;
+  }
+  h1, h2{
+    text-transform: uppercase;
+    // margin-left: -20px;÷
+    line-height: -.5;
+    // color: $offwhite;
+  }
+  ul{
+    list-style-type: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-bottom: $pad * 2;
+  }
+  li{
+    text-align: center !important;
+    font-weight: 900 !important;
+    font-size: 21px;
+  }
+  li:hover, li:active{
+    cursor: pointer;
+    color: $blue;
+  }
+  .align-center, .med-large-expand, .large-11{
+    background: rgba(0,0,0,0.1);
+  }
+  #nemSecurity{
+    text-align:center;
+    margin-left: -15px;
+    margin-top: -14px;
+    margin-bottom: -4px;
+
+    // padding-left: 0px !important;
+  }
+  #nemCore{
+    margin-left: -97px;
+    margin-top: -14px;
+    margin-bottom: -4px;
+  }
+  #nemFeatures{
+    margin-left: -8px;
+    margin-top: -14px;
+    margin-bottom: -4px;
   }
 }
