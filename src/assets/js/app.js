@@ -104,10 +104,44 @@ $.i18n.init({
 		// $('#appname').text($.t('app.name'));
 		// $('#appclient').text($.t('app.client'));
 
+
+
+
+// $(document).ready(function(){
+//
+//      function postProcessing(data) {
+//         var myArray = data;
+//        alert(myArray);
+//      }
+//
+//
+//     getValues();
+//
+//         function getValues(){
+//              $.ajax({
+//                 url: 'http://www.nodeexplorer.com/api_network_status_jsonp?callback=nodeexplorer',
+//                 type: 'get',
+//                 dataType: 'jsonp',
+//                 cache: false,
+//                 success: postProcessing,
+//                 async:true,
+//                 });
+//         };
+// })
+// $(document).ready(function(){
+//   $.ajax({
+//
+//     url: "http://www.nodeexplorer.com/api_network_status_jsonp?callback=nodeexplorer",
+//     dataType: 'jsonp',
+//     success: function(data) {
+//       alert("Temperature is: " + data.marketcapUSD );
+//     },
+//     error: function() {
+//       alert("error");
+//     }
+//   });
+// });
 		<!-- OURNEM HOMEPAGE -->
-
-
-
 		<!-- NAVIGATION -->
     $('#navClient').text($.t('navClient'));
     $('#navBuy').text($.t('navBuy'));

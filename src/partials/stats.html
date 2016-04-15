@@ -31,6 +31,26 @@
   </div>
 </section>
 
+<!-- <script>
+function processJSON (json) {
+  alert(nodeexplorer);
+};
+
+// Create a new script element
+var script_element = document.createElement('script');
+
+// Set its source to the JSONP API
+script_element.src = 'http://www.nodeexplorer.com/api_network_status_jsonp?callback=nodeexplorer';
+
+// Stick the script element in the page <head>
+document.getElementsByTagName('head')[0].appendChild(script_element);
+</script> -->
+
+
+
+
+
+
 <script>
   function nodeexplorer(data) {
     document.getElementById("data1").innerHTML=data.nodesOnlineQuantity;
@@ -40,4 +60,4 @@
   }
 
 </script>
-<script src="http://www.nodeexplorer.com/api_network_status_jsonp?callback=nodeexplorer"></script>
+<!-- <script src="http://www.nodeexplorer.com/api_network_status_jsonp?callback=nodeexplorer"></script> -->

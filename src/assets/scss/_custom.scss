@@ -39,6 +39,7 @@ footer .row .row{
   // list-style-type: none;
   margin: 0;
   font-weight: 300;
+  overflow: visible !important; //remove for live version
 }
 #help ul, footer ul, #faqNavWrap ul{
   list-style-type: none;
@@ -234,7 +235,54 @@ nav .submenu li:last-child{
 
 
 
+.reveal h2{
+  left: 500px;
+  position: fixed;
+  overflow: visible;
+  background: red;
+}
+#aboutIt{
+}
+#modals{
+  .reveal{
+    padding: 0 !important;
+  }
+  h1{
+    background-color: $blue;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    margin-left: -75px;
+    margin-top: -75px;
+    @include centerChildren;
+    text-align:center;
+    color: $white;
+    font-weight: 900;
+    font-size: 22px;
+    text-transform: uppercase;
+    overflow: visible;
+  }
+  p.small-10{
+    margin-top: 75px;
+    padding-left: 0px;
+    margin-bottom: 75px;
+    text-align: justify;
+    line-height: 1.2;
+    color: $white;
+    font-weight: 500;
+  }
+  button{
+    color: $white;
 
+    // margin-right: 5px;
+    // margin-top: 15px;
+
+  }
+}
 // #about{
 //   background: url(../img/waterFog.jpg);
 //   background-size: cover;
@@ -1263,9 +1311,9 @@ header.band {
 #testFaq {
     -skrollr-animation-name:animation5;
 }
-.appsTitle{
-    -skrollr-animation-name:appTitle1;
-}
+// .appsTitle{
+//     -skrollr-animation-name:appTitle1;
+// }
 $laptopStart: 0;
 $laptopDuration: 500;
 $laptopEnd: $laptopStart + $laptopDuration;

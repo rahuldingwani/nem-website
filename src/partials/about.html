@@ -16,9 +16,9 @@
               <ul>
                 <li data-open="reputation" class="reputationTitle"></li>
                 <li data-open="spamProtect" class="spamTitle"></li>
-                <li class="lightwalletTitle"></li>
                 <li data-open="architecture" class="architectureTitle"></li>
                 <li class="supernodesTitle"></li>
+                <li class="lightwalletTitle"></li>
               </ul>
             </div>
           </div>
@@ -34,10 +34,11 @@
             <div id="about2" class="row align-center">
               <ul>
                 <li data-open="multisig" class="multisigTitle"></li>
+                <li data-open="mobile" class="appsTitle"></li>
                 <li data-open="namespace" class="namespaceTitle"></li>
                 <li data-open="messaging" class="messagingTitle"></li>
                 <li data-open="mosaics" class="mosaicTitle"></li>
-                <li data-open="harvesting" class="harvestingTitle"></li>
+
               </ul>
             </div>
           </div>
@@ -52,11 +53,12 @@
             </div>
             <div id="about3" class="row align-center">
               <ul>
-                <li data-open="lightwallets" class="lightwalletTitle"></li>
+                <li data-open="harvesting" class="harvestingTitle"></li>
                 <li data-open="apis" class="apisTitle"></li>
                 <li data-open="poi" class="consensusTitle"></li>
                 <li data-open="xem" class="xemTitle"></li>
-                <li data-open="harvesting" class="harvestingTitle"></li>
+                <li data-open="nis" class="nisTitle"></li>
+
               </ul>
             </div>
           </div>
@@ -67,29 +69,33 @@
   </section>
 
 
-
-  <div class="reveal" id="multisig" data-reveal>
-    <h1>Multisig</h1>
+<div id="modals">
+  <div class="reveal xlarge row" id="multisig" data-reveal>
+    <h2>Multisig</h2>
     <p class="multisig">NEM's multisig solution is on blockchain. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
   <p class="multisig2">Because multisignature accounts can be created, and transactions issued by using the API, it has suddenly become far simpler, to make use of multisignature technology. Furthermore, a client based multisig solution requires the wallet to be running. With NEM’s unique blockchain based solution for multisig, the NIS nodes handle the signing of a transaction. Hence, once a multisig transaction is created, the user can switch the client wallet offline.</p>
     <button class="close-button" data-close aria-label="Close reveal" type="button">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  <div class="reveal" id="mobile" data-reveal>
-    <h1>Mobile Apps</h1>
-    <p class="apps">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+  <div class="reveal xlarge" id="mobile" data-reveal>
+    <div class="row">
+    <h1 class="small-2 columns">Mobile Apps</h1>
+    <p class="apps small-10 columns">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
     <button class="close-button" data-close aria-label="Close reveal" type="button">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  <div class="reveal" id="reputation" data-reveal>
-    <h1>Node Reputation System</h1>
-    <p class="reputation">Eigentrust is a security clustering algorithm so nodes can give reputation to their neighbors in clusters, making it very difficult for a node to give false information consistently to the network. Only nodes that have consistently performed well in the past giving verifiable correct information are given a good reputation and have their data acknowledged.</p>
+  </div>
+  <div class="reveal xlarge" id="reputation" data-reveal>
+    <div class="row">
+    <h1 class="small-2 columns">Node Reputation System</h1>
+    <p class="reputation small-10 columns">Eigentrust is a security clustering algorithm so nodes can give reputation to their neighbors in clusters, making it very difficult for a node to give false information consistently to the network. Only nodes that have consistently performed well in the past giving verifiable correct information are given a good reputation and have their data acknowledged.</p>
     <button class="close-button" data-close aria-label="Close reveal" type="button">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
+</div>
   <div class="reveal" id="messaging" data-reveal>
     <h1>Messaging</h1>
     <p class="messaging">Messages can be sent along with transactions or by themselves. This can be done unencrypted/encrypted/hex formats depending on the user or programmers needs.</p>
@@ -192,3 +198,4 @@
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
+</div>
