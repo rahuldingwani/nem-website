@@ -17,8 +17,8 @@
                 <li data-open="reputation" class="reputationTitle"></li>
                 <li data-open="spamProtect" class="spamTitle"></li>
                 <li data-open="architecture" class="architectureTitle"></li>
-                <li class="supernodesTitle"></li>
-                <li class="lightwalletTitle"></li>
+                <li data-open="supernodes" class="supernodesTitle"></li>
+                <li data-open="lightwallet" class="lightwalletTitle"></li>
               </ul>
             </div>
           </div>
@@ -34,8 +34,8 @@
             <div id="about2" class="row align-center">
               <ul>
                 <li data-open="multisig" class="multisigTitle"></li>
-                <li data-open="mobile" class="appsTitle"></li>
                 <li data-open="namespace" class="namespaceTitle"></li>
+                <li data-open="harvesting" class="harvestingTitle"></li>
                 <li data-open="messaging" class="messagingTitle"></li>
                 <li data-open="mosaics" class="mosaicTitle"></li>
 
@@ -53,9 +53,9 @@
             </div>
             <div id="about3" class="row align-center">
               <ul>
-                <li data-open="harvesting" class="harvestingTitle"></li>
+                <li data-open="newcode" class="newcodeTitle"></li>
                 <li data-open="apis" class="apisTitle"></li>
-                <li data-open="poi" class="consensusTitle"></li>
+                <li data-open="consensus" class="consensusTitle"></li>
                 <li data-open="xem" class="xemTitle"></li>
                 <li data-open="nis" class="nisTitle"></li>
 
@@ -71,131 +71,165 @@
 
 <div id="modals">
   <div class="reveal xlarge row" id="multisig" data-reveal>
-    <h2>Multisig</h2>
-    <p class="multisig">NEM's multisig solution is on blockchain. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-  <p class="multisig2">Because multisignature accounts can be created, and transactions issued by using the API, it has suddenly become far simpler, to make use of multisignature technology. Furthermore, a client based multisig solution requires the wallet to be running. With NEM’s unique blockchain based solution for multisig, the NIS nodes handle the signing of a transaction. Hence, once a multisig transaction is created, the user can switch the client wallet offline.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="reveal xlarge" id="mobile" data-reveal>
     <div class="row">
-    <h1 class="small-2 columns">Mobile Apps</h1>
-    <p class="apps small-10 columns">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+      <h1 class="small-2 columns multisigTitle">Multisig</h1>
+      <div class="small-10 columns">
+      <p class="multisig" data-i18n="[html]multisig">NEM's multisig solution is on blockchain. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+    <p class="multisig2" data-i18n="[html]multisig2">Because multisignature accounts can be created, and transactions issued by using the API, it has suddenly become far simpler, to make use of multisignature technology. Furthermore, a client based multisig solution requires the wallet to be running. With NEM’s unique blockchain based solution for multisig, the NIS nodes handle the signing of a transaction. Hence, once a multisig transaction is created, the user can switch the client wallet offline.</p>
   </div>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
+
   <div class="reveal xlarge" id="reputation" data-reveal>
     <div class="row">
-    <h1 class="small-2 columns">Node Reputation System</h1>
-    <p class="reputation small-10 columns">Eigentrust is a security clustering algorithm so nodes can give reputation to their neighbors in clusters, making it very difficult for a node to give false information consistently to the network. Only nodes that have consistently performed well in the past giving verifiable correct information are given a good reputation and have their data acknowledged.</p>
+    <h1 class="small-2 columns reputationTitle">Node Reputation System</h1>
+    <p class="reputation small-10 columns" data-i18n="[html]reputation">Eigentrust is a security clustering algorithm so nodes can give reputation to their neighbors in clusters, making it very difficult for a node to give false information consistently to the network. Only nodes that have consistently performed well in the past giving verifiable correct information are given a good reputation and have their data acknowledged.</p>
     <button class="close-button" data-close aria-label="Close reveal" type="button">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
 </div>
+
   <div class="reveal" id="messaging" data-reveal>
-    <h1>Messaging</h1>
-    <p class="messaging">Messages can be sent along with transactions or by themselves. This can be done unencrypted/encrypted/hex formats depending on the user or programmers needs.</p>
+    <div class="row">
+    <h1 class="small-2 columns messagingTitle">Messaging</h1>
+    <p class="messaging small-10 columns" data-i18n="[html]messaging">Messages can be sent along with transactions or by themselves. This can be done unencrypted/encrypted/hex formats depending on the user or programmers needs.</p>
     <button class="close-button" data-close aria-label="Close reveal" type="button">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
+  </div>
+
   <div class="reveal" id="architecture" data-reveal>
-    <h1>2-Tiered Architecture</h1>
-    <p class="architecture">Design of the solution is based on the NCC being one tier (i.e., client) and the NIS being the server tier. The NCC also has a webserver with useful APIs.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <div class="row">
+      <h1 class="small-2 columns architectureTitle">2-Tiered Architecture</h1>
+      <p class="architecture small-10 columns" data-i18n="[html]architecture">Design of the solution is based on the NCC being one tier (i.e., client) and the NIS being the server tier. The NCC also has a webserver with useful APIs.</p>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
   </div>
+  </div>
+
   <div class="reveal" id="harvesting" data-reveal>
-    <h1>Harvesting</h1>
-    <p class="harvesting">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <div class="row">
+      <h1 class="small-2 columns harvestingTitle">Harvesting</h1>
+      <p class="harvesting small-10 columns" data-i18n="[html]harvesting">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
+
   <div class="reveal" id="delegated" data-reveal>
-    <h1>Delegated Harvesting</h1>
-    <p class="delegated">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <div class="row">
+      <h1 class="small-2 columns delegatedTitle">Delegated Harvesting</h1>
+      <p class="delegated small-10 columns" data-i18n="[html]delegated">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
+
   <div class="reveal" id="mosaic" data-reveal>
-    <h1>Mosaics</h1>
-    <p class="mosaic">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <p class="mosaic2">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <div class="row">
+      <h1 class="small-2 columns mosaicTitle">Mosaics</h1>
+      <div class="small-10 columns">
+        <p class="mosaic" data-i18n="[html]mosaic">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+        <p class="mosaic2" data-i18n="[html]mosaic2">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+      </div>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
-  <div class="reveal" id="video" data-reveal>
-    <h1>About NEM Video</h1>
-    <p></p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
+
   <div class="reveal" id="ncc" data-reveal>
-    <h1>NCC</h1>
-    <p class="ncc">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <div class="row">
+      <h1 class="small-2 columns nccTitle">NCC</h1>
+      <p class="ncc small-10 columns" data-i18n="[html]ncc">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
+
   <div class="reveal" id="nis" data-reveal>
-    <h1>NIS</h1>
-    <p class="nis">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <div class="row">
+      <h1 class="small-2 columns nisTitle">NIS</h1>
+      <p class="nis small-10 columns" data-i18n="[html]nis">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
+
   <div class="reveal" id="consensus" data-reveal>
-    <h1>Consensus Mechanism</h1>
-    <p class="consensus">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <p class="consensus2">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <div class="row">
+      <h1 class="small-2 columns consensusTitle">Consensus Mechanism</h1>
+      <div class="small-10 columns">
+        <p class="consensus" data-i18n="[html]consensus">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+        <p class="consensus2" data-i18n="[html]consensus2">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+      </div>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
+
   <div class="reveal" id="newcode" data-reveal>
-    <h1>100% New Code</h1>
-    <p class="newcode">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <div class="row">
+      <h1 class="small-2 columns newcodeTitle">100% New Code</h1>
+      <p class="newcode small-10 columns" data-i18n="[html]newcode">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
+
   <div class="reveal" id="blocktimes" data-reveal>
-    <h1>Block Times</h1>
-    <p class="blocktimes">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <div class="row">
+      <h1 class="small-2 columns blocktimesTitle">Block Times</h1>
+      <p class="blocktimes small-10 columns" data-i18n="[html]blocktimes">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
+
   <div class="reveal" id="xem" data-reveal>
-    <h1>XEM</h1>
-    <p class="xem">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <div class="row">
+      <h1 class="small-2 columns xemTitle">XEM</h1>
+      <p class="xem small-10 columns" data-i18n="[html]xem">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
+
   <div class="reveal" id="namespace" data-reveal>
-    <h1>Namespace</h1>
-    <p class="namespace">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <p class="namespace2">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <p class="namespace3">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <div class="row">
+      <h1 class="small-2 columns namespaceTitle">Namespace</h1>
+      <div class="small-10 columns">
+        <p class="namespace" data-i18n="[html]namespace">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+        <p class="namespace2" data-i18n="[html]namespace2">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+        <p class="namespace3" data-i18n="[html]namespace3">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+      </div>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
+
   <div class="reveal" id="spamProtect" data-reveal>
-    <h1>Spam Protection</h1>
-    <p class="spam">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
-    <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <div class="row">
+      <h1 class="small-2 columns spamTitle">Spam Protection</h1>
+      <p class="spam small-10 columns" data-i18n="[html]spam">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
 </div>

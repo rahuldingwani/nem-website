@@ -235,12 +235,12 @@ nav .submenu li:last-child{
 
 
 
-.reveal h2{
-  left: 500px;
-  position: fixed;
-  overflow: visible;
-  background: red;
-}
+// .reveal h2{
+//   left: 500px;
+//   position: fixed;
+//   overflow: visible;
+//   background: red;
+// }
 #aboutIt{
 }
 #modals{
@@ -266,7 +266,7 @@ nav .submenu li:last-child{
     text-transform: uppercase;
     overflow: visible;
   }
-  p.small-10{
+  p.small-10, div.small-10 p{
     margin-top: 75px;
     padding-left: 0px;
     margin-bottom: 75px;
@@ -274,6 +274,12 @@ nav .submenu li:last-child{
     line-height: 1.2;
     color: $white;
     font-weight: 500;
+  }
+  div.small-10 p:first-of-type{
+    margin-bottom: $pad;
+  }
+  div.small-10 p:last-of-type{
+    margin-top: 0px;
   }
   button{
     color: $white;

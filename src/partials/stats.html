@@ -13,45 +13,39 @@
 <section id="stats">
   <div class="statsInside">
     <div id="dataWrap1">
-      <div id="data1"></div>
+      <div id="data1">loading...</div>
       <h5 id="dataText1">nodes online</h5>
     </div>
     <div id="dataWrap2">
-      <div id="data2"></div>
+      <div id="data2">loading...</div>
       <h5 id="dataText2">block height</h5>
     </div>
     <div id="dataWrap3">
-      <div id="data3"></div>
+      <div id="data3">loading...</div>
       <h5 id="dataText3">price (satoshis)</h5>
     </div>
     <div id="dataWrap4">
-      <div id="data4"></div>
+      <div id="data4">loading...</div>
       <h5 id="dataText4">latest nis version</h5>
     </div>
   </div>
 </section>
 
+
+
+<script type="text/javascript">
+$(function() {
+    window.nodeexplorer = function(data) {
+        $('#data1').text(data.nodesOnlineQuantity);
+        $('#data2').text(data.currentBlockHeight);
+        $('#data3').text(data.marketcapUSD);
+        $('#data4').text(data.latestVersion);;
+    }
+    $.getJSON('http://www.nodeexplorer.com/api_network_status_jsonp?callback=?');
+})
+</script>
+
 <!-- <script>
-function processJSON (json) {
-  alert(nodeexplorer);
-};
-
-// Create a new script element
-var script_element = document.createElement('script');
-
-// Set its source to the JSONP API
-script_element.src = 'http://www.nodeexplorer.com/api_network_status_jsonp?callback=nodeexplorer';
-
-// Stick the script element in the page <head>
-document.getElementsByTagName('head')[0].appendChild(script_element);
-</script> -->
-
-
-
-
-
-
-<script>
   function nodeexplorer(data) {
     document.getElementById("data1").innerHTML=data.nodesOnlineQuantity;
     document.getElementById("data2").innerHTML=data.currentBlockHeight;
@@ -60,4 +54,4 @@ document.getElementsByTagName('head')[0].appendChild(script_element);
   }
 
 </script>
-<!-- <script src="http://www.nodeexplorer.com/api_network_status_jsonp?callback=nodeexplorer"></script> -->
+<script src="http://www.nodeexplorer.com/api_network_status_jsonp?callback=nodeexplorer"></script> -->

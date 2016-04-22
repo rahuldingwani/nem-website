@@ -70,9 +70,9 @@ div.style.height = "0px";
 // });
 
 // remove stats section if stats are null
-if ($('#data1').is(':empty')) {
-    $('#stats').remove();
-}
+// if ($('#data1').is(':empty')) {
+//     $('#stats').remove();
+// }
 
 // //**## NEM NEWS FEED ##**/
 // //Pulls twitter feed using twitter fetcher.
@@ -107,40 +107,6 @@ $.i18n.init({
 
 
 
-// $(document).ready(function(){
-//
-//      function postProcessing(data) {
-//         var myArray = data;
-//        alert(myArray);
-//      }
-//
-//
-//     getValues();
-//
-//         function getValues(){
-//              $.ajax({
-//                 url: 'http://www.nodeexplorer.com/api_network_status_jsonp?callback=nodeexplorer',
-//                 type: 'get',
-//                 dataType: 'jsonp',
-//                 cache: false,
-//                 success: postProcessing,
-//                 async:true,
-//                 });
-//         };
-// })
-// $(document).ready(function(){
-//   $.ajax({
-//
-//     url: "http://www.nodeexplorer.com/api_network_status_jsonp?callback=nodeexplorer",
-//     dataType: 'jsonp',
-//     success: function(data) {
-//       alert("Temperature is: " + data.marketcapUSD );
-//     },
-//     error: function() {
-//       alert("error");
-//     }
-//   });
-// });
 		<!-- OURNEM HOMEPAGE -->
 		<!-- NAVIGATION -->
     $('#navClient').text($.t('navClient'));
@@ -179,27 +145,32 @@ $.i18n.init({
     $('.namespaceTitle').text($.t('namespaceTitle'));
     $('.spamTitle').text($.t('spamTitle'));
 
-    $('.multisig').text($.t('multisig'));
-    $('.multisig2').text($.t('multisig2'));
-    $('.apps').text($.t('apps'));
-    $('.reputation').text($.t('reputation'));
-    $('.messaging').text($.t('messaging'));
-    $('.architecture').text($.t('architecture'));
-    $('.harvesting').text($.t('harvesting'));
-    $('.delegated').text($.t('delegated'));
-    $('.mosaic').text($.t('mosaic'));
-    $('.mosaic2').text($.t('mosaic2'));
-    $('.ncc').text($.t('ncc'));
-    $('.nis').text($.t('nis'));
-    $('.consensus').text($.t('consensus'));
-    $('.consensus2').text($.t('consensus2'));
-    $('.newcode').text($.t('newcode'));
-    $('.blocktimes').text($.t('blocktimes'));
-    $('.xem').text($.t('xem'));
-    $('.namespace').text($.t('namespace'));
-    $('.namespace2').text($.t('namespace2'));
-    $('.namespace3').text($.t('namespace3'));
-    $('.spam').text($.t('spam'));
+    $('.multisig').i18n();
+    $('.multisig2').i18n();
+    $('.reputation').i18n();
+    $('.messaging').i18n();
+    $('.architecture').i18n();
+    $('.harvesting').i18n();
+    $('.delegated').i18n();
+    $('.mosaic').i18n();
+    $('.mosaic2').i18n();
+    $('.ncc').i18n();
+    $('.nis').i18n();
+    $('.consensus').i18n();
+    $('.consensus2').i18n();
+    $('.newcode').i18n();
+    $('.blocktimes').i18n();
+    $('.xem').i18n();
+    $('.namespace').i18n();
+    $('.namespace2').i18n();
+    $('.namespace3').i18n();
+    $('.spam').i18n();
+    $('.supernodes').i18n();
+    $('.lightwallet').i18n();
+    $('.apis').i18n();
+
+
+
 
     <!-- STATS SECTION -->
     $('#dataText1').text($.t('data1'));
