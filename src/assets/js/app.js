@@ -167,7 +167,7 @@ $.i18n.init({
     $('.spam').i18n();
     $('.supernodes').i18n();
     $('.lightwallet').i18n();
-    $('.apis').i18n();
+    $('.nisApis').i18n();
 
 
 
