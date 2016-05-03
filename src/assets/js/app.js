@@ -151,6 +151,7 @@ $.i18n.init({
     $('.messaging').i18n();
     $('.architecture').i18n();
     $('.harvesting').i18n();
+    $('.harvesting2').i18n();
     $('.delegated').i18n();
     $('.mosaic').i18n();
     $('.mosaic2').i18n();
@@ -158,7 +159,23 @@ $.i18n.init({
     $('.nis').i18n();
     $('.consensus').i18n();
     $('.consensus2').i18n();
+    $('.consensus3').i18n();
     $('.newcode').i18n();
+    $('#newcode2').i18n();
+    $('#newcode3').i18n();
+    $('#newcode4').i18n();
+    $('#newcode5').i18n();
+    $('#newcode6').i18n();
+    $('#newcode7').i18n();
+    $('#newcode8').i18n();
+    $('#newcode9').i18n();
+    $('#newcode10').i18n();
+    $('#newcode11').i18n();
+    $('#newcode12').i18n();
+    $('#newcode13').i18n();
+    $('#newcode14').i18n();
+
+
     $('.blocktimes').i18n();
     $('.xem').i18n();
     $('.namespace').i18n();
