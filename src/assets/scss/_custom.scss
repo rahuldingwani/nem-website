@@ -362,13 +362,31 @@ nav .submenu li:last-child{
   color: $blue;
   font-size: 54px;
   font-weight: 300;
+  @include breakpoint(large down) {
+    font-size: 44px;
+    font-weight: 300;
+  }
+  @include breakpoint(medium down) {
+    font-size: 34px;
+    font-weight: 300;
+  }
 }
 #dataText1, #dataText2, #dataText3, #dataText4{
   color: $white;
   font-weight: 900;
   font-size: 18px;
   margin-top: -12px;
-    color: $gray;
+  color: $gray;
+  @include breakpoint(large down) {
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: -4px;
+  }
+  @include breakpoint(med-large down) {
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: -4px;
+  }
 }
 
 // #dataText4{
