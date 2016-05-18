@@ -1345,3 +1345,8 @@ a > span:hover:before {
     background-color: pink;
   }
 }
+
+#discourse-comments{
+  margin: $pad;
+  padding: $pad;
+}
