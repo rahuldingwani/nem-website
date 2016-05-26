@@ -39,7 +39,7 @@ skrollr.menu.init(s, {
         //By default, the duration is hardcoded at 500ms.
         // return 500;
         //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
-        // return Math.abs(currentTop - targetTop) * 10;
+        return Math.abs(currentTop - targetTop) * .05;
     },
     //By default skrollr-menu will only react to links whose href attribute contains a hash and nothing more, e.g. `href="#foo"`.
     //If you enable `complexLinks`, skrollr-menu also reacts to absolute and relative URLs which have a hash part.
