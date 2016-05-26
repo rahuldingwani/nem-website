@@ -182,7 +182,7 @@ $.i18n.init({
     $('.namespace2').i18n();
     $('.namespace3').i18n();
     $('.spam').i18n();
-    $('.supernodes').i18n();
+    $('.supernode').i18n();
     $('.lightwallet').i18n();
     $('.nisApis').i18n();
 

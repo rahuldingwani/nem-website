@@ -84,10 +84,21 @@ nav{
   .top-bar, .top-bar-left ul, .top-bar-right ul{
     background: $white;
   }
+  li a{
+    font-weight: 400;
+      // color: $blue;
+  }
+  li a:hover{
+    font-weight: 400;
+      color: $blue;
+  }
   a{
     text-transform: uppercase;
     color: $black !important;
     font-size: 15px;
+    span{
+      font-weight: 400;
+    }
 }
   .top-bar-left {
     li{
@@ -209,8 +220,6 @@ nav .submenu li:last-child{
   }
 }
 
-#aboutIt{
-}
 #modals{
   .reveal{
     padding: 0 !important;
@@ -1185,9 +1194,9 @@ header.band {
 #bannerHeader {
     -skrollr-animation-name:animation3;
 }
-#laptop {
-    -skrollr-animation-name:animation4;
-}
+// #laptop {
+//     -skrollr-animation-name:animation4;
+// }
 #testFaq {
     -skrollr-animation-name:animation5;
 }
