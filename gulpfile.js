@@ -159,6 +159,32 @@ gulp.src('bower_components/font-awesome/fonts/**.*')
   .pipe(gulp.dest('dist/assets/fonts/'));
 });
 
+// place needed pdf's at root level
+gulp.task('pdfs', function() {
+gulp.src('src/pdfs/**.*')
+  .pipe(gulp.dest('dist/'));
+});
+
+// // place ncc documentation
+// gulp.task('ncc', function() {
+// gulp.src('src/data/ncc/ncc.html')
+//   .pipe(gulp.dest('dist/'));
+// });
+
+// gulp.task('nccCopy', ['clean'], function () {
+//     return gulp.src(['src/data/ncc/**/*'], {
+//         base: 'ncc'
+//     }).pipe(gulp.dest('dist/'));
+// });
+
+gulp.task('nccCopy', ['clean'], function () {
+    return gulp.src(['src/ncc/**/*'], {
+        base: 'src'
+    }).pipe(gulp.dest('dist'));
+});
+
+
+
 // Copy images to the "dist" folder
 // In production, the images are compressed
 gulp.task('images', function() {
@@ -173,7 +199,7 @@ gulp.task('images', function() {
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-  sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy', 'fonts'], 'styleguide', done);
+  sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy', 'fonts', 'pdfs', 'nccCopy'], 'styleguide', done);
 });
 
 // google spreadsheet i18n.
