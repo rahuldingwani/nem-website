@@ -5,18 +5,18 @@ var mySVGsToInject = document.querySelectorAll('img.injectIt');
 
 // Options
 var injectorOptions = {
-  evalScripts: 'once',
-  pngFallback: '../img',
+  evalScripts: 'always',
+  // pngFallback: '../img',
   each: function (svg) {
     // Callback after each SVG is injected
-    console.log('SVG injected: ' + svg.getAttribute('id'));
+    // console.log('SVG injected: ' + svg.getAttribute('id'));
   }
 };
 
 // Trigger the injection
 SVGInjector(mySVGsToInject, injectorOptions, function (totalSVGsInjected) {
   // Callback after all SVGs are injected
-  console.log('We injected ' + totalSVGsInjected + ' SVG(s)!');
+  // console.log('We injected ' + totalSVGsInjected + ' SVG(s)!');
 });
 
 // smoothScroll.init();
@@ -25,36 +25,36 @@ gumshoe.init({
 });
 
 //parrallax scrolling
-var s = skrollr.init(/*other stuff*/);
-// The options (second parameter) are all optional. The values shown are the default values.
-skrollr.menu.init(s, {
-    //skrollr will smoothly animate to the new position using `animateTo`.
-    animate: true,
-    //The easing function to use.
-    easing: 'sqrt',
-    //Multiply your data-[offset] values so they match those set in skrollr.init
-    scale: 1.5,
-    //How long the animation should take in ms.
-    duration: function(currentTop, targetTop) {
-        //By default, the duration is hardcoded at 500ms.
-        // return 500;
-        //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
-        return Math.abs(currentTop - targetTop) * .05;
-    },
-    //By default skrollr-menu will only react to links whose href attribute contains a hash and nothing more, e.g. `href="#foo"`.
-    //If you enable `complexLinks`, skrollr-menu also reacts to absolute and relative URLs which have a hash part.
-    //The following will all work (if the user is on the correct page):
-    //http://example.com/currentPage/#foo
-    //http://example.com/currentDir/currentPage.html?foo=bar#foo
-    ///?foo=bar#foo
-    complexLinks: false,
-    //This event is triggered right before we jump/animate to a new hash.
-    // change: function(newHash, newTopPosition) {
-    //     //Do stuff
-    // },
-    //Add hash link (e.g. `#foo`) to URL or not.
-    updateUrl: true //defaults to `true`.
-});
+// var s = skrollr.init(/*other stuff*/);
+// // The options (second parameter) are all optional. The values shown are the default values.
+// skrollr.menu.init(s, {
+//     //skrollr will smoothly animate to the new position using `animateTo`.
+//     animate: true,
+//     //The easing function to use.
+//     easing: 'sqrt',
+//     //Multiply your data-[offset] values so they match those set in skrollr.init
+//     scale: 1.5,
+//     //How long the animation should take in ms.
+//     duration: function(currentTop, targetTop) {
+//         //By default, the duration is hardcoded at 500ms.
+//         // return 500;
+//         //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+//         return Math.abs(currentTop - targetTop) * .05;
+//     },
+//     //By default skrollr-menu will only react to links whose href attribute contains a hash and nothing more, e.g. `href="#foo"`.
+//     //If you enable `complexLinks`, skrollr-menu also reacts to absolute and relative URLs which have a hash part.
+//     //The following will all work (if the user is on the correct page):
+//     //http://example.com/currentPage/#foo
+//     //http://example.com/currentDir/currentPage.html?foo=bar#foo
+//     ///?foo=bar#foo
+//     complexLinks: false,
+//     //This event is triggered right before we jump/animate to a new hash.
+//     // change: function(newHash, newTopPosition) {
+//     //     //Do stuff
+//     // },
+//     //Add hash link (e.g. `#foo`) to URL or not.
+//     updateUrl: true //defaults to `true`.
+// });
 
 // fixes bug that messed up Foundation Reveal while skrollr was active.
 // This could make more bugs though so let's see....
