@@ -58,8 +58,8 @@ gumshoe.init({
 
 // fixes bug that messed up Foundation Reveal while skrollr was active.
 // This could make more bugs though so let's see....
-var div = document.getElementById("body");
-div.style.height = "0px";
+// var div = document.getElementById("body");
+// div.style.height = "0px";
 
 // Make elements stick function calls
 // $(document).ready(function(){

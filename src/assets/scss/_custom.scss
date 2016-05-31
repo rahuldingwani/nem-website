@@ -220,6 +220,10 @@ nav .submenu li:last-child{
   }
 }
 
+
+
+
+@include breakpoint(large up) {
 #modals{
   .reveal{
     padding: 0 !important;
@@ -244,7 +248,7 @@ nav .submenu li:last-child{
     text-transform: uppercase;
     overflow: visible;
   }
-  p.small-10, div.small-10 p{
+  p.small-12, div.small-12 p{
     margin-top: 75px;
     padding-left: 0px;
     margin-bottom: 75px;
@@ -260,15 +264,15 @@ nav .submenu li:last-child{
   li{
     font-weight: 500;
   }
-  div.small-10 p:nth-of-type(2){
+  div.small-12 p:nth-of-type(2){
     margin-bottom: $pad;
     margin-top: 0px;
   }
-  div.small-10 p:last-of-type{
+  div.small-12 p:last-of-type{
     margin-top: 0px;
     margin-bottom: 75px;
   }
-  div.small-10 p:first-of-type{
+  div.small-12 p:first-of-type{
     margin-bottom: $pad;
     margin-top: 75px;
   }
@@ -282,6 +286,25 @@ nav .submenu li:last-child{
     // margin-right: 5px;
     // margin-top: 15px;
 
+  }
+  .buttons{
+    margin-top: $pad * -2.5;
+    margin-bottom: $pad * 2;
+  }
+}
+}
+@include breakpoint(med-large down) {
+  #modals{
+    .reveal{
+      height: 100%;
+      color: white;
+      p{
+      text-align: justify;
+      }
+      .buttons{
+        margin-top: $pad;
+      }
+    }
   }
 }
 #aboutIt{
@@ -1138,17 +1161,31 @@ a .btn-1e:hover:after {
   }
 }
 #faqNavWrap{
-  // margin-top: 400px;
-  @include flex-grid-column(16);
-  background: $white;
-  z-index: 1000;
-  li:first-child a{
-    font-weight: 700;
+  @include breakpoint(large up) {
+    @include flex-grid-column(16);
+    background: $white;
+    z-index: 1000;
+    li:first-child a{
+      font-weight: 700;
+    }
+    a.active{
+      color: red;
+      background: pink;
+    }
   }
-  a.active{
-    color: red;
-    background: pink;
+  @include breakpoint(med-large down) {
+    @include flex-grid-column(47);
+    background: $white;
+    z-index: 1000;
+    li:first-child a{
+      font-weight: 700;
+    }
+    a.active{
+      color: red;
+      background: pink;
+    }
   }
+
 
 }
 #faqContent{
@@ -1177,6 +1214,37 @@ a .btn-1e:hover:after {
   span.blue{
     color: blue;
   }
+}
+
+#faqContent{
+  @include breakpoint(med-large down) {
+
+  @include flex-grid-column(47);
+  background: transparent;
+  // padding: $pad;
+  article{
+    background: $white;
+    padding: 2px 5px 5px 10px;
+    margin-bottom: $pad;
+  }
+  article:last-of-type{
+    margin-bottom: 0;
+  }
+  h2{
+    background: $white;
+    padding: 2px 5px 2px 10px;
+    margin-bottom: $pad;
+  }
+  span.gold{
+    color: orange;
+  }
+  span.red{
+    color: red;
+  }
+  span.blue{
+    color: blue;
+  }
+}
 }
 
 header.band {
