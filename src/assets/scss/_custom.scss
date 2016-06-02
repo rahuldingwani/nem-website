@@ -224,67 +224,133 @@ nav .submenu li:last-child{
 
 
 
-
-#aboutIt{
-  background: url(../img/background2.jpg);
-  background-size: cover;
-  text-align: center !important;
-  .columns{
-    text-align: center;
-    margin: 0 auto;
-  }
-  #aboutWrap1, #aboutWrap2, #aboutWrap3{
-    margin-right: $pad;
-    margin-bottom: $pad * 4;
-    margin-top: $pad * 8;
-    background-color: $darkest-gray;
-    color: $gray;
-  }
-  #aboutWrap3{
-    margin-right: 0;
-  }
-  #about1, #about2, #about3{
-    padding-bottom: $pad * 2;
-  }
-  h1, h2{
-    text-transform: uppercase;
-    // margin-left: -20px;÷
-    line-height: -.5;
-    // color: $offwhite;
-  }
-  ul{
-    list-style-type: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    padding-bottom: $pad * 2;
-  }
-  li{
+@include breakpoint(med-large up) {
+  #aboutIt{
+    background: url(../img/background2.jpg);
+    background-size: cover;
     text-align: center !important;
-    font-weight: 900 !important;
-    font-size: 21px;
+    .columns{
+      text-align: center;
+      margin: 0 auto;
+    }
+    #aboutWrap1, #aboutWrap2, #aboutWrap3{
+      margin-right: $pad;
+      margin-bottom: $pad * 4;
+      margin-top: $pad * 8;
+      background-color: $darkest-gray;
+      color: $gray;
+    }
+    #aboutWrap3{
+      margin-right: 0;
+    }
+    #about1, #about2, #about3{
+      padding-bottom: $pad * 2;
+    }
+    h1, h2{
+      text-transform: uppercase;
+      // margin-left: -20px;÷
+      line-height: -.5;
+      // color: $offwhite;
+    }
+    ul{
+      list-style-type: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      padding-bottom: $pad * 2;
+    }
+    li{
+      text-align: center !important;
+      font-weight: 900 !important;
+      font-size: 21px;
+    }
+    li:hover, li:active{
+      cursor: pointer;
+      color: $blue;
+    }
+    .align-center, .med-large-expand, .large-11{
+      background: rgba(0,0,0,0.1);
+    }
+    #nemSecurity{
+      text-align:center;
+      margin-left: -15px;
+      margin-top: -14px;
+      margin-bottom: -4px;
+    }
+    #nemCore{
+      margin-left: -97px;
+      margin-top: -14px;
+      margin-bottom: -4px;
+    }
+    #nemFeatures{
+      margin-left: -8px;
+      margin-top: -14px;
+      margin-bottom: -4px;
+    }
   }
-  li:hover, li:active{
-    cursor: pointer;
-    color: $blue;
-  }
-  .align-center, .med-large-expand, .large-11{
-    background: rgba(0,0,0,0.1);
-  }
-  #nemSecurity{
-    text-align:center;
-    margin-left: -15px;
-    margin-top: -14px;
-    margin-bottom: -4px;
-  }
-  #nemCore{
-    margin-left: -97px;
-    margin-top: -14px;
-    margin-bottom: -4px;
-  }
-  #nemFeatures{
-    margin-left: -8px;
-    margin-top: -14px;
-    margin-bottom: -4px;
+}
+
+@include breakpoint(medium down) {
+  #aboutIt{
+    background: url(../img/geometry.png);
+    background-size: cover;
+    text-align: center !important;
+    .columns{
+      text-align: center;
+      margin: 0 auto;
+    }
+    #aboutWrap1, #aboutWrap2, #aboutWrap3{
+      margin-right: $pad;
+      margin-bottom: $pad;
+      margin-top: $pad;
+      background-color: $darkest-gray;
+      color: $gray;
+    }
+    #aboutWrap3{
+      margin-right: 0;
+    }
+    #about1, #about2, #about3{
+      padding-bottom: $pad * 2;
+    }
+    h1, h2{
+      text-transform: uppercase;
+      // margin-left: -20px;÷
+      line-height: -.5;
+      // color: $offwhite;
+    }
+    ul{
+      list-style-type: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      padding-bottom: $pad * 2;
+    }
+    li{
+      text-align: center !important;
+      font-weight: 900 !important;
+      font-size: 21px;
+    }
+    li:hover, li:active{
+      cursor: pointer;
+      color: $blue;
+    }
+    .align-center, .med-large-expand, .large-11{
+      background: rgba(0,0,0,0.1);
+    }
+    #nemSecurity{
+      text-align:center;
+      margin-left: -15px;
+      margin-top: -14px;
+      margin-bottom: -4px;
+    }
+    #nemCore{
+      margin-left: -97px;
+      margin-top: -14px;
+      margin-bottom: -4px;
+    }
+    #nemFeatures{
+      margin-left: -8px;
+      margin-top: -14px;
+      margin-bottom: -4px;
+    }
   }
 }
 
@@ -378,10 +444,16 @@ nav .submenu li:last-child{
 }
 @include breakpoint(medium down) {
     #aboutIt{
-      background: url(../img/geometry.png);
     h2{
       font-size: 40px;
     }
+  }
+  #aboutWrap1, #aboutWrap2, #aboutWrap3{
+    margin-right: $pad;
+    margin-bottom: $pad;
+    margin-top: $pad;
+    background-color: $darkest-gray;
+    color: $gray;
   }
 }
 
