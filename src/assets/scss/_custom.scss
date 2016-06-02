@@ -258,12 +258,14 @@ nav .submenu li:last-child{
       margin: 0 !important;
       padding-bottom: $pad * 2;
     }
-    li{
+    li a{
       text-align: center !important;
       font-weight: 900 !important;
       font-size: 21px;
+      cursor: pointer;
+      color: $gray;
     }
-    li:hover, li:active{
+    li a:hover, li a:active{
       cursor: pointer;
       color: $blue;
     }
@@ -323,12 +325,13 @@ nav .submenu li:last-child{
       margin: 0 !important;
       padding-bottom: $pad * 2;
     }
-    li{
+    li a{
       text-align: center !important;
       font-weight: 900 !important;
       font-size: 21px;
+      color: $gray;
     }
-    li:hover, li:active{
+    li a:hover, li a:active{
       cursor: pointer;
       color: $blue;
     }
