@@ -14,7 +14,6 @@
       <button class="menu-icon" type="button" data-toggle></button>
       <div class="title-bar-title">Menu</div>
     </div>
-    <div>
     <div class="navWrap">
       <nav class="row">
         <div class="12-small columns">
@@ -32,25 +31,25 @@
     
             <div class="top-bar-right">
               <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
-                <li><a href="/install.html" id="navClient">client</a></li>
-                <li><a href="/buy.html">buy xem</a></li>
+                <li><a href="/install.html" id="navClient"><span>client</span></a></li>
+                <li><a href="/buy.html"><span>get xem</span></a></li>
                 <li class="has-submenu">
-                  <a href="#" id="supportDropdown">support</a>
+                  <a href="#" id="supportDropdown"><span>support</span></a>
                   <ul class="submenu menu vertical" data-submenu>
                     <li><a href="/faq.html">Faq's</a></li>
                     <li><a href="http://blog.nem.io/nem-tutorial-list/">Tutorial</a></li>
                     <li><a href="https://forum.nem.io/">Forum</a></li>
                   </ul>
                 </li>
-                <li><a href="/index.html#newsWrap">updates</a></li>
-                <li><a href="http://blog.nem.io/">blog</a></li>
+                <li><a href="/index.html#newsWrap"><span>updates</span></a></li>
+                <li><a href="http://blog.nem.io/"><span>blog</span></a></li>
                 <li class="has-submenu">
                   <a href="#" id="navLang" class="last" data-i18n="[html]navLang"></a>
                   <ul class="submenu menu vertical" data-submenu>
                     <li><a id="en" href="?setLng=en"><img src="/assets/img/flags/United-States-of-America(USA).png" alt="English"/></a></li>
                     <li><a id="cn" href="?setLng=cn"><img src="/assets/img/flags/China.png" alt="Chinese"/></a></li>
-                    <li><a id="ja" href="?setLng=ja"><img src="/assets/img/flags/Finland.png" alt="Finnish"/></a></li>
-                    <li><a id="fi" href="?setLng=fi"><img src="/assets/img/flags/Japan.png" alt="日本語"/></a></li>
+                    <li><a id="fi" href="?setLng=fi"><img src="/assets/img/flags/Finland.png" alt="Finnish"/></a></li>
+                    <li><a id="de" href="?setLng=de"><img src="/assets/img/flags/Netherlands.png" alt="Deutsch"/></a></li>
                  </ul>
                 </li>
               </ul>
@@ -58,7 +57,6 @@
           </div>
         </div>
       </nav>
-    </div>
     </div>
     
     
@@ -74,11 +72,11 @@
           <h2 id="installers">Installer (NCC &amp; NIS)</h2>
         </div>
         <div class="windows column small-4">
-          <img src="/assets/img/windows.png" />
+          <!-- <img src="/assets/img/windows.png" /> -->
           <h4 id="windowsInstall">Windows Installer</h4>
         </div>
         <div class="mac column small-4">
-          <img src="/assets/img/mac.png" />
+          <!-- <img src="/assets/img/mac.png" /> -->
           <h4 id="macInstall">Mac Installer</h4>
         </div>
       </div>
@@ -89,13 +87,13 @@
           <h2 id="lightweight">Lightweight Clients (remote NIS)</h2>
         </div>
         <div class="windows column small-4">
-          <img src="/assets/img/nginx.png" />
+          <!-- <img src="/assets/img/nginx.png" /> -->
           <h4 id="nginxInstall">Lightweight (nginx)</h4>
           <h5 id="nginxSig">Lightweight Signature (tornado)</h5>
     
         </div>
         <div class="mac column small-4">
-          <img src="/assets/img/tornado.jpg" />
+          <!-- <img src="/assets/img/tornado.jpg" /> -->
           <h4 id="tornadoInstall">Lightweight (tornado)</h4>
           <h5 id="tornadoSig">Lightweight Signature (tornado)</h5>
         </div>
@@ -124,11 +122,11 @@
         </div>
         <div class="backup column small-12 large-5">
           <p id="ifIssues" data-i18n="[html]ifIssues">
-            If you are having issues downloading from the links above, download them directly from our download page at <a href="http://download.nem.io/">download.nem.io</a>
+            If you are having issues downloading from the links above, download them directly from our download page at <a href="http://bob.nem.ninja/">bob.nem.ninja</a>
           </p>
-          <p id="or">OR</p>
+          <!-- <p id="or">OR</p>
           <p id="sisterSite" data-i18n="[html]sisterSite">
-            Download them directly from our sister-site at <a href="http://bob.nem.ninja/">bob.nem.ninja</a>
+            Download them directly from our sister-site at <a href="http://bob.nem.ninja/">bob.nem.ninja</a> -->
           </p>
         </div>
       </div>
@@ -294,7 +292,7 @@
        function callback(data) {
           // console.log(data);
           // alert(data.testing);
-          link = "<a href=\"http://download.nem.io/";
+          link = "<a href=\"http://bob.nem.ninja/";
           // document.getElementById("windowsInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-windows-installer.exe\"><img src=\"/assets/img/windows.png\"/><br><br>Windows Installer</a>";
           document.getElementById("windowsInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-windows-installer.exe\"><img src=\"/assets/img/windows.png\"/><br><br>Windows Installer</a>";
           document.getElementById("macInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-osx-installer.app.tgz\"><img src=\"/assets/img/mac.png\"/><br><br>Mac Installer</a>";
@@ -309,7 +307,7 @@
         }
     </script>
     <!-- get client version number from download.nem.io -->
-    <script src="http://download.nem.io/version_p.js"></script>
+    <script src="http://bob.nem.ninja/version_p.js"></script>
     
 
     <script src="assets/js/app.js"></script>

@@ -1,4 +1,6 @@
 {
+ "a1": "<a href=\"http://blog.nem.io/windows-mac-installation-guide/\">",
+ "a2": "</a>",
  "about2": "Installiere den NEM Mobile Client, er beherscht alle Kern-Funktionen von NEM. Eine einfache Bedienung steht dabei im Vordergrund.",
  "apisTitle": "API's",
  "appsTitle": "Mobile Apps",
@@ -69,7 +71,7 @@
  "navBlog": "Blog",
  "navBuy": "XEM kaufen",
  "navClient": "Client",
- "navLang": "<img src=\"assets/img/flags/???GERMAN???.png\" alt=\"Deutsch\" />",
+ "navLang": "<img src=\"assets/img/flags/Netherlands.png\" alt=\"Deutsch\" />",
  "navSupport": "Support",
  "navSupportFaq": "FAQ",
  "navSupportForum": "Forum",

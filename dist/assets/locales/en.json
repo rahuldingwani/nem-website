@@ -199,7 +199,7 @@
  "namespace3": "The sub-levels of a namespace can act as the actual name of the asset, or in some cases can be a class of assets as it is itself a sub-domain with lots of assets under that sub-domain name. This means that last part of a string will always be the name of the individual asset on the NEM blockchain and the prior names will act as the domain and/or subdomain for that asset.\n",
  "namespaceTitle": "Namespace",
  "navBlog": "Blog",
- "navBuy": "Buy XEM",
+ "navBuy": "Get XEM",
  "navClient": "Client",
  "NAVIGATION": "Below are all the top bar navigation links",
  "navLang": "<img src=\"assets/img/flags/United-States-of-America(USA).png\" alt=\"English\" />",
