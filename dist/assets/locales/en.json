@@ -4,7 +4,7 @@
  "ABOUT SECTION": "Below is all the content in the bubbles",
  "ABOUT TITLES": "Below are all the titles for the about bubbles",
  "about2": "Install the NEM Mobile Client, it has all the core NEM features, with ease of use in mind.",
- "apisTitle": "API's",
+ "apisTitle": "APIs",
  "appsTitle": "Mobile Apps",
  "architecture": "NEM’s platform was designed as a two-tier solution.  The NCC, light, and mobile wallets are the client or wallet tier and the NIS is the server tier. Not only does the NIS have a full set of <a href=\"http://bob.nem.ninja/docs/\">API's</a> but the NCC also has a webserver with useful <a href=\"http://nem.io/ncc/index.html\">API's</a>. These two layers create a firewall of security in between the wallet where all important information is stored and signed, and the node that announces transactions.",
  "architectureTitle": "2-Tiered Design",
