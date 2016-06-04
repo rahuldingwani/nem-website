@@ -24,50 +24,29 @@ gumshoe.init({
   offset: 10, // Distance in pixels to offset calculations
 });
 
-//parrallax scrolling
-// var s = skrollr.init(/*other stuff*/);
-// // The options (second parameter) are all optional. The values shown are the default values.
-// skrollr.menu.init(s, {
-//     //skrollr will smoothly animate to the new position using `animateTo`.
-//     animate: true,
-//     //The easing function to use.
-//     easing: 'sqrt',
-//     //Multiply your data-[offset] values so they match those set in skrollr.init
-//     scale: 1.5,
-//     //How long the animation should take in ms.
-//     duration: function(currentTop, targetTop) {
-//         //By default, the duration is hardcoded at 500ms.
-//         // return 500;
-//         //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
-//         return Math.abs(currentTop - targetTop) * .05;
-//     },
-//     //By default skrollr-menu will only react to links whose href attribute contains a hash and nothing more, e.g. `href="#foo"`.
-//     //If you enable `complexLinks`, skrollr-menu also reacts to absolute and relative URLs which have a hash part.
-//     //The following will all work (if the user is on the correct page):
-//     //http://example.com/currentPage/#foo
-//     //http://example.com/currentDir/currentPage.html?foo=bar#foo
-//     ///?foo=bar#foo
-//     complexLinks: false,
-//     //This event is triggered right before we jump/animate to a new hash.
-//     // change: function(newHash, newTopPosition) {
-//     //     //Do stuff
-//     // },
-//     //Add hash link (e.g. `#foo`) to URL or not.
-//     updateUrl: true //defaults to `true`.
-// });
+//**## IE DETECTION AND REDIRECT ##**//
+function GetIEVersion() {
+	var sAgent = window.navigator.userAgent;
+	var Idx = sAgent.indexOf("MSIE");
+	// If IE, return version number.
+		if (Idx > 0)
+			return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+		// If IE 11 then look for Updated user agent string.
+		else if (!!navigator.userAgent.match(/Trident\/7\./))
+			return 11;
+		else
+			return 0; //It is not IE
+		}
+		if (GetIEVersion() > 0)
+		var txt="It looks like you are using Internet Explorer, for the best experience, you should view this site in ";
+		var or=" or ";
+		var firefox="<a href=\"https://www.mozilla.org/en-US/firefox/new/\">Firefox</a>";
+		var chrome="<a href=\"http://www.google.com/chrome/\">Chrome</a>";
+		var cancel = "<i class=\"icon-cancel-circled\" onclick=\"parentNode.remove()\"></i>";
+    $('#headerIE').html(txt+chrome+or+firefox+cancel);
 
-// fixes bug that messed up Foundation Reveal while skrollr was active.
-// This could make more bugs though so let's see....
-// var div = document.getElementById("body");
-// div.style.height = "0px";
-
-// Make elements stick function calls
-// $(document).ready(function(){
-//   $("#sticker").sticky({
-//     topSpacing:20,
-//     bottomSpacing: 800
-//   });
-// });
+		if (GetIEVersion() == 0)
+		$('#headerIE').remove();
 
 // remove stats section if stats are null
 // if ($('#data1').is(':empty')) {

@@ -8,8 +8,19 @@
          url('../fonts/proximanova-bold-webfont.svg#proxima_novabold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+.warning.alert{
+   text-align: center;
+   margin-bottom: 0px;
+   background-color: $warning-color;
+   i{
+      padding-left: 100px;
+      @include breakpoint(med-large down) {
+      padding-left: 10px;
+      }
+   }
+}
+
 h1, h2, h3{
   font-family: 'proxima_novabold';
 }
@@ -207,8 +218,14 @@ nav .submenu li:last-child{
   background-repeat: no-repeat;
   height: 150px;
   text-transform: capitalize;
+  @include breakpoint(medium down) {
+    height: 70px;
+  }
   .row{
     height: 150px;
+    @include breakpoint(medium down) {
+      height: 70px;
+    }
   }
   h1{
     text-align: center;
@@ -216,7 +233,12 @@ nav .submenu li:last-child{
     color: $medium-gray;
     @include flex-grid-column(12);
     @include flex-grid-column-align(middle);
-    // z-index: 2;
+    @include breakpoint(medium down) {
+    font-size: 40px;
+    }
+    @include breakpoint(small down) {
+    font-size: 20px;
+    }
   }
 }
 
@@ -378,9 +400,13 @@ nav .submenu li:last-child{
     text-align:center;
     color: $white;
     font-weight: 900;
-    font-size: 22px;
+    font-size: 19px;
     text-transform: uppercase;
     overflow: visible;
+    padding-left: 0px;
+    padding-right: 0px;
+    // display: block;
+    word-wrap: break-word;
   }
   p.small-12, div.small-12 p{
     margin-top: 75px;
@@ -825,11 +851,13 @@ nav .submenu li:last-child{
   background-color: $medium-gray;
   padding-top: $pad * 5;
   padding-bottom: $pad * 5;
+  list-style: none;
   #newsFeed ul{
     @include grid-row();
     li{
       position: relative;
       background-color: $white;
+      list-style: none;
       @include grid-column(4);
       .media img, a span:nth-of-type(2){
         display: none;
@@ -838,6 +866,7 @@ nav .submenu li:last-child{
       a span{
          font-weight: 300;
          color: $blue !important;
+         list-style: none;
       }
       // -- Twitter Content -- //
       .tweet{
@@ -898,6 +927,24 @@ nav .submenu li:last-child{
     }
   }
   @include breakpoint(medium down) {
+    a span{
+      @include grid-column(12);
+       font-weight: 300;
+       color: $blue !important;
+       list-style: none;
+    }
+    .tweet{
+      @include grid-column(12);
+      margin-top: $pad;
+     font-weight: 300;
+     margin-bottom: 50px;
+
+     overflow: hidden !important;
+    }
+    .timePosted{
+      margin-top: 50px;
+
+    }
   li:first-of-type{
     width: calc(100%);
     margin-bottom: $pad;
