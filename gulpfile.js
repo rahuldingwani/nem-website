@@ -11,6 +11,7 @@ var config   = require('./config.json');
 
 // Check for --production flag
 var isProduction = !!(argv.production);
+// var isProduction = true;
 
 // Port to use for the development server.
 var PORT = 8765;
