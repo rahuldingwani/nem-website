@@ -27,11 +27,14 @@
 <script type="text/javascript">
 $(function() {
     window.nodeexplorer = function(data) {
+
+        var stringer1 = numeral(data.marketcapUSD).format('($0.00 a)');
         $('#data1').text(data.nodesOnlineQuantity);
         $('#data2').text(data.currentBlockHeight);
-        $('#data3').text(data.marketcapUSD);
+        $('#data3').text(stringer1);
         $('#data4').text(data.latestVersion);;
     }
     $.getJSON('http://www.nodeexplorer.com/api_network_status_jsonp?callback=?');
+
 })
 </script>

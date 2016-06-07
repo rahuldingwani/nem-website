@@ -66,6 +66,7 @@ var PATHS = {
     'bower_components/skrollr/src/skrollr.js',
     'bower_components/skrollr-menu/src/skrollr.menu.js',
     'bower_components/svg-injector/svg-injector.js',
+    'bower_components/numeral/numeral.js',
 
     'src/assets/js/!(app.js)**/*.js',
     'src/assets/js/app.js'
