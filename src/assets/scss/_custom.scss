@@ -668,11 +668,29 @@ nav .submenu li:last-child{
 
 
 #clients{
-  img{
-    width: 100%;
+  background: url(../img/clientBackground.jpg);
+  background-size: cover;
+  @include sectionTopPad;
+  @include sectionBottomPad;
+  z-index: -1000;
+  // height: 1000px;
+  .row{
+    background: url(../img/clientSecBackground.png);
+    background-size: contain;
+    // overflow: visible;
+    z-index: 1000;
+    height: 850px;
+
+  }
+  #iphone{
+    max-width: 350px;
+    margin-left: $pad * 3;
   }
 }
+.testies{
 
+  overflow: visible;
+}
 #buyHeaderWrap h2{
     text-align: center;
     margin-bottom: 0;
