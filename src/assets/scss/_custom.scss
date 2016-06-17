@@ -673,13 +673,16 @@ nav .submenu li:last-child{
   @include sectionTopPad;
   @include sectionBottomPad;
   z-index: -1000;
-  // height: 1000px;
+  color: $white;
+white-space: nowrap;
   .row{
     background: url(../img/clientSecBackground.png);
     background-size: contain;
     // overflow: visible;
     z-index: 1000;
     height: 850px;
+    padding-top: $pad * 3.5;
+    padding-bottom: $pad * 3.5;
 
   }
   #iphone{
@@ -688,8 +691,9 @@ nav .submenu li:last-child{
   }
 }
 .testies{
-
+    white-space: nowrap;
   overflow: visible;
+  align-self: flex-start;
 }
 #buyHeaderWrap h2{
     text-align: center;
