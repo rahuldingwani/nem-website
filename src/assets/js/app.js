@@ -185,7 +185,10 @@ $.i18n.init({
 
     $('#clientHeader2').text($.t('header2'));
     $('#clientAbout').text($.t('about2'));
+    $('#clientAbout2').text($.t('about3'));
     $('#clientHelp2').i18n();
+    $('.followGuide').i18n();
+
 
     <!-- BUY SECTION -->
     $('#buyHeader').text($.t('buyHeader'));

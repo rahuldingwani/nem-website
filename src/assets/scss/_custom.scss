@@ -674,7 +674,7 @@ nav .submenu li:last-child{
   @include sectionBottomPad;
   z-index: -1000;
   color: $white;
-white-space: nowrap;
+// white-space: nowrap;
   .row{
     background: url(../img/clientSecBackground.png);
     background-size: contain;
@@ -683,18 +683,80 @@ white-space: nowrap;
     height: 850px;
     padding-top: $pad * 3.5;
     padding-bottom: $pad * 3.5;
-
   }
   #iphone{
     max-width: 350px;
     margin-left: $pad * 3;
   }
-}
-.testies{
+  h2{
     white-space: nowrap;
-  overflow: visible;
-  align-self: flex-start;
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+  p, a{
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  .client1{
+    white-space: nowrap;
+    overflow: visible;
+    // align-self: flex-start;
+    padding-left: $pad * 3;
+  }
+  .client2{
+    // white-space: nowrap;
+    overflow: visible;
+    align-self: flex-start;
+    padding-left: 0px;
+      padding-right: $pad * 3;
+  }
+
+  .button1{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    @include breakpoint(med-large down) {
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+      position: absolute;
+    }
+  }
+  .button2 {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    @include breakpoint(med-large down) {
+      opacity: 1;
+      visibility: visible;
+      display: block;
+    }
+  }
+  .followGuide{
+    position: relative;
+    top: -3px;
+  }
+  .btn{
+    border: 1px solid $white;
+    color: $white;
+  }
+  a .btn-1e:after {
+    background: $white;
+  }
+  a .btn-1e:hover,
+  a .btn-1e:active {
+     color: $dark-gray;
+  }
+
 }
+
+
+
+
+
 #buyHeaderWrap h2{
     text-align: center;
     margin-bottom: 0;
@@ -1185,7 +1247,6 @@ a .btn {
    color: inherit;
    background: none;
    cursor: pointer;
-   padding: 6px 6px !important;
    display: inline-block;
    margin: 0px;
    text-transform: uppercase;
@@ -1197,7 +1258,7 @@ a .btn {
    color: $dark-gray;
    font-size: 12px;
    overflow: hidden;
-   padding: 15px !important;
+   padding: 8px 25px 8px 25px !important;
    margin: 13px 0px 13px 0px;
    font-weight: 500;
    // replace with motion ui
@@ -1234,7 +1295,7 @@ a .btn-1e:active {
 }
 /* background size */
 a .btn-1e:hover:after {
-   height: 620%;
+   height: 745%;
    opacity: 1;
 }
 /* BUTTON STYLING END */
