@@ -670,8 +670,8 @@ nav .submenu li:last-child{
 #clients{
   background: url(../img/clientBackground.jpg);
   background-size: cover;
-  @include sectionTopPad;
-  @include sectionBottomPad;
+  padding-top: $pad * 4;
+  padding-bottom: $pad * 4;
   z-index: -1000;
   color: $white;
 // white-space: nowrap;
