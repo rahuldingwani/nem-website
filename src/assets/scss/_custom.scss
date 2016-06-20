@@ -674,7 +674,9 @@ nav .submenu li:last-child{
   padding-bottom: $pad * 4;
   z-index: -1000;
   color: $white;
-// white-space: nowrap;
+  @include breakpoint(large down) {
+    background-size: contain;
+  }
   .row{
     background: url(../img/clientSecBackground.png);
     background-size: contain;
@@ -687,6 +689,13 @@ nav .submenu li:last-child{
   #iphone{
     max-width: 350px;
     margin-left: $pad * 3;
+    @include breakpoint(large down) {
+      max-width: 275px;
+    }
+    @include breakpoint(medium down) {
+      max-width: 275px;
+      display: none;
+    }
   }
   h2{
     white-space: nowrap;
