@@ -330,6 +330,9 @@ nav .submenu li:last-child{
       background-color: $darkest-gray;
       color: $gray;
     }
+    #aboutWrap1{
+      margin-top: 0px;
+    }
     #aboutWrap3{
       margin-right: 0;
       margin-bottom: 0px;
@@ -701,6 +704,7 @@ nav .submenu li:last-child{
     }
     @include breakpoint(medium down) {
       display: none;
+      visibility: hidden;
     }
   }
   h2{
