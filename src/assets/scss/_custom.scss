@@ -747,6 +747,7 @@ nav .submenu li:last-child{
     }
     @include breakpoint(small down) {
       padding-left: $pad;
+      margin-bottom: $pad * 5.5;
       h2{
         white-space: normal;
       }
@@ -776,6 +777,10 @@ nav .submenu li:last-child{
       h2{
         white-space: normal;
       }
+    }
+    @include breakpoint(small down) {
+      margin-top: $pad * 7.5;
+      padding-right: $pad;
     }
   }
   .button1{
