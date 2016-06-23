@@ -264,6 +264,7 @@ nav .submenu li:last-child{
     }
     #aboutWrap3{
       margin-right: 0;
+
     }
     #about1, #about2, #about3{
       padding-bottom: $pad * 2;
@@ -331,6 +332,7 @@ nav .submenu li:last-child{
     }
     #aboutWrap3{
       margin-right: 0;
+      margin-bottom: 0px;
     }
     #about1, #about2, #about3{
       padding-bottom: $pad * 2;
@@ -545,126 +547,126 @@ nav .submenu li:last-child{
 
 
 
-.client{
-  background: url(../img/clientBackground.jpg);
-  background-size: cover;
-  @include sectionTopPad;
-  @include sectionBottomPad;
-}
-.client .columns{
-  // background: $test;
-  // border: $borderTest;
-  img{
-    width:670px;
-    min-width:670px;
-    overflow: visible;
-    @include breakpoint(medium down) {
-      width: 400px;
-      min-width:400px;
-    }
-    @include breakpoint(small down) {
-      width: 300px;
-      min-width:300px;
-      margin: 0 auto !important;
-    }
-  }
-}
-.client{
-  h3{
-    font-weight: 700;
-    @include breakpoint(medium down) {
-      font-size: 20px;
-    }
-  }
-  .helpAlt p{
-    text-align: center;
-    opacity: 0;
-    display: none;
-    visibility: hidden;
-    font-size: 14px;
-    @include breakpoint(medium down) {
-      opacity: 1;
-      visibility: visible;
-      display: block;
-    }
-  }
-  .large-6{
-    padding-left: 0px;
-    padding-right: 0px;
-    @include breakpoint(large down) {
-      padding-right: $pad;
-      padding-bottom: 200px;
-    }
-    @include breakpoint(medium down) {
-      padding-right: 0px;
-    }
-    @include breakpoint(small down) {
-      padding-left: $pad;
-    }
-    p{
-      max-width: 520px;
-      font-weight: 300;
-      @include breakpoint(medium down) {
-        font-size: 16px;
-      }
-    }
-    p:last-child{
-      max-width: 520px;
-      font-size: 14px;
-      font-weight: 300;
-      @include breakpoint(medium down) {
-        font-size: 12px;
-        opacity: 0;
-        visibility: hidden;
-        // display: none;
-      }
-      @include breakpoint(small down) {
-        font-size: 12px;
-        opacity: 0;
-        visibility: hidden;
-        display: none;
-      }
-    }
-    button{
-      opacity: 1;
-      visibility: visible;
-      display: block;
-      @include breakpoint(medium down) {
-        opacity: 0;
-        visibility: hidden;
-        display: none;
-      }
-    }
-    button.alt{
-      opacity: 0;
-      visibility: hidden;
-      display: none;
-      @include breakpoint(medium down) {
-        opacity: 1;
-        visibility: visible;
-        display: block;
-      }
-    }
-  }
-}
-
-.clientBottom{
-  text-align: right;
-  p{
-    max-width: 400px;
-    margin: 0 0 0 auto;
-  }
-  .columns{
-    margin-top: $pad * (5 / 2);
-  }
-  span button{
-    margin-top: $pad / 2;
-    @include comingButton;
-  }
-}
-.client .row.align-middle{
-  margin: 0 auto;
-}
+// .client{
+//   background: url(../img/clientBackground.jpg);
+//   background-size: cover;
+//   @include sectionTopPad;
+//   @include sectionBottomPad;
+// }
+// .client .columns{
+//   // background: $test;
+//   // border: $borderTest;
+//   img{
+//     width:670px;
+//     min-width:670px;
+//     overflow: visible;
+//     @include breakpoint(medium down) {
+//       width: 400px;
+//       min-width:400px;
+//     }
+//     @include breakpoint(small down) {
+//       width: 300px;
+//       min-width:300px;
+//       margin: 0 auto !important;
+//     }
+//   }
+// }
+// .client{
+//   h3{
+//     font-weight: 700;
+//     @include breakpoint(medium down) {
+//       font-size: 20px;
+//     }
+//   }
+//   .helpAlt p{
+//     text-align: center;
+//     opacity: 0;
+//     display: none;
+//     visibility: hidden;
+//     font-size: 14px;
+//     @include breakpoint(medium down) {
+//       opacity: 1;
+//       visibility: visible;
+//       display: block;
+//     }
+//   }
+//   .large-6{
+//     padding-left: 0px;
+//     padding-right: 0px;
+//     @include breakpoint(large down) {
+//       padding-right: $pad;
+//       padding-bottom: 200px;
+//     }
+//     @include breakpoint(medium down) {
+//       padding-right: 0px;
+//     }
+//     @include breakpoint(small down) {
+//       padding-left: $pad;
+//     }
+//     p{
+//       max-width: 520px;
+//       font-weight: 300;
+//       @include breakpoint(medium down) {
+//         font-size: 16px;
+//       }
+//     }
+//     p:last-child{
+//       max-width: 520px;
+//       font-size: 14px;
+//       font-weight: 300;
+//       @include breakpoint(medium down) {
+//         font-size: 12px;
+//         opacity: 0;
+//         visibility: hidden;
+//         // display: none;
+//       }
+//       @include breakpoint(small down) {
+//         font-size: 12px;
+//         opacity: 0;
+//         visibility: hidden;
+//         display: none;
+//       }
+//     }
+//     button{
+//       opacity: 1;
+//       visibility: visible;
+//       display: block;
+//       @include breakpoint(medium down) {
+//         opacity: 0;
+//         visibility: hidden;
+//         display: none;
+//       }
+//     }
+//     button.alt{
+//       opacity: 0;
+//       visibility: hidden;
+//       display: none;
+//       @include breakpoint(medium down) {
+//         opacity: 1;
+//         visibility: visible;
+//         display: block;
+//       }
+//     }
+//   }
+// }
+//
+// .clientBottom{
+//   text-align: right;
+//   p{
+//     max-width: 400px;
+//     margin: 0 0 0 auto;
+//   }
+//   .columns{
+//     margin-top: $pad * (5 / 2);
+//   }
+//   span button{
+//     margin-top: $pad / 2;
+//     @include comingButton;
+//   }
+// }
+// .client .row.align-middle{
+//   margin: 0 auto;
+// }
 
 
 #clients{
@@ -675,11 +677,12 @@ nav .submenu li:last-child{
   z-index: -1000;
   color: $white;
   @include breakpoint(large down) {
-    background-size: contain;
+    background-size: cover;
   }
   .row{
-    background: url(../img/clientSecBackground.png);
-    background-size: contain;
+    background-size: cover;
+    background: url(../img/clientSecBackground.png) no-repeat center center;
+    // background-size: contain;
     // overflow: visible;
     z-index: 1000;
     height: 850px;
@@ -692,8 +695,11 @@ nav .submenu li:last-child{
     @include breakpoint(large down) {
       max-width: 275px;
     }
+    @include breakpoint(med-large down) {
+      max-width: 200px;
+      margin-left: $pad * 1.5;
+    }
     @include breakpoint(medium down) {
-      max-width: 275px;
       display: none;
     }
   }
@@ -702,24 +708,58 @@ nav .submenu li:last-child{
     font-size: 26px;
     margin-bottom: 0;
   }
-  p, a{
+  p{
     font-weight: 500;
     font-size: 13px;
     margin-bottom: 0;
-  }
 
-  .client1{
+  }
+  a{
     white-space: nowrap;
+    font-weight: 500;
+  }
+  .clientHelp{
+    white-space: nowrap;
+
+    @include breakpoint(med-large down) {
+    padding-top: $pad * 2.5;
+    }
+  }
+  #clientAbout, #clientContent{
+    margin-bottom: -$pad / 3;
+  }
+  .client1{
     overflow: visible;
     // align-self: flex-start;
     padding-left: $pad * 3;
+    @include breakpoint(large down) {
+      padding-left: 0;
+    }
+    @include breakpoint(med-large down) {
+      padding-left: $pad;
+    }
+    @include breakpoint(medium down) {
+      @include flex-grid-order(1);
+      padding-left: $pad * 3;
+      margin-bottom: $pad * 3;
+    }
+    .clientHeader2{
+      white-space: wrap;
+    }
   }
   .client2{
-    // white-space: nowrap;
+    white-space: normal;
     overflow: visible;
     align-self: flex-start;
     padding-left: 0px;
-      padding-right: $pad * 3;
+    padding-right: $pad * 3;
+    @include breakpoint(medium down) {
+      padding-left: $pad;
+      margin-top: $pad * 5;
+      white-space: normal !important;
+      @include flex-grid-order(0);
+    }
+
   }
 
   .button1{

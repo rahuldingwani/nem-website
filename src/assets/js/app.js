@@ -180,7 +180,7 @@ $.i18n.init({
     $('#clientContent').i18n();
     $('#clientClick').text($.t('click'));
     $('#clientClickAlt').text($.t('clickAlt'));
-    $('#clientHelp').i18n();
+    $('.clientHelp').i18n();
     $('#clientHelpAlt').i18n();
 
     $('#clientHeader2').text($.t('header2'));
