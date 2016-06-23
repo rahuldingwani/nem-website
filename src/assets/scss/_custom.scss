@@ -716,7 +716,6 @@ nav .submenu li:last-child{
     font-weight: 500;
     font-size: 13px;
     margin-bottom: 0;
-
   }
   a{
     white-space: nowrap;
@@ -724,9 +723,8 @@ nav .submenu li:last-child{
   }
   .clientHelp{
     white-space: nowrap;
-
     @include breakpoint(med-large down) {
-    padding-top: $pad * 2.5;
+    // padding-top: $pad * 2.5;
     }
   }
   #clientAbout, #clientContent{
@@ -747,6 +745,12 @@ nav .submenu li:last-child{
       padding-left: $pad * 3;
       margin-bottom: $pad * 3;
     }
+    @include breakpoint(small down) {
+      padding-left: $pad;
+      h2{
+        white-space: normal;
+      }
+    }
     .clientHeader2{
       white-space: wrap;
     }
@@ -760,12 +764,20 @@ nav .submenu li:last-child{
     @include breakpoint(medium down) {
       padding-left: $pad;
       margin-top: $pad * 5;
-      white-space: normal !important;
       @include flex-grid-order(0);
     }
-
+    @include breakpoint(med-large down) {
+      h2{
+        white-space: normal;
+      }
+    }
+    @include breakpoint(medium down) {
+      text-align: right;
+      h2{
+        white-space: normal;
+      }
+    }
   }
-
   .button1{
     opacity: 1;
     visibility: visible;
@@ -781,7 +793,7 @@ nav .submenu li:last-child{
     opacity: 0;
     visibility: hidden;
     display: none;
-    position: absolute;
+    // position: absolute;
     @include breakpoint(med-large down) {
       opacity: 1;
       visibility: visible;
