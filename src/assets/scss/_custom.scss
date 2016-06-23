@@ -723,9 +723,7 @@ nav .submenu li:last-child{
   }
   .clientHelp{
     white-space: nowrap;
-    @include breakpoint(med-large down) {
-    // padding-top: $pad * 2.5;
-    }
+      margin-top: -$pad / 3;
   }
   #clientAbout, #clientContent{
     margin-bottom: -$pad / 3;
@@ -734,6 +732,7 @@ nav .submenu li:last-child{
     overflow: visible;
     // align-self: flex-start;
     padding-left: $pad * 3;
+    // white-space: nowrap;
     @include breakpoint(large down) {
       padding-left: 0;
     }
@@ -747,7 +746,7 @@ nav .submenu li:last-child{
     }
     @include breakpoint(small down) {
       padding-left: $pad;
-      margin-bottom: $pad * 5.5;
+      margin-bottom: $pad * 6.25;
       h2{
         white-space: normal;
       }
@@ -779,7 +778,7 @@ nav .submenu li:last-child{
       }
     }
     @include breakpoint(small down) {
-      margin-top: $pad * 7.5;
+      margin-top: $pad * 6.25;
       padding-right: $pad;
     }
   }
