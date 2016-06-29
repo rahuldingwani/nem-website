@@ -232,7 +232,7 @@ nav .submenu li:last-child{
     margin-bottom: 0;
     color: $medium-gray;
     @include flex-grid-column(12);
-    @include flex-grid-column-align(middle);
+    @include flex-align-self(middle);
     @include breakpoint(medium down) {
     font-size: 40px;
     }
@@ -501,7 +501,7 @@ nav .submenu li:last-child{
   text-align: center;
   height: 250px;
   @include flex-grid-row(null, 1400px);
-  @include flex-grid-row-align(justify, middle);
+  @include flex-align(justify, middle);
 }
 #dataWrap1, #dataWrap2, #dataWrap3, #dataWrap4{
   @include flex-grid-column();
@@ -740,7 +740,7 @@ nav .submenu li:last-child{
       padding-left: $pad;
     }
     @include breakpoint(medium down) {
-      @include flex-grid-order(1);
+      @include flex-order(1);
       padding-left: $pad * 3;
       margin-bottom: $pad * 3;
     }
@@ -764,7 +764,7 @@ nav .submenu li:last-child{
     @include breakpoint(medium down) {
       padding-left: $pad;
       margin-top: $pad * 5;
-      @include flex-grid-order(0);
+      @include flex-order(0);
     }
     @include breakpoint(med-large down) {
       h2{
@@ -1451,7 +1451,7 @@ a .btn-1e:hover:after {
 }
 #innerWrapFaq{
   @include flex-grid-row(collapse, 1000px, 48, true);
-  @include flex-grid-row-align(justify);
+  @include flex-align(justify);
   hr{
     width: 80%;
     margin-top: 20px;
@@ -1717,7 +1717,7 @@ a > span:hover:before {
   height: 88vh;
   background: blue;
   @include flex-grid-row();
-  @include flex-grid-row-align(center, middle);
+  @include flex-align(center, middle);
   article{
     @include flex-grid-column(24);
     background-color: pink;

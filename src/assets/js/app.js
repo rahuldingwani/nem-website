@@ -86,8 +86,8 @@ $.i18n.init({
 
 
 
-		<!-- OURNEM HOMEPAGE -->
-		<!-- NAVIGATION -->
+		//// OURNEM HOMEPAGE ////
+		//// NAVIGATION ////
     $('#navClient').text($.t('navClient'));
     $('#navBuy').text($.t('navBuy'));
     $('#navSupport').text($.t('navSupport'));
@@ -98,7 +98,7 @@ $.i18n.init({
     $('#navBlog').text($.t('navBlog'));
     $('#navLang').i18n();
 
-    <!-- ABOUT SECTION -->
+    //// ABOUT SECTION ////
     $('#nemSecurity').text($.t('nemSecurity'));
     $('#nemCore').text($.t('nemCore'));
     $('#nemFeatures').text($.t('nemFeatures'));
@@ -168,14 +168,14 @@ $.i18n.init({
 
 
 
-    <!-- STATS SECTION -->
+    //// STATS SECTION ////
     $('#dataText1').text($.t('data1'));
     $('#dataText2').text($.t('data2'));
     $('#dataText3').text($.t('data3'));
     $('#dataText4').text($.t('data4'));
 
 
-    <!-- CLIENT SECTION -->
+    //// CLIENT SECTION ////
     $('#clientHeader').text($.t('header'));
     $('#clientContent').i18n();
     $('#clientClick').text($.t('click'));
@@ -190,13 +190,13 @@ $.i18n.init({
     $('.followGuide').i18n();
 
 
-    <!-- BUY SECTION -->
+    //// BUY SECTION ////
     $('#buyHeader').text($.t('buyHeader'));
     $('#buyHere').text($.t('buyHere'));
     $('#xemFaucet').text($.t('xemFaucet'));
     $('#xemCash').text($.t('xemCash'));
 
-    <!-- HELP SECTION -->
+    //// HELP SECTION ////
     $('#helpHeader').text($.t('helpHeader'));
     $('#faq').text($.t('faq'));
     $('#faqAlt').text($.t('faqAlt'));
@@ -209,7 +209,7 @@ $.i18n.init({
     $('#chatAlt').text($.t('chatAlt'));
     $('#chatAlt2').text($.t('chatAlt2'));
 
-    <!-- FOOTER SECTION -->
+    //// FOOTER SECTION ////
     $('#toolsList').text($.t('toolsList'));
     $('#toolsContent').i18n();
     $('#toolsContent2').i18n();
@@ -246,7 +246,7 @@ $.i18n.init({
     $('#topBlogsContent6').i18n();
     $('#topBlogsContent7').i18n();
 
-    <!-- INSTALL PAGE -->
+    //// INSTALL PAGE ////
     $('.getClient').text($.t('getClient'));
     $('#installers').text($.t('installers'));
     $('#standalone').text($.t('standalone'));
@@ -256,7 +256,7 @@ $.i18n.init({
     $('#or').text($.t('or'));
     $('#sisterSite').i18n();
 
-    <!-- FAQ -->
+    //// FAQ ////
     $('.faqHeader').text($.t('faqBanner'));
     $('.faqGeneral').text($.t('faqGeneral'));
 
@@ -528,7 +528,7 @@ $.i18n.init({
     $('#socialNetworkContent10').i18n();
 
 
-    <!-- GENERIC -->
+    //// GENERIC ////
     $('.coming').text($.t('coming'));
     $('.more').text($.t('more'));
     $('.getXem').text($.t('getXem'));

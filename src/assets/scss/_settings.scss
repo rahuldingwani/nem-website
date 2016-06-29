@@ -38,6 +38,7 @@
 //  33. Title Bar
 //  34. Tooltip
 //  35. Top Bar
+//  36. Meter
 
 @import 'util/util';
 
@@ -71,12 +72,23 @@ $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
-// $rem-base: 16px; removed in 6.1
+$global-flexbox: true;
+$print-transparent-backgrounds: true;
+$input-placeholder-color: $medium-gray;
 
 $yellow: #f6a704;
 $green: #00c4b4;
 $blue: #5ab3e8;
 $blueLite: rgba(116,200,236,0.6);
+
+$foundation-palette: (
+  primary: #2199e8,
+  secondary: #777,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #ec5840,
+);
+@include add-foundation-colors;
 
 $pad: 20px;
 
@@ -387,10 +399,10 @@ $mediaobject-image-width-stacked: 100%;
 
 $menu-margin: 0;
 $menu-margin-nested: 1rem;
-// $menu-item-padding: 0.7rem 1rem;
 $menu-item-padding: 1rem 3rem 1rem ($pad / 2);
 $menu-icon-spacing: 0.25rem;
-$menu-expand-max: 7;
+$menu-item-color-active: $blueLite;
+$menu-item-background-active: $primary-color;
 
 // 23. Off-canvas
 // --------------
@@ -512,7 +524,6 @@ $show-header-for-stacked: false;
 $tab-margin: 0;
 $tab-background: $white;
 $tab-background-active: $light-gray;
-$tab-border: $light-gray;
 $tab-item-color: foreground($tab-background, $primary-color);
 $tab-item-background-hover: $white;
 $tab-item-padding: 1.25rem 1.5rem;
@@ -552,7 +563,6 @@ $tooltip-padding: 0.75rem;
 $tooltip-font-size: $small-font-size;
 $tooltip-pip-width: 0.75rem;
 $tooltip-pip-height: $tooltip-pip-width * 0.866;
-$tooltip-pip-offset: 1.25rem;
 $tooltip-radius: $global-radius;
 
 // 35. Top Bar
@@ -562,3 +572,15 @@ $topbar-title-spacing: 0rem;
 $topbar-padding: 0.5rem;
 $topbar-background: $light-gray;
 $topbar-input-width: 200px;
+$topbar-submenu-background: $topbar-background;
+$topbar-unstack-breakpoint: small;
+
+// 36. Meter
+// -----------
+
+$meter-height: $progress-height;
+$meter-radius: $progress-radius;
+$meter-background: $progress-background;
+$meter-fill-good: $success-color;
+$meter-fill-medium: $warning-color;
+$meter-fill-bad: $alert-color;
