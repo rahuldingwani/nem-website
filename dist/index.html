@@ -14,7 +14,6 @@
   </head>
   <body id="body">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <div class="warning alert" id ="headerIE"></div>
     
     <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="med-large">
@@ -513,18 +512,7 @@
     
     
     <script type="text/javascript">
-    $(function() {
-        window.nodeexplorer = function(data) {
     
-            var marketCap = numeral(data.marketcapUSD).format('($0.00a)');
-            $('#data1').text(data.nodesOnlineQuantity);
-            $('#data2').text(data.currentBlockHeight);
-            $('#data3').text(marketCap);
-            $('#data4').text(data.latestVersion);;
-        }
-        $.getJSON('http://www.nodeexplorer.com/api_network_status_jsonp?callback=?');
-    
-    })
     </script>
     
     
@@ -585,7 +573,7 @@
           <i class="fa fa-square fa-stack-2x fa-inverse"></i>
           <i class="fa fa-users fa-stack-1x"></i>
         </span>
-        <a href="https://telegram.me/joinchat/Al-9jgDZ9s7ebfuypgdZbw">
+        <a href="https://telegram.me/joinchat/Al-9jj3ruJOkbxmwQ7wy-Q">
           <span id="chat" class="helpText hasAlt">
           Join our telegram channels and interact with the developers
           </span>
@@ -754,7 +742,9 @@
     </footer>
     
     
+    <script>
 
+    </script>
     <script src="assets/js/app.js"></script>
   </body>
 

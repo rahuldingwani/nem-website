@@ -30,6 +30,7 @@
   "private": true,
   "resolutions": {
     "foundation-sites": "~6.1.1",
-    "twitter-fetcher": "~15.0.1"
+    "twitter-fetcher": "~15.0.1",
+    "what-input": "~1.1.2"
   }
 }

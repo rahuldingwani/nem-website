@@ -1,3 +1,12 @@
+// (function( $ ) {
+// 'use strict';
+//
+// $(function() {
+//     alert( 'JavaScript Loaded!' );
+// });
+//
+// })( jQuery );
+
 $(document).foundation();
 
 // Elements to inject
@@ -25,28 +34,28 @@ gumshoe.init({
 });
 
 //**## IE DETECTION AND REDIRECT ##**//
-function GetIEVersion() {
-	var sAgent = window.navigator.userAgent;
-	var Idx = sAgent.indexOf("MSIE");
-	// If IE, return version number.
-		if (Idx > 0)
-			return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
-		// If IE 11 then look for Updated user agent string.
-		else if (!!navigator.userAgent.match(/Trident\/7\./))
-			return 11;
-		else
-			return 0; //It is not IE
-		}
-		if (GetIEVersion() > 0)
-		var txt="It looks like you are using Internet Explorer, for the best experience, you should view this site in ";
-		var or=" or ";
-		var firefox="<a href=\"https://www.mozilla.org/en-US/firefox/new/\">Firefox</a>";
-		var chrome="<a href=\"http://www.google.com/chrome/\">Chrome</a>";
-		var cancel = "<i class=\"icon-cancel-circled\" onclick=\"parentNode.remove()\"></i>";
-    $('#headerIE').html(txt+chrome+or+firefox+cancel);
-
-		if (GetIEVersion() == 0)
-		$('#headerIE').remove();
+// function GetIEVersion() {
+// 	var sAgent = window.navigator.userAgent;
+// 	var Idx = sAgent.indexOf("MSIE");
+// 	// If IE, return version number.
+// 		if (Idx > 0)
+// 			return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+// 		// If IE 11 then look for Updated user agent string.
+// 		else if (!!navigator.userAgent.match(/Trident\/7\./))
+// 			return 11;
+// 		else
+// 			return 0; //It is not IE
+// 		}
+// 		if (GetIEVersion() > 0)
+// 		var txt="It looks like you are using Internet Explorer, for the best experience, you should view this site in ";
+// 		var or=" or ";
+// 		var firefox="<a href=\"https://www.mozilla.org/en-US/firefox/new/\">Firefox</a>";
+// 		var chrome="<a href=\"http://www.google.com/chrome/\">Chrome</a>";
+// 		var cancel = "<i class=\"icon-cancel-circled\" onclick=\"parentNode.remove()\"></i>";
+//     $('#headerIE').html(txt+chrome+or+firefox+cancel);
+//
+// 		if (GetIEVersion() == 0)
+// 		$('#headerIE').remove();
 
 // remove stats section if stats are null
 // if ($('#data1').is(':empty')) {
@@ -71,6 +80,18 @@ var config1 = {
 };
 twitterFetcher.fetch(config1);
 
+$(function() {
+    window.nodeexplorer = function(data) {
+
+        var marketCap = numeral(data.marketcapUSD).format('($0.00a)');
+        $('#data1').text(data.nodesOnlineQuantity);
+        $('#data2').text(data.currentBlockHeight);
+        $('#data3').text(marketCap);
+        $('#data4').text(data.latestVersion);;
+    }
+    $.getJSON('http://www.nodeexplorer.com/api_network_status_jsonp?callback=?');
+
+})
 
 $.i18n.init({
 		ns: { namespaces: ['en', 'cn', 'ja', 'fi'], defaultNs: 'en'},
