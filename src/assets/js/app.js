@@ -98,14 +98,8 @@ $.i18n.init({
 		useLocalStorage: false,
 		fallbackLng: 'en',
     resGetPath: 'assets/locales/__lng__.json',
-		debug: true
+		debug: false
 	}, function(t) {
-		// $('#add').text($.t('ns.common:add'));
-		// $('#appname').text($.t('app.name'));
-		// $('#appclient').text($.t('app.client'));
-
-
-
 
 		<!-- OURNEM HOMEPAGE -->
 		<!-- NAVIGATION -->

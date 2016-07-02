@@ -56,15 +56,15 @@ var PATHS = {
     'bower_components/foundation-sites/js/foundation.toggler.js',
     'bower_components/foundation-sites/js/foundation.tooltip.js',
     // Path to non-foundation JS components
-    'bower_components/twitter-fetcher/js/twitterFetcher.js',
+    // 'bower_components/twitter-fetcher/js/twitterFetcher.js',
     'bower_components/i18next/i18next.js',
     // 'bower_components/smooth-scroll/dist/js/smooth-scroll.js',
     // 'bower_components/jquery-sticky/jquery.sticky.js',
 
-    'bower_components/gumshoe/dist/js/gumshoe.js',
-    'bower_components/skrollr-stylesheets/src/skrollr.stylesheets.js',
-    'bower_components/skrollr/src/skrollr.js',
-    'bower_components/skrollr-menu/src/skrollr.menu.js',
+    // 'bower_components/gumshoe/dist/js/gumshoe.js',
+    // 'bower_components/skrollr-stylesheets/src/skrollr.stylesheets.js',
+    // 'bower_components/skrollr/src/skrollr.js',
+    // 'bower_components/skrollr-menu/src/skrollr.menu.js',
     'bower_components/svg-injector/svg-injector.js',
     'bower_components/numeral/numeral.js',
 
