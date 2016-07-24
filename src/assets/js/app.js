@@ -1,12 +1,3 @@
-// (function( $ ) {
-// 'use strict';
-//
-// $(function() {
-//     alert( 'JavaScript Loaded!' );
-// });
-//
-// })( jQuery );
-
 $(document).foundation();
 
 // Elements to inject
@@ -27,58 +18,6 @@ SVGInjector(mySVGsToInject, injectorOptions, function (totalSVGsInjected) {
   // Callback after all SVGs are injected
   // console.log('We injected ' + totalSVGsInjected + ' SVG(s)!');
 });
-
-// smoothScroll.init();
-// gumshoe.init({
-//   offset: 10, // Distance in pixels to offset calculations
-// });
-
-//**## IE DETECTION AND REDIRECT ##**//
-// function GetIEVersion() {
-// 	var sAgent = window.navigator.userAgent;
-// 	var Idx = sAgent.indexOf("MSIE");
-// 	// If IE, return version number.
-// 		if (Idx > 0)
-// 			return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
-// 		// If IE 11 then look for Updated user agent string.
-// 		else if (!!navigator.userAgent.match(/Trident\/7\./))
-// 			return 11;
-// 		else
-// 			return 0; //It is not IE
-// 		}
-// 		if (GetIEVersion() > 0)
-// 		var txt="It looks like you are using Internet Explorer, for the best experience, you should view this site in ";
-// 		var or=" or ";
-// 		var firefox="<a href=\"https://www.mozilla.org/en-US/firefox/new/\">Firefox</a>";
-// 		var chrome="<a href=\"http://www.google.com/chrome/\">Chrome</a>";
-// 		var cancel = "<i class=\"icon-cancel-circled\" onclick=\"parentNode.remove()\"></i>";
-//     $('#headerIE').html(txt+chrome+or+firefox+cancel);
-//
-// 		if (GetIEVersion() == 0)
-// 		$('#headerIE').remove();
-
-// remove stats section if stats are null
-// if ($('#data1').is(':empty')) {
-//     $('#stats').remove();
-// }
-
-// //**## NEM NEWS FEED ##**/
-// //Pulls twitter feed using twitter fetcher.
-// // Also automatically hyperlinks URLS and user mentions and hashtags.
-// //@nemcoin
-// var config1 = {
-//   "id": '474290838172749825',
-//   "domId": 'newsFeed',
-//   "maxTweets": 3,
-//   "enableLinks": true,
-//   "showUser": true,
-//   "showImages": true,
-//   "showTime": true,
-//   "dateFunction": '',
-//   "showRetweet": false,
-//   "showInteraction": false
-// };
-// twitterFetcher.fetch(config1);
 
 $(function() {
     window.nodeexplorer = function(data) {
