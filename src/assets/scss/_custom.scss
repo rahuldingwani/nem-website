@@ -213,16 +213,20 @@ nav .submenu li:last-child{
 
 
 .banner{
-  background: url(../img/banner1600.png);
+  background: url(../img/bannerXL.png);
+  // background: url(../img/nemLogomarkWhite.png) 145px 145px no-repeat, url(../img/bannerXL.png);
   background-size: 100%;
   background-repeat: no-repeat;
   height: 150px;
+  margin: 0 auto;
   text-transform: capitalize;
   @include breakpoint(medium down) {
     height: 70px;
   }
   .row{
     height: 150px;
+    @include flex-grid-row-align(center, middle);
+
     @include breakpoint(medium down) {
       height: 70px;
     }
@@ -230,15 +234,21 @@ nav .submenu li:last-child{
   h1{
     text-align: center;
     margin-bottom: 0;
-    color: $medium-gray;
+    // margin-top: $pad;
+    color: $dark-gray;
+    z-index: 0;
+    font-size: 140px;
     @include flex-grid-column(12);
     @include flex-grid-column-align(middle);
     @include breakpoint(medium down) {
-    font-size: 40px;
+    font-size: 70px;
     }
     @include breakpoint(small down) {
     font-size: 20px;
     }
+  }
+  img{
+    position: absolute;
   }
 }
 
