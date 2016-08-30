@@ -451,12 +451,22 @@ nav .submenu li:last-child{
 
 @include breakpoint(med-large up) {
 #modals{
+  .row1 h1{
+    background-color: #3AA948;
+  }
+  .row2 h1{
+    background-color: #1F9CD8;
+  }
+  .row3 h1{
+    background-color: #E64F24;
+  }
   .reveal{
     padding: 0 !important;
     overflow: visible !important;
+    background-color: $darkest-gray;
+    border: none;
   }
   h1{
-    background-color: $blue;
     border-radius: 100px;
     width: 150px;
     height: 150px;

@@ -60,7 +60,7 @@
 
 
 <div id="modals">
-  <div class="reveal xlarge row" id="multisig" data-reveal>
+  <div class="reveal xlarge row row2" id="multisig" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns multisigTitle">Multisig</h1>
       <div class="small-12 large-10 columns">
@@ -78,7 +78,7 @@
     </div>
   </div>
 
-  <div class="reveal xlarge" id="reputation" data-reveal>
+  <div class="reveal xlarge row1" id="reputation" data-reveal>
     <div class="row">
     <h1 class="large-2 small-12 columns reputationTitle">Node Reputation System</h1>
     <div class="small-12 large-10 columns">
@@ -96,7 +96,7 @@
   </div>
 </div>
 
-  <div class="reveal" id="messaging" data-reveal>
+  <div class="reveal row2" id="messaging" data-reveal>
     <div class="row">
     <h1 class="large-2 small-12 columns messagingTitle">Messaging</h1>
     <p class="messaging small-12 large-10 columns" data-i18n="[html]messaging">Messages can be sent along with transactions or by themselves. This can be done unencrypted/encrypted/hex formats depending on the user or programmers needs.</p>
@@ -111,7 +111,7 @@
   </div>
   </div>
 
-  <div class="reveal" id="architecture" data-reveal>
+  <div class="reveal row1" id="architecture" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns architectureTitle">2-Tiered Architecture</h1>
       <p class="architecture small-12 large-10 columns" data-i18n="[html]architecture">Design of the solution is based on the NCC being one tier (i.e., client) and the NIS being the server tier. The NCC also has a webserver with useful APIs.</p>
@@ -126,7 +126,7 @@
   </div>
   </div>
 
-  <div class="reveal" id="harvesting" data-reveal>
+  <div class="reveal row2" id="harvesting" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns harvestingTitle">Harvesting</h1>
       <div class="small-12 large-10 columns">
@@ -144,17 +144,7 @@
     </div>
   </div>
 
-  <!-- <div class="reveal" id="delegated" data-reveal>
-    <div class="row">
-      <h1 class="small-2 columns delegatedTitle">Delegated Harvesting</h1>
-      <p class="delegated small-10 columns" data-i18n="[html]delegated">This is harvesting (mining/forging) whereby another person’s node can be used to form blocks for your account. All done safely and that other node doesn’t ever get to see any of the fee rewards even though it was the one that pushed the block to the network. It is done by creating a safe secondary private key that is a delegate key. This delegate key is publicly (blockchain) mapped to the main account via a contract and inherits its importance score, but the delegated key has neither funds nor assets in it. This delegate private key can be given to another node and use its borrowed importance score to harvest. All fees earned will be transferred directly to the original account, so there is no way for the node owner to steal the fees.</p>
-      <button class="close-button" data-close aria-label="Close reveal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  </div> -->
-
-  <div class="reveal" id="mosaic" data-reveal>
+  <div class="reveal row2" id="mosaic" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns mosaicTitle">Mosaics</h1>
       <div class="small-12 large-10 columns">
@@ -172,7 +162,7 @@
     </div>
   </div>
 
-  <div class="reveal" id="ncc" data-reveal>
+  <!-- <div class="reveal row1" id="ncc" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns nccTitle">NCC</h1>
       <p class="ncc small-12 large-10 columns" data-i18n="[html]ncc">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
@@ -185,9 +175,9 @@
       <button type="button" class="button" data-close aria-label="Close reveal">Close</button>
     </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="reveal" id="nis" data-reveal>
+  <div class="reveal row3" id="nis" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns nisTitle">NIS</h1>
       <p class="nis small-12 large-10 columns" data-i18n="[html]nis">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
@@ -202,7 +192,7 @@
     </div>
   </div>
 
-  <div class="reveal" id="consensus" data-reveal>
+  <div class="reveal row3" id="consensus" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns consensusTitle">Consensus Mechanism</h1>
       <div class="small-12 large-10 columns">
@@ -221,7 +211,7 @@
     </div>
   </div>
 
-  <div class="reveal" id="newcode" data-reveal>
+  <div class="reveal row3" id="newcode" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns newcodeTitle">100% New Code</h1>
       <div class="small-12 large-10 columns">
@@ -253,7 +243,7 @@
     </div>
   </div>
 
-  <div class="reveal" id="blocktimes" data-reveal>
+  <!-- <div class="reveal row1" id="blocktimes" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns blocktimesTitle">Block Times</h1>
       <p class="blocktimes small-12 large-10 columns" data-i18n="[html]blocktimes">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
@@ -266,9 +256,9 @@
       <button type="button" class="button" data-close aria-label="Close reveal">Close</button>
     </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="reveal" id="xem" data-reveal>
+  <div class="reveal row3" id="xem" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns xemTitle">XEM</h1>
       <p class="xem small-12 large-10 columns" data-i18n="[html]xem">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
@@ -283,7 +273,7 @@
     </div>
   </div>
 
-  <div class="reveal" id="namespace" data-reveal>
+  <div class="reveal row2" id="namespace" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns namespaceTitle">Namespace</h1>
       <div class="small-12 large-10 columns">
@@ -302,7 +292,7 @@
     </div>
   </div>
 
-  <div class="reveal" id="spamProtect" data-reveal>
+  <div class="reveal row1" id="spamProtect" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns spamTitle">Spam Protection</h1>
       <p class="spam small-12 large-10 columns" data-i18n="[html]spam">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
@@ -317,7 +307,7 @@
     </div>
   </div>
 
-  <div class="reveal" id="supernodes" data-reveal>
+  <div class="reveal row1" id="supernodes" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns supernodesTitle">supernodes</h1>
       <p class="supernode small-12 large-10 columns" data-i18n="[html]supernode">NEM's multisig solution is “on blockchain”. This doesn’t sound like a big deal at first, but if one really takes a closer look at it, the advantages are significant. With other platforms, multisig has always been client or wallet based which means each implementation is not compatible across many different platforms, even if it is of the same crypto currency. This is not the case with NEM.</p>
@@ -332,7 +322,7 @@
     </div>
   </div>
 
-  <div class="reveal" id="lightwallet" data-reveal>
+  <div class="reveal row1" id="lightwallet" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns lightwalletTitle">lightwallet</h1>
       <div class="small-12 large-10 columns">
@@ -351,7 +341,7 @@
     </div>
   </div>
 
-  <div class="reveal" id="nisApis" data-reveal>
+  <div class="reveal row3" id="nisApis" data-reveal>
     <div class="row">
       <h1 class="large-2 small-12 columns apisTitle">apis</h1>
       <p class="nisApis small-12 large-10 columns" data-i18n="[html]nisApis">api's</p>
