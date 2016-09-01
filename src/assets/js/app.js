@@ -48,6 +48,7 @@ $.i18n.init({
     $('#navSupportFaq').text($.t('navSupportFaq'));
     $('#navSupportTutorial').text($.t('navSupportTutorial'));
     $('#navSupportForum').text($.t('navSupportForum'));
+    $('#navSupportWiki').text($.t('navSupportWiki'));
     $('#navUpdates').text($.t('navUpdates'));
     $('#navBlog').text($.t('navBlog'));
     $('#navLang').i18n();
