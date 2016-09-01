@@ -123,7 +123,7 @@ gulp.task('sass', function() {
     ]
   }));
 
-  var minifycss = $.if(isProduction, $.minifyCss());
+  var cleancss = $.if(isProduction, $.cleanCss());
 
   return gulp.src('src/assets/scss/app.scss')
     .pipe($.sourcemaps.init())
@@ -135,7 +135,7 @@ gulp.task('sass', function() {
       browsers: COMPATIBILITY
     }))
     .pipe(uncss)
-    .pipe(minifycss)
+    .pipe(cleancss)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
     .pipe(gulp.dest('dist/assets/css'));
 });
@@ -193,6 +193,11 @@ gulp.task('build', function(done) {
 
 // google spreadsheet i18n.
 // Pulls columns from gspreadsheet and puts each column in seperate json file.
+
+var document_key = '1dCO6KpecxgB577Fd0Gk0W-h9NuwTwPyDB7lysiNSZ34';
+if(!isProduction && config.document_key !== undefined) {
+  document_key = (config.document_key);
+}
 gulp.src('src/*')
 .pipe(i18n({
     private_key_id: (config.private_key_id),
@@ -200,7 +205,7 @@ gulp.src('src/*')
     client_email: (config.client_email),
     client_id: (config.client_id),
     type: 'service_account',
-    document_key: '1dCO6KpecxgB577Fd0Gk0W-h9NuwTwPyDB7lysiNSZ34',
+    document_key: document_key,
     default_locale: 'en',
     write_default_translations: 'true',
     key_column: 'key',
