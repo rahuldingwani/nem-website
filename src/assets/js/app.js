@@ -81,6 +81,7 @@ $.i18n.init({
     $('.multisig').i18n();
     $('.multisig2').i18n();
     $('.reputation').i18n();
+    $('.reputation2').i18n();
     $('.messaging').i18n();
     $('.architecture').i18n();
     $('.harvesting').i18n();
@@ -117,6 +118,8 @@ $.i18n.init({
     $('.spam').i18n();
     $('.supernode').i18n();
     $('.lightwallet').i18n();
+    $('.lightwallet2').i18n();
+    $('.lightwallet3').i18n();
     $('.nisApis').i18n();
 
 
