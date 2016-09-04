@@ -6,7 +6,7 @@
   "scripts": {
     "bower": "bower",
     "start": "gulp",
-    "transrate": "gulp tranrate",
+    "translate": "gulp translate",
     "build": "gulp build --production"
   },
   "author": "ZURB <foundation@zurb.com>",
