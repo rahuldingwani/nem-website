@@ -105,13 +105,6 @@ gulp.task('pages:reset', function(cb) {
   cb();
 });
 
-gulp.task('styleguide', function(cb) {
-  sherpa('src/styleguide/index.md', {
-    output: 'dist/styleguide.html',
-    template: 'src/styleguide/template.html'
-  }, cb);
-});
-
 // Compile Sass into CSS
 // In production, the CSS is compressed
 gulp.task('sass', function() {
@@ -123,19 +116,19 @@ gulp.task('sass', function() {
     ]
   }));
 
-  var minifycss = $.if(isProduction, $.minifyCss());
+  var cleancss = $.if(isProduction, $.cleanCss());
 
   return gulp.src('src/assets/scss/app.scss')
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: PATHS.sass
     })
-      .on('error', $.sass.logError))
+    .on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: COMPATIBILITY
     }))
     .pipe(uncss)
-    .pipe(minifycss)
+    .pipe(cleancss)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
     .pipe(gulp.dest('dist/assets/css'));
 });
@@ -158,19 +151,19 @@ gulp.task('javascript', function() {
 
 // Copy fontawesome font icons to dist folder
 gulp.task('fonts', function() {
-gulp.src('bower_components/font-awesome/fonts/**.*')
-  .pipe(gulp.dest('dist/assets/fonts/'));
+  gulp.src('bower_components/font-awesome/fonts/**.*')
+    .pipe(gulp.dest('dist/assets/fonts/'));
 });
 
 // place needed pdf's at root level of dist
 gulp.task('pdfs', function() {
-gulp.src('src/assets/pdfs/**.*')
-  .pipe(gulp.dest('dist'));
+  gulp.src('src/assets/pdfs/**.*')
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('nccCopy', ['clean'], function () {
     return gulp.src(['src/ncc/**/*'], {
-        base: 'src'
+      base: 'src'
     }).pipe(gulp.dest('dist'));
 });
 
@@ -188,26 +181,32 @@ gulp.task('images', function() {
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-  sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy', 'fonts', 'pdfs', 'nccCopy'], 'styleguide', done);
+  sequence('clean', ['translate', 'pages', 'sass', 'javascript', 'images', 'copy', 'fonts', 'pdfs', 'nccCopy'], done);
 });
 
 // google spreadsheet i18n.
 // Pulls columns from gspreadsheet and puts each column in seperate json file.
-gulp.src('src/*')
-.pipe(i18n({
-    private_key_id: (config.private_key_id),
-    private_key: (config.private_key),
-    client_email: (config.client_email),
-    client_id: (config.client_id),
-    type: 'service_account',
-    document_key: '1dCO6KpecxgB577Fd0Gk0W-h9NuwTwPyDB7lysiNSZ34',
-    default_locale: 'en',
-    write_default_translations: 'true',
-    key_column: 'key',
-    ext: '.json',
-    output_dir: 'locales/'
-}))
-.pipe(gulp.dest('dist/assets/'));
+gulp.task('translate', function() {
+  var document_key = '1dCO6KpecxgB577Fd0Gk0W-h9NuwTwPyDB7lysiNSZ34';
+  if(!isProduction && config.document_key !== undefined) {
+    document_key = (config.document_key);
+  }
+  gulp.src('src/*')
+    .pipe(i18n({
+      private_key_id: (config.private_key_id),
+      private_key: (config.private_key),
+      client_email: (config.client_email),
+      client_id: (config.client_id),
+      type: 'service_account',
+      document_key: document_key,
+      default_locale: 'en',
+      write_default_translations: 'true',
+      key_column: 'key',
+      ext: '.json',
+      output_dir: 'locales/'
+    }))
+    .pipe(gulp.dest('dist/assets/'));
+});
 
 // Start a server with LiveReload to preview the site in
 gulp.task('server', ['build'], function() {
@@ -224,5 +223,4 @@ gulp.task('default', ['build', 'server'], function() {
   gulp.watch(['src/assets/scss/**/*.scss'], ['sass', browser.reload]);
   gulp.watch(['src/assets/js/**/*.js'], ['javascript', browser.reload]);
   gulp.watch(['src/assets/img/**/*'], ['images', browser.reload]);
-  gulp.watch(['src/styleguide/**'], ['styleguide', browser.reload]);
 });
