@@ -127,7 +127,9 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: COMPATIBILITY
     }))
-    .pipe(uncss)
+    // removed compressing css, it was causing bugs in navbar.
+    // I will give someone 10,000XEM to fix it.
+    // .pipe(uncss)
     .pipe(cleancss)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
     .pipe(gulp.dest('dist/assets/css'));
