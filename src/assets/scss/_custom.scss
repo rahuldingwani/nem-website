@@ -302,7 +302,25 @@ nav .submenu li:last-child{
   }
 }
 
-
+#whatsNem{
+  color: $white;
+  background-color: $darkest-gray;
+  padding-top: $pad * 2;
+  padding-bottom: $pad * 2;
+  padding-left: $pad * 4;
+  padding-right: $pad * 4;
+  h2{
+    text-align: left;
+    text-transform: capitalize !important;
+    font-size: 30px;
+  }
+  p{
+    text-align: justify;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
 @include breakpoint(med-large up) {
   #aboutIt{
     background: url(../img/background2.jpg);
@@ -315,7 +333,8 @@ nav .submenu li:last-child{
     #aboutWrap1, #aboutWrap2, #aboutWrap3{
       margin-right: $pad;
       margin-bottom: $pad * 4;
-      margin-top: $pad * 8;
+      // margin-top: $pad * 8;
+      margin-top: $pad;
       background-color: $darkest-gray;
       color: $white;
       .small-12{
@@ -387,7 +406,6 @@ nav .submenu li:last-child{
     #aboutWrap1, #aboutWrap2, #aboutWrap3{
       margin-right: $pad;
       margin-bottom: $pad;
-      margin-top: $pad;
       background-color: $darkest-gray;
       color: $white;
       .small-12{
