@@ -326,7 +326,10 @@ nav .submenu li:last-child{
     margin-bottom: $pad;
   }
 }
-
+.orbit-slide{
+  min-height: 300px;
+  // margin-top: $pad;
+}
 @include breakpoint(med-large up) {
   #aboutIt{
     background: url(../img/background2.jpg);
