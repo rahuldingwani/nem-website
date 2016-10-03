@@ -14,7 +14,7 @@ var isProduction = !!(argv.production);
 // var isProduction = true;
 
 // Port to use for the development server.
-var PORT = 8765;
+var PORT = 8764;
 
 // Browsers to target when prefixing CSS.
 var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
@@ -67,6 +67,7 @@ var PATHS = {
     // 'bower_components/skrollr-menu/src/skrollr.menu.js',
     'bower_components/svg-injector/svg-injector.js',
     'bower_components/numeral/numeral.js',
+    'bower_components/slick-carousel/slick/slick.js',
 
     'src/assets/js/!(app.js)**/*.js',
     'src/assets/js/app.js'
@@ -127,8 +128,7 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: COMPATIBILITY
     }))
-    // removed compressing css, it was causing bugs in navbar.
-    // I will give someone 10,000XEM to fix it.
+    // removed compressing css, it was causing bugs in navbar
     // .pipe(uncss)
     .pipe(cleancss)
     .pipe($.if(!isProduction, $.sourcemaps.write()))

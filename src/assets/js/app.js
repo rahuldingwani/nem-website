@@ -1,5 +1,25 @@
 $(document).foundation();
 
+
+$('.one-time').slick({
+  dots: true,
+  infinite: true,
+  speed: 600,
+  slidesToShow: 1,
+  // adaptiveHeight: true,
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  responsive: [
+  {
+    breakpoint: 1000,
+    settings: {
+      adaptiveHeight: true
+    }
+  }
+  ]
+});
+
 // Elements to inject
 var mySVGsToInject = document.querySelectorAll('img.injectIt');
 

@@ -1,4 +1,5 @@
-# - Set API Kyes and remove this comments-
+
+# - Set API Keys and remove this comments-
 #
 # 1. Copy this file as config.json
 # 2. Go to the [Google Developers  Console](https://console.developers.google.com/project)
@@ -7,7 +8,7 @@
 # 5. Set API keys at config.json
 # 6. Share the spreadsheet with your service account using the email
 # 7. Remove comments from config.json
-# if developing with original original i18 spreadsheet, the set "document_key".
+# if developing with original i18 spreadsheet, then set "document_key".
 
 {
   "private_key_id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
