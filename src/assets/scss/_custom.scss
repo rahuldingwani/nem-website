@@ -88,10 +88,9 @@ button:focus{
 
 .navWrap{
   background: $white;
-  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+  // box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
 }
 nav{
-  // background: transparent !important;
   .top-bar, .top-bar-left ul, .top-bar-right ul{
     background: $white;
   }
@@ -100,8 +99,14 @@ nav{
       // color: $blue;
   }
   li a:hover{
+      color: $blue;
+  }
+  li a span:hover{
     font-weight: 400;
       color: $blue;
+  }
+  .is-submenu-item a:hover{
+    color: $blue !important;
   }
   a{
     text-transform: uppercase;
@@ -120,8 +125,9 @@ nav{
 
   }
 }
+
   .top-bar-right ul:first-child{
-    padding-top: 24px;
+    padding-top: $pad - 3;
   }
   .top-bar-right ul li img:last-child{
     padding-bottom: 2px;
@@ -131,9 +137,13 @@ nav{
     @include breakpoint(medium up) {
       @include css-triangle(5px, $dropdownmenu-arrow-color, down);
       position: relative;
+      border-color: #000 transparent transparent;
       top: rem-calc(2px) + rem-calc(get-side($menu-item-padding, top));
       #{$global-right}: 5px;
     }
+  }
+  a#navLang:hover::after, a#supportDropdown:hover::after{
+    border-color: $blue transparent transparent;
   }
   a#navLang::after{
     @include breakpoint(medium up) {
@@ -306,6 +316,8 @@ nav .submenu li:last-child{
 @include breakpoint(med-large up) {
   #aboutIt{
     background: url(../img/background2.jpg);
+    // margin-top: $pad;
+    top: -50px;
     background-size: cover;
     text-align: center !important;
     .columns{
@@ -1808,7 +1820,7 @@ a > span:before {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #000;
+  background-color: $blue;
   overflow: hidden;
   visibility: hidden;
   -webkit-transform: scaleX(0);

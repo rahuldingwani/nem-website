@@ -6,10 +6,9 @@ $('.one-time').slick({
   infinite: true,
   speed: 600,
   slidesToShow: 1,
-  // adaptiveHeight: true,
-  arrows: true,
+  arrows: false,
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3500,
   responsive: [
   {
     breakpoint: 1000,
