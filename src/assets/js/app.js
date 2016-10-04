@@ -14,6 +14,7 @@ $('.one-time').slick({
   {
     breakpoint: 1000,
     settings: {
+      mobileFirst: true,
       adaptiveHeight: true
     }
   }
