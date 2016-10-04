@@ -74,7 +74,7 @@
  "header2": "Streamlined NEM Mobile Client",
  "help": "Need help installing the NEM Client?",
  "HELP SECTION": "Help section below",
- "helpHeader": "Still need Help?",
+ "helpHeader": "Get Involved!",
  "howDelegateHarvest": "What is delegated harvesting?",
  "howDelegateHarvestContent": "Delegated harvesting is a security feature in NEM that allows a person to safely harvest using a proxy private key. This proxy private key is created by transferring the POI score of a primary account to an empty delegated account. That private key can now safely be shared with others as it doesn't actually contain any of the funds in the primary account. This allows a person with delegated harvesting activated to give their private key of the delegated account to third parties so that they can harvest with it. All funds earned from harvesting are then automatically sent back to the primary account.",
  "howDelegateHarvestContent2": "To learn more about delegated harvesting please go <a href=\"http://blog.nem.io/how-local-and-delegated-harvesting-works/\">HERE</a>.",
