@@ -1087,6 +1087,7 @@ button.slick-prev, button.slick-next{
   @include breakpoint(small down) {
     opacity: 0;
     position: absolute;
+    display: none;
   }
 }
 .helpText.hasAlt{
@@ -1107,6 +1108,7 @@ button.slick-prev, button.slick-next{
   @include breakpoint(small down) {
     opacity: 0;
     position: absolute;
+    display: none;
   }
 }
 .helpTextAlt2{
