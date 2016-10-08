@@ -317,7 +317,6 @@
  "testnetWhatContent": "是的，您可以在NEM测试网络尝试测试您的应用或NEM功能。更多信息请点击<a href=\"http://blog.nem.io/setting-up-the-testnet/\">此链接</a>.",
  "toInstall": "安装：",
  "toolsContent": "<a href=\"http://chain.nem.ninja/#/blocks/0\">区块链浏览器</a>",
- "toolsContent2": "<a href=\"http://blockexplore.in/\">Blockexplore.in</a>",
  "toolsContent3": "<a href=\"http://www.nodeexplorer.com/\">节点浏览器</a>",
  "toolsContent4": "<a href=\"http://nemnodes.org/\">NEM地球</a>",
  "toolsContent5": "<a href=\"http://supernodes.nem.io/\">超级节点浏览器</a>",

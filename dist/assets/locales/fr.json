@@ -315,7 +315,6 @@
  "testnetWhatContent": "Oui, vous pouvez utiliser le le testnet pour bâtir et essayer vos applications. Pour plus d'information sur le testnet, s'il vous plait, cliquer <a href=\"http://blog.nem.io/setting-up-the-testnet/\">ICI</a>.",
  "toInstall": "Pour installer:",
  "toolsContent": "<a href=\"http://chain.nem.ninja/#/blocks/0\">Nembex</a>",
- "toolsContent2": "<a href=\"http://blockexplore.in/\">Blockexplore.in</a>",
  "toolsContent3": "<a href=\"http://www.nodeexplorer.com/\">Node Explorer</a>",
  "toolsContent4": "<a href=\"http://nemnodes.org/\">Nemnodes.org</a>",
  "toolsContent5": "<a href=\"http://supernodes.nem.io/\">Supernodes.nem.io</a>",

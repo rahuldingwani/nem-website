@@ -118,7 +118,6 @@
  "supernode": "El <a href=\"http://blog.nem.io/supernodes/\">Programa de Súper nodos de NEM</a> premia a los nodos estables y con alto rendimiento de la red NEM. Para correr un Súper nodo es necesario tener un mínimo de 3.000.000 XEM almacenados o delegados a una cuenta para poder pasar comprobaciones regulares de rendimiento. Estos nodos ayudan a mantener la red y asegurar que puede procesar una gran cantidad de datos para servir a los monederos móviles y ligeros.",
  "supernodesTitle": "Súper Nodos",
  "toolsContent": "<a href=\"http://chain.nem.ninja/#/blocks/0\">Nembex</a>",
- "toolsContent2": "<a href=\"http://blockexplore.in/\">Blockexplore.in</a>",
  "toolsContent3": "<a href=\"http://www.nodeexplorer.com/\">Explorador de nodos</a>",
  "toolsContent4": "<a href=\"http://nemnodes.org/\">Nemnodes.org</a>",
  "toolsContent5": "<a href=\"http://supernodes.nem.io/\">Supernodes.nem.io</a>",
