@@ -12,7 +12,7 @@
 .warning.alert{
    text-align: center;
    margin-bottom: 0px;
-   background-color: $warning-color;
+  //  background-color: $warning-color;
    i{
       padding-left: 100px;
       @include breakpoint(med-large down) {
