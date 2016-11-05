@@ -1625,12 +1625,12 @@ a .btn-1e:hover:after {
 
 
 // INSTALL page
-#install{
+#install2{
   text-align: center;
   background: url(../img/sayagata.png);
   @include sectionTopPad;
   @include sectionBottomPad;
-  .row .column{
+  .row .column, .row .columns{
     background: transparent !important;
   }
   hr{
