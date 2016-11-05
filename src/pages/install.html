@@ -8,62 +8,100 @@
 </div>
 <section id="install">
 
-  <div class="row align-center">
+  <div class="row align-center desktop">
     <div class="column small-12">
-      <h2 id="lightweight">Clients</h2>
+      <h2 id="lightweight">Desktop Client</h2>
     </div>
-    <div class="windows column small-4">
-      <img src="{{root}}/assets/img/github.png" />
-      <h4 id="tornadoInstall"><a href="https://github.com/NemProject/NanoWallet">Nanowallet (Windows / Linux / Mac)</a></h4>
+    <div class="column large-4 small-12 med-large-6 medium-12 nanowallet">
+      <img src="{{root}}/assets/img/nanowallet.png" /><br>
+      <a href="https://www.dropbox.com/s/cwva802f6plhjw5/NanoWallet-1.1.11.zip?dl=054"><button class="btn btn-1e">Download the Nano Wallet</button></a>
+      <br>
+      <a href="https://github.com/NemProject/NanoWallet">Get Source Code</a>
     </div>
-    <div class="mac column small-4">
-      <img src="{{root}}/assets/img/nginx.png" />
-      <h4 id="nginxInstall"><a href="http://bob.nem.ninja/lightwallet-standalone-1.8-cdn-nginx1.8.zip">Lightweight (Windows)</a></h4>
-      <h5 id="nginxSig"><a href="http://bob.nem.ninja/lightwallet-standalone-1.8-cdn-nginx1.8.zip.sig">Lightweight Signature</a></h5>
-    </div>
-  </div>
-  <hr>
-
-  <div class="row align-center">
-    <div class="column small-12">
-      <h2 id="installers">Installer (NCC &amp; NIS)</h2>
-    </div>
-    <div class="windows column small-4">
-      <img src="{{root}}/assets/img/windows.png" />
-      <h4 id="windowsInstall"><a href="http://bob.nem.ninja/installer/nemwallet-0.6.82-windows-installer.exe">Windows Installer</a></h4>
-    </div>
-    <div class="mac column small-4">
-      <img src="{{root}}/assets/img/mac.png" />
-      <h4 id="macInstall"><a href="http://bob.nem.ninja/installer/nemwallet-0.6.82-osx-installer.app.tgz">Mac Installer</a></h4>
-    </div>
-  </div>
-  <hr>
-
-  <div class="row align-center">
-    <div class="column small-12">
-      <h3 id="standalone">Standalone Client</h3>
-      <h5 id="installOptions">For 32/64 Linux, 32-bit Windows, and 32-bit Mac</h5>
-    </div>
-    <div class="nisncc column small-4">
-      <h5 id="tgzClient"><a href="http://bob.nem.ninja/nis-ncc-0.6.82.tgz">NIS/NCC Standalone (.tgz)</a></h5>
-      <p id="tgzSig"><a href="http://bob.nem.ninja/nis-ncc-0.6.82.tgz.sig">NIS/NCC Signature (.tgz)</a></p>
-    </div>
-    <div class="nccnis column small-4">
-      <h5 id="zipClient"><a href="http://bob.nem.ninja/nis-ncc-0.6.82.zip">NIS/NCC Standalone (.zip)</a></h5>
-    </div>
-  </div>
-  <hr>
-
-  <div class="row align-center">
-    <div class="column small-12">
-      <h5 id="backup">Backup Client Resource</h5>
-    </div>
-    <div class="backup column small-12 large-5">
-      <p id="ifIssues" data-i18n="[html]ifIssues">
-        If you are having issues downloading from the links above, download them directly from our download page at <a href="http://bob.nem.ninja/">bob.nem.ninja</a>
+    <div class="nanoContent column large-5 small-11">
+      <p>
+        <h5>Some of the many features of Nano Wallet:</h5>
+        <ul>
+          <li>
+             Send XEM, mosiacs, and messages to any address/namespace
+          </li>
+          <li>
+             compatible with OSX, Windows, Linux, and more.
+          </li>
+          <li>
+          On-Chain Multisignature and Multi-User Accounts
+          </li>
+          <li>
+           Namespaces, Subdomains, and Mosaics
+          </li>
+          <li>
+             Apostille Notarization Service
+          </li>
+          <li>
+              Changelly Instant Exchange
+          </li>
+        </ul>
       </p>
     </div>
   </div>
+  <!-- <hr> -->
+
+  <div class="row align-center mobile-standalone">
+
+    <div class="android column large-4 med-large-6 medium-12 small-12">
+            <h2 id="">Mobile Wallet</h2>
+            <p> The official Android app is available on the google play store. iOS app is coming soon.</p>
+
+      <a href="https://play.google.com/store/apps/developer?id=NEM%20Mobile%20Team&hl=en"><img src="{{root}}/assets/img/googlePlay.png" /></a>
+
+    </div>
+    <div class="standalone column large-6 med-large-6 medium-12 small-12">
+            <h2>Standalone Client</h2>
+            <p> The standalone client is what you will want to run if you are trying to set up a supernode or a full node.</p>
+
+              <div class="row align-center">
+            <div class="nisncc column large-5 med-large-5 medium-5 small-12">
+              <a href="http://bob.nem.ninja/nis-ncc-0.6.82.tgz"><button class="btn btn-1e">NIS/NCC Standalone (.tgz)</button></a>
+              <br>
+              <a href="http://bob.nem.ninja/nis-ncc-0.6.82.tgz.sig">NIS/NCC Signature (.tgz)</a>
+            </div>
+            <div class="nccnis column large-5 med-large-5 medium-5 small-12">
+              <a href="http://bob.nem.ninja/nis-ncc-0.6.82.zip"><button class="btn btn-1e">NIS/NCC Standalone (.zip)</button></a>
+            </div>
+          </div>
+    </div>
+  </div>
+  <!-- <hr> -->
+
+  <div class="row align-center">
+
+    <div class="backup column large-6 med-large-6 medium-12 small-12">
+      <h5 id="backup">Backup Client Resource</h5>
+
+      <p id="ifIssues" data-i18n="[html]ifIssues">
+        If you are having issues downloading from the links above, download them directly from our download page
+      </p>
+      <a href="http://download.nem.io/"><button class="btn btn-1e">download.nem.io</button></a>
+    </div>
+
+    <div class="column large-6 med-large-6 medium-12 small-12">
+      <h5 id="installer">NCC/NIS Installer (Deprecated)</h5>
+      <p id="">The original NCC/NIS Installer. We suggest using Nanowallet, or NCC/NIS Standalone instead.</p>
+
+      <div class="row align-center">
+      <div class="windows column large-4 small-4">
+        <h4 id="windowsInstall"><a href="http://bob.nem.ninja/installer/nemwallet-0.6.82-windows-installer.exe"><button class="btn btn-1e">Windows</button></a></h4>
+      </div>
+      <div class="mac column large-4 small-4">
+        <h4 id="macInstall"><a href="http://bob.nem.ninja/installer/nemwallet-0.6.82-osx-installer.app.tgz"><button class="btn btn-1e">Mac</button></a></h4>
+      </div>
+</div>
+    </div>
+
+
+  </div>
+
+
 
 </section>
 

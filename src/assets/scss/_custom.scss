@@ -1627,25 +1627,70 @@ a .btn-1e:hover:after {
 // INSTALL page
 #install{
   text-align: center;
-  background: url(../img/concrete_seamless.png);
+  background: url(../img/sayagata.png);
   @include sectionTopPad;
   @include sectionBottomPad;
   hr{
     border: 1px solid $gray;
     width: 20%;
   }
-  .row .column{
-    background: $white;
+  a{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
-  .row .column:first-of-type {
-    background: transparent;
-    margin-top: $pad * 2;
-    h2, h3, h4, h5{
-      font-weight: 300;
+  .row .column{
+    // background: $white;
+  }
+  // .row .column:first-of-type {
+  //   background: transparent;
+  //   margin-top: $pad * 2;
+  //   h2, h3, h4, h5{
+  //     font-weight: 300;
+  //   }
+  // }
+  .nanowallet{
+    background: transparent !important;
+    img{
+      margin-top: $pad * 2;
     }
   }
+  .nanoContent{
+    text-align: left;
+    @include breakpoint(med-large down) {
+      text-align: center;
+    }
+
+  }
+  .android{
+    // background: $white;
+    // padding-top: $pad * 2;
+    img {
+      width: 200px;
+    }
+    p{
+      padding-left: $pad;
+      padding-right: $pad;
+    }
+  }
+  .standalone{
+    @include breakpoint(med-large down) {
+      margin-top: $pad * 2;
+      ul, li{
+        list-style-type: none;
+      }
+    }
+
+    p{
+      padding-left: $pad * 3;
+      padding-right: $pad * 3;
+    }
+  }
+  .desktop{
+    margin-bottom: $pad * 3;
+  }
   img{
-   margin-top: $pad * 2;
+
   //  margin-bottom: $pad;
    max-height: $pad * 5;
   }
@@ -1658,9 +1703,9 @@ a .btn-1e:hover:after {
     padding-bottom: $pad;
   }
   .nisncc, .nccnis{
-    padding-top: $pad;
+    // padding-top: $pad * 2;
     p{
-      margin-bottom: $pad;
+      // margin-bottom: $pad;
     }
   }
   .nisncc{
@@ -1670,8 +1715,13 @@ a .btn-1e:hover:after {
     margin-left: $pad / 2;
   }
   .backup{
-    padding-top: $pad;
-    margin-bottom: $pad;
+    @include breakpoint(med-large down) {
+    margin-bottom: $pad * 2;
+}
+  }
+
+  .mobile-standalone{
+    margin-bottom: $pad * 5;
   }
 }
 

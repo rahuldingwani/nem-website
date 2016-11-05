@@ -91,7 +91,7 @@
  "howHarvest": "How can I Harvest?",
  "howHarvestContent": "Log into your wallet and click \"Start local harvesting\".\n",
  "howHarvestContent2": "Requirement: The user account needs a vested balance of at least 10,000 XEM.",
- "ifIssues": "If you are having issues downloading from the links above, download them directly from our download page at <a href=\"http://download.nem.io/\">download.nem.io</a>",
+ "ifIssues": "If you are having issues downloading from the links above, download them directly from our download page",
  "INSTALL PAGE": "install page below",
  "installers": "Installer (NCC & NIS)",
  "installJava": "How do I install Java?",
