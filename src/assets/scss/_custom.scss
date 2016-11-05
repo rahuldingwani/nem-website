@@ -1639,16 +1639,6 @@ a .btn-1e:hover:after {
     font-weight: 700;
     text-transform: uppercase;
   }
-  .row .column{
-    // background: $white;
-  }
-  // .row .column:first-of-type {
-  //   background: transparent;
-  //   margin-top: $pad * 2;
-  //   h2, h3, h4, h5{
-  //     font-weight: 300;
-  //   }
-  // }
   .nanowallet{
     background: transparent !important;
     img{
@@ -1676,9 +1666,6 @@ a .btn-1e:hover:after {
   .standalone{
     @include breakpoint(med-large down) {
       margin-top: $pad * 2;
-      ul, li{
-        list-style-type: none;
-      }
     }
 
     p{
@@ -1690,7 +1677,6 @@ a .btn-1e:hover:after {
     margin-bottom: $pad * 3;
   }
   img{
-
   //  margin-bottom: $pad;
    max-height: $pad * 5;
   }
@@ -1717,7 +1703,7 @@ a .btn-1e:hover:after {
   .backup{
     @include breakpoint(med-large down) {
     margin-bottom: $pad * 2;
-}
+    }
   }
 
   .mobile-standalone{
