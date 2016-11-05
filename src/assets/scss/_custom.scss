@@ -1549,94 +1549,19 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-/* BUTTON STYLING START */
-a .btn {
-   border: none;
-   font-family: inherit;
-   font-size: inherit;
-   color: inherit;
-   background: none;
-   cursor: pointer;
-   display: inline-block;
-   margin: 0px;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   outline: none;
-   position: relative;
-   border: 2px solid $dark-gray;
-   border-radius: 2px;
-   color: $dark-gray;
-   font-size: 12px;
-   overflow: hidden;
-   padding: 8px 25px 8px 25px !important;
-   margin: 13px 0px 13px 0px;
-   font-weight: 500;
-   // replace with motion ui
-   -webkit-transition: all 0.3s;
-   -moz-transition: all 0.3s;
-   transition: all 0.3s;
-}
-a .btn:after {
-   content: '';
-   position: absolute;
-   z-index: -1;
-   -webkit-transition: all 0.3s;
-   -moz-transition: all 0.3s;
-   transition: all 0.3s;
-}
-a .btn-1e:after {
-   width: 100%;
-   height: 0;
-   top: 50%;
-   left: 50%;
-   background: $dark-gray;
-   opacity: 0;
-   // replace with motion ui
-   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-   -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-   -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-   transform: translateX(-50%) translateY(-50%) rotate(45deg);
-}
-a .btn-1e:hover,
-a .btn-1e:active {
-   color: $white;
-   opacity: 1;
-   z-index: 60;
-}
-/* background size */
-a .btn-1e:hover:after {
-   height: 745%;
-   opacity: 1;
-}
-/* BUTTON STYLING END */
-
-
-
-
-
-
-
 // INSTALL page
 #install{
   text-align: center;
   background: url(../img/sayagata.png);
   @include sectionTopPad;
   @include sectionBottomPad;
-  .row .column, .row .columns{
-    background: transparent !important;
-  }
-  hr{
-    border: 1px solid $gray;
-    width: 20%;
-  }
+  // .row .column, .row .columns{
+  //   background: transparent !important;
+  // }
+  // hr{
+  //   border: 1px solid $gray;
+  //   width: 20%;
+  // }
   a{
     font-size: 12px;
     font-weight: 700;
@@ -1713,6 +1638,81 @@ a .btn-1e:hover:after {
     margin-bottom: $pad * 5;
   }
 }
+
+
+
+
+
+
+
+
+/* BUTTON STYLING START */
+a .btn {
+   border: none;
+   font-family: inherit;
+   font-size: inherit;
+   color: inherit;
+   background: none;
+   cursor: pointer;
+   display: inline-block;
+   margin: 0px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   outline: none;
+   position: relative;
+   border: 2px solid $dark-gray;
+   border-radius: 2px;
+   color: $dark-gray;
+   font-size: 12px;
+   overflow: hidden;
+   padding: 8px 25px 8px 25px !important;
+   margin: 13px 0px 13px 0px;
+   font-weight: 500;
+   // replace with motion ui
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+}
+a .btn:after {
+   content: '';
+   position: absolute;
+   z-index: -1;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+}
+a .btn-1e:after {
+   width: 100%;
+   height: 0;
+   top: 50%;
+   left: 50%;
+   background: $dark-gray;
+   opacity: 0;
+   // replace with motion ui
+   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+   -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+   -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+   transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+a .btn-1e:hover,
+a .btn-1e:active {
+   color: $white;
+   opacity: 1;
+   z-index: 60;
+}
+/* background size */
+a .btn-1e:hover:after {
+   height: 745%;
+   opacity: 1;
+}
+/* BUTTON STYLING END */
+
+
+
+
+
+
+
 
 
 
