@@ -1,0 +1,104 @@
+{{!-- Navigation --}}
+{{> navSecondLevel}}
+
+<div class="banner">
+  <div class="row align-center">
+    <h1 class="getClient">install NEM</h1>
+  </div>
+</div>
+<div id="clientDownloads">
+
+   <div class="row align-center desktop">
+     <div class="column small-12">
+        <h2>Desktop Client</h2>
+      </div>
+      <div class="column large-4 small-12 med-large-6 medium-12 nanowallet">
+        <img src="{{root}}/assets/img/nanowallet.png" /><br>
+        <a href="https://www.dropbox.com/s/cwva802f6plhjw5/NanoWallet-1.1.11.zip?dl=054"><button class="btn btn-1e">Download the Nano Wallet</button></a>
+        <br>
+        <a href="https://github.com/NemProject/NanoWallet">Get Source Code</a>
+      </div>
+      <div class="nanoContent column large-5 small-11">
+       <h5>Some of the many features of Nano Wallet:</h5>
+        <ul>
+          <li>
+               Send XEM, mosiacs, and messages to any address/namespace
+          </li>
+          <li>
+               compatible with OSX, Windows, Linux, and more.
+          </li>
+          <li>
+            On-Chain Multisignature and Multi-User Accounts
+          </li>
+          <li>
+             Namespaces, Subdomains, and Mosaics
+          </li>
+          <li>
+               Apostille Notarization Service
+          </li>
+          <li>
+                Changelly Instant Exchange
+          </li>
+        </ul>
+      </div>
+     </div>
+
+    <div class="row align-center mobile-standalone">
+      <div class="android column large-4 med-large-6 medium-12 small-12">
+        <h2>Mobile Wallet</h2>
+          <p> The official Android app is available on the google play store. iOS app is coming soon.</p>
+
+        <a href="https://play.google.com/store/apps/details?id=org.nem.nac.mainnet&hl=en"><img src="{{root}}/assets/img/googlePlay.png" /></a>
+
+      </div>
+      <div class="standalone column large-6 med-large-6 medium-12 small-12">
+              <h2>Standalone Client</h2>
+              <p> The standalone client is what you will want to run if you are trying to set up a supernode or a full node.</p>
+
+                <div class="row align-center">
+              <div class="nisncc column large-5 med-large-5 medium-5 small-12">
+                <a href="http://bob.nem.ninja/nis-ncc-0.6.82.tgz"><button class="btn btn-1e">NIS/NCC Standalone (.tgz)</button></a>
+                <br>
+                <a href="http://bob.nem.ninja/nis-ncc-0.6.82.tgz.sig">NIS/NCC Signature (.tgz)</a>
+              </div>
+              <div class="nccnis column large-5 med-large-5 medium-5 small-12">
+                <a href="http://bob.nem.ninja/nis-ncc-0.6.82.zip"><button class="btn btn-1e">NIS/NCC Standalone (.zip)</button></a>
+              </div>
+            </div>
+      </div>
+    </div>
+
+  <div class="row align-center">
+
+    <div class="backup column large-6 med-large-6 medium-12 small-12">
+      <h5 id="backup">Backup Client Resource</h5>
+
+      <p id="ifIssues" data-i18n="[html]ifIssues">
+        If you are having issues downloading from the links above, download them directly from our download page
+      </p>
+      <a href="http://download.nem.io/"><button class="btn btn-1e">download.nem.io</button></a>
+    </div>
+
+    <div class="column large-6 med-large-6 medium-12 small-12">
+      <h5 id="installer">NCC/NIS Installer (Deprecated)</h5>
+      <p>The original NCC/NIS Installer. We suggest using Nanowallet, or NCC/NIS Standalone instead.</p>
+
+      <div class="row align-center">
+      <div class="windows column large-4 small-4">
+        <h4 id="windowsInstall"><a href="http://bob.nem.ninja/installer/nemwallet-0.6.82-windows-installer.exe"><button class="btn btn-1e">Windows</button></a></h4>
+      </div>
+      <div class="mac column large-4 small-4">
+        <h4 id="macInstall"><a href="http://bob.nem.ninja/installer/nemwallet-0.6.82-osx-installer.app.tgz"><button class="btn btn-1e">Mac</button></a></h4>
+      </div>
+</div>
+    </div>
+
+
+  </div>
+
+
+
+</div>
+
+{{!-- Footer Here --}}
+{{> footer}}
