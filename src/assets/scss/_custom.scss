@@ -1550,18 +1550,11 @@ footer{
 
 
 // INSTALL page
-#install{
+#clientDownloads{
   text-align: center;
   background: url(../img/sayagata.png);
   @include sectionTopPad;
   @include sectionBottomPad;
-  // .row .column, .row .columns{
-  //   background: transparent !important;
-  // }
-  // hr{
-  //   border: 1px solid $gray;
-  //   width: 20%;
-  // }
   a{
     font-size: 12px;
     font-weight: 700;
@@ -1577,12 +1570,9 @@ footer{
     text-align: left;
     @include breakpoint(med-large down) {
       text-align: center;
-    }
-
+      }
   }
   .android{
-    // background: $white;
-    // padding-top: $pad * 2;
     img {
       width: 200px;
     }
@@ -1615,12 +1605,6 @@ footer{
   .mac{
     margin-left: $pad / 2;
     padding-bottom: $pad;
-  }
-  .nisncc, .nccnis{
-    // padding-top: $pad * 2;
-    p{
-      // margin-bottom: $pad;
-    }
   }
   .nisncc{
     margin-right: $pad / 2;
