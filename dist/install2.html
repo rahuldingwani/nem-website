@@ -54,7 +54,7 @@
     
             <div class="top-bar-right">
               <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
-                <li><a href="https://github.com/NemProject/NanoWallet" id="navClient"><span>client</span></a></li>
+                <li><a href="/install.html" id="navClient"><span>client</span></a></li>
                 <li><a href="/buy.html"><span id="navBuy">get xem</span></a></li>
                 <li class="has-submenu">
                   <a href="#" id="supportDropdown"><span id="navSupport">support</span></a>
@@ -88,105 +88,81 @@
     
     
     <div class="banner">
-      <div class="row align-center">
+      <div class="row">
         <h1 class="getClient">install nem</h1>
       </div>
     </div>
-    <div id="clientDownloads">
-    
-       <div class="row align-center desktop">
-         <div class="column small-12">
-            <h2>Desktop Client</h2>
-          </div>
-          <div class="column large-4 small-12 med-large-6 medium-12 nanowalleto">
-            <img src="/assets/img/nanowallet.png" /><br>
-            <a href="https://www.dropbox.com/s/cwva802f6plhjw5/NanoWallet-1.1.11.zip?dl=054"><button class="btn btn-1e">Download the Nano Wallet</button></a>
-            <br>
-            <a href="https://github.com/NemProject/NanoWallet">Get Source Code</a>
-          </div>
-          <div class="nanoContent column large-5 small-11">
-           <h5>Some of the many features of Nano Wallet:</h5>
-            <ul>
-              <li>
-                   Send XEM, mosiacs, and messages to any address/namespace
-              </li>
-              <li>
-                   compatible with OSX, Windows, Linux, and more.
-              </li>
-              <li>
-                On-Chain Multisignature and Multi-User Accounts
-              </li>
-              <li>
-                 Namespaces, Subdomains, and Mosaics
-              </li>
-              <li>
-                   Apostille Notarization Service
-              </li>
-              <li>
-                    Changelly Instant Exchange
-              </li>
-            </ul>
-          </div>
-         </div>
-    
-        <div class="row align-center mobile-standalone">
-          <div class="android column large-4 med-large-6 medium-12 small-12">
-            <h2>Mobile Wallet</h2>
-              <p> The official Android app is available on the google play store. iOS app is coming soon.</p>
-    
-            <a href="https://play.google.com/store/apps/details?id=org.nem.nac.mainnet&hl=en"><img src="/assets/img/googlePlay.png" /></a>
-    
-          </div>
-          <div class="standalone column large-6 med-large-6 medium-12 small-12">
-                  <h2>Standalone Client</h2>
-                  <p> The standalone client is what you will want to run if you are trying to set up a supernode or a full node.</p>
-    
-                    <div class="row align-center">
-                  <div class="nisncc column large-5 med-large-5 medium-5 small-12">
-                    <a href="http://bob.nem.ninja/nis-ncc-0.6.82.tgz"><button class="btn btn-1e">NIS/NCC Standalone (.tgz)</button></a>
-                    <br>
-                    <a href="http://bob.nem.ninja/nis-ncc-0.6.82.tgz.sig">NIS/NCC Signature (.tgz)</a>
-                  </div>
-                  <div class="nccnis column large-5 med-large-5 medium-5 small-12">
-                    <a href="http://bob.nem.ninja/nis-ncc-0.6.82.zip"><button class="btn btn-1e">NIS/NCC Standalone (.zip)</button></a>
-                  </div>
-                </div>
-          </div>
-        </div>
+    <section id="install">
     
       <div class="row align-center">
+        <div class="column small-12">
+          <h2 id="lightweight">Lightweight Clients (remote NIS)</h2>
+        </div>
+        <div class="windows column small-4">
+          <!-- <img src="/assets/img/nginx.png" /> -->
+          <h4 id="nginxInstall">Lightweight (nginx)</h4>
+          <h5 id="nginxSig">Lightweight Signature (tornado)</h5>
     
-        <div class="backup column large-6 med-large-6 medium-12 small-12">
+        </div>
+        <!-- <div class="mac column small-4">
+          <h4 id="tornadoInstall">Lightweight (tornado)</h4>
+          <h5 id="tornadoSig">Lightweight Signature (tornado)</h5>
+        </div> -->
+      </div>
+      <hr>
+    
+      <div class="row align-center">
+        <div class="column small-12">
+          <h2 id="installers">Installer (NCC &amp; NIS)</h2>
+        </div>
+        <div class="windows column small-4">
+          <!-- <img src="/assets/img/windows.png" /> -->
+          <h4 id="windowsInstall">Windows Installer</h4>
+        </div>
+        <div class="mac column small-4">
+          <!-- <img src="/assets/img/mac.png" /> -->
+          <h4 id="macInstall">Mac Installer</h4>
+        </div>
+      </div>
+      <hr>
+    
+      <div class="row align-center">
+        <div class="column small-12">
+          <h3 id="standalone">Standalone Client</h3>
+          <h5 id="installOptions">For 32/64 Linux, 32-bit Windows, and 32-bit Mac</h5>
+        </div>
+        <div class="nisncc column small-4">
+          <h5 id="tgzClient">NIS/NCC Standalone (.tgz)</h5>
+          <p id="tgzSig">NIS/NCC Signature (.tgz)</p>
+        </div>
+        <div class="nccnis column small-4">
+          <h5 id="zipClient">NIS/NCC Standalone (.zip)</h5>
+        </div>
+      </div>
+      <hr>
+    
+      <div class="row align-center">
+        <div class="column small-12">
           <h5 id="backup">Backup Client Resource</h5>
-    
+        </div>
+        <div class="backup column small-12 large-5">
           <p id="ifIssues" data-i18n="[html]ifIssues">
-            If you are having issues downloading from the links above, download them directly from our download page
+            If you are having issues downloading from the links above, download them directly from our download page at <a href="http://bob.nem.ninja/">bob.nem.ninja</a>
           </p>
-          <a href="http://download.nem.io/"><button class="btn btn-1e">download.nem.io</button></a>
         </div>
-    
-        <div class="column large-6 med-large-6 medium-12 small-12">
-          <h5 id="installer">NCC/NIS Installer (Deprecated)</h5>
-          <p>The original NCC/NIS Installer. We suggest using Nanowallet, or NCC/NIS Standalone instead.</p>
-    
-          <div class="row align-center">
-          <div class="windows column large-4 small-4">
-            <h4 id="windowsInstall"><a href="http://bob.nem.ninja/installer/nemwallet-0.6.82-windows-installer.exe"><button class="btn btn-1e">Windows</button></a></h4>
-          </div>
-          <div class="mac column large-4 small-4">
-            <h4 id="macInstall"><a href="http://bob.nem.ninja/installer/nemwallet-0.6.82-osx-installer.app.tgz"><button class="btn btn-1e">Mac</button></a></h4>
-          </div>
-    </div>
-        </div>
-    
-    
       </div>
     
+    </section>
     
     
+    
+    
+    <!-- 
+    <div id="newsWrap">
+        <div id="newsFeed"></div>
     </div>
     
-    
+     -->
     
     <footer>
       <div class="row">
@@ -256,6 +232,24 @@
       </div>
     </footer>
     
+    
+    <!-- put version number in download links -->
+    <!-- <script>
+       function callback(data) {
+          // console.log(data);
+          // alert(data.testing);
+          link = "<a href=\"http://bob.nem.ninja/";
+          // document.getElementById("windowsInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-windows-installer.exe\"><img src=\"/assets/img/windows.png\"/><br><br>Windows Installer</a>";
+          document.getElementById("windowsInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-windows-installer.exe\"><img src=\"/assets/img/windows.png\"/><br><br>Windows Installer</a>";
+          document.getElementById("macInstall").innerHTML=link+"installer/nemwallet-"+data.stable+"-osx-installer.app.tgz\"><img src=\"/assets/img/mac.png\"/><br><br>Mac Installer</a>";
+          document.getElementById("nginxInstall").innerHTML=link+"lightwallet-standalone-1.8-cdn-nginx1.8.zip\"><img src=\"/assets/img/nginx.png\"/><br><br>Lightweight (nginx)</a>";
+          document.getElementById("nginxSig").innerHTML=link+"lightwallet-standalone-1.8-cdn-nginx1.8.zip.sig\">Lightweight Signature (nginx)</a>";
+          document.getElementById("tgzClient").innerHTML=link+"nis-ncc-"+data.stable+".tgz\">NIS/NCC Standalone (.tgz)</a>";
+          document.getElementById("tgzSig").innerHTML=link+"nis-ncc-"+data.stable+".tgz.sig\">NIS/NCC Signature (.tgz)</a>";
+          document.getElementById("zipClient").innerHTML=link+"nis-ncc-"+data.stable+".zip\">NIS/NCC Standalone (.zip)</a>";
+        }
+    </script> -->
+    <!-- <script src="http://bob.nem.ninja/version_p.js"></script> -->
     
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
