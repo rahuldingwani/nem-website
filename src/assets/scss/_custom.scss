@@ -382,6 +382,76 @@ nav .submenu li:last-child{
 }
 
 
+#aboutWrap1:hover ul li:nth-child(1) a{
+     animation: fontFade .6s;
+}
+#aboutWrap1:hover ul li:nth-child(2) a{
+     animation: fontFade .6s .15s;
+}
+#aboutWrap1:hover ul li:nth-child(3) a{
+     animation: fontFade .6s .3s;
+}
+#aboutWrap1:hover ul li:nth-child(4) a{
+     animation: fontFade .6s .45s;
+}
+#aboutWrap1:hover ul li:nth-child(5) a{
+     animation: fontFade .6s .6s;
+}
+@keyframes fontFade{
+        0%, 100% {
+          color: $white;
+        }
+        50% {
+          color: #3AA948;
+        }
+}
+#aboutWrap2:hover ul li:nth-child(1) a{
+     animation: fontFade2 .6s;
+}
+#aboutWrap2:hover ul li:nth-child(2) a{
+     animation: fontFade2 .6s .15s;
+}
+#aboutWrap2:hover ul li:nth-child(3) a{
+     animation: fontFade2 .6s .3s;
+}
+#aboutWrap2:hover ul li:nth-child(4) a{
+     animation: fontFade2 .6s .45s;
+}
+#aboutWrap2:hover ul li:nth-child(5) a{
+     animation: fontFade2 .6s .6s;
+}
+@keyframes fontFade2{
+        0%, 100% {
+          color: $white;
+        }
+        50% {
+          color: #1F9CD8;
+        }
+}
+#aboutWrap3:hover ul li:nth-child(1) a{
+     animation: fontFade3 .6s;
+}
+#aboutWrap3:hover ul li:nth-child(2) a{
+     animation: fontFade3 .6s .15s;
+}
+#aboutWrap3:hover ul li:nth-child(3) a{
+     animation: fontFade3 .6s .3s;
+}
+#aboutWrap3:hover ul li:nth-child(4) a{
+     animation: fontFade3 .6s .45s;
+}
+#aboutWrap3:hover ul li:nth-child(5) a{
+     animation: fontFade3 .6s .6s;
+}
+@keyframes fontFade3{
+        0%, 100% {
+          color: $white;
+        }
+        50% {
+          color: #E64F24;
+        }
+}
+
 @include breakpoint(med-large up) {
   #aboutIt{
     background: url(../img/background2.jpg);
@@ -672,8 +742,10 @@ button.slick-prev, button.slick-next{
     margin-top: $pad;
     background-color: $darkest-gray;
     color: $gray;
+
   }
 }
+
 
 
 #stats{
