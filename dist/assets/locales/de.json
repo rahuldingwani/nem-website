@@ -30,7 +30,7 @@
  "devGuidesContent": "<a href=\"https://forum.nem.io/t/nem-development-101-episode-01-java-git-maven-nem-core/1656\">NEM Entwicklung 101, Ep. 1</a>",
  "devGuidesContent2": "<a href=\"https://forum.nem.io/t/nem-development-101-episode-02-idea-intellij-nem-core-vanity-gen/1665\">NEM Entwicklung 101, Ep. 2</a>",
  "devGuidesContent3": "<a href=\"https://github.com/rb2nem/nem_programming\">RB2's NEM Programmierungs Guide</a>",
- "devGuidesContent5": "<a href=\"http://blog.nem.io/setting-up-the-testnet/\">Aufsetzen des NEM Testnetzes</a>",
+ "devGuidesContent4": "<a href=\"http://blog.nem.io/setting-up-the-testnet/\">Aufsetzen des NEM Testnetzes</a>",
  "devResources": "Entwickler-Ressourcen",
  "devResourcesContent": "<a href=\"https://github.com/NemProject\">Quellcode</a>",
  "devResourcesContent3": "<a href=\"https://github.com/BloodyRookie/nem-samples\">NEM Beispiele</a>",
