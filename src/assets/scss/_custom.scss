@@ -318,7 +318,7 @@ nav .submenu li:last-child{
     }
   }
   .standalone{
-    @include breakpoint(med-large down) {
+    @include breakpoint(medium down) {
       margin-top: $pad * 2;
     }
 
