@@ -312,7 +312,7 @@
  "testnetWhatContent": "はい、アプリを構築してテストしたり、トランザクションの実験を行うことができます。 testnet についてのより詳しい情報は <a href=\"http://blog.nem.io/setting-up-the-testnet/\">こちら</a>をご覧ください。",
  "toInstall": "インストール方法：",
  "toolsContent": "<a href=\"http://chain.nem.ninja/#/blocks/0\">Nembex</a>",
- "toolsContent3": "<a href=\"http://www.nodeexplorer.com/\">Node Explorer</a>",
+ "toolsContent2": "<a href=\"http://www.nodeexplorer.com/\">Node Explorer</a>",
  "toolsContent4": "<a href=\"http://nemnodes.org/\">Nemnodes.org</a>",
  "toolsContent5": "<a href=\"http://supernodes.nem.io/\">Supernodes.nem.io</a>",
  "toolsContent6": "<a href=\"http://nemchina.com/\">NEM China</a>",
