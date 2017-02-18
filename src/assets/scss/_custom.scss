@@ -335,11 +335,12 @@ nav .submenu li:last-child{
   }
   .windows{
     margin-right: $pad / 2;
-    padding-bottom: $pad;
   }
   .mac{
     margin-left: $pad / 2;
-    padding-bottom: $pad;
+  }
+  h4#windowsInstall, h4#macInstall {
+    margin-bottom: 0px;
   }
   .nisncc{
     margin-right: $pad / 2;
