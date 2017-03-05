@@ -48,7 +48,7 @@ $(function() {
         $('#data3').text(marketCap);
         $('#data4').text(data.latestVersion);
     }
-    $.getJSON('https://www.nodeexplorer.com/api_network_status_jsonp?callback=?');
+    $.getJSON('https://nodeexplorer.com/api_network_status_jsonp?callback=?');
 
 })
 
