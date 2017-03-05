@@ -39,18 +39,18 @@ SVGInjector(mySVGsToInject, injectorOptions, function (totalSVGsInjected) {
   // console.log('We injected ' + totalSVGsInjected + ' SVG(s)!');
 });
 
-// $(function() {
-//     window.nodeexplorer = function(data) {
-//
-//         var marketCap = numeral(data.marketcapUSD).format('($0.00a)');
-//         $('#data1').text(data.nodesOnlineQuantity);
-//         $('#data2').text(data.currentBlockHeight);
-//         $('#data3').text(marketCap);
-//         $('#data4').text(data.latestVersion);;
-//     }
-//     $.getJSON('https://www.nodeexplorer.com/api_network_status_jsonp?callback=?');
-//
-// })
+$(function() {
+    window.nodeexplorer = function(data) {
+
+        var marketCap = numeral(data.marketcapUSD).format('($0.00a)');
+        $('#data1').text(data.nodesOnlineQuantity);
+        $('#data2').text(data.currentBlockHeight);
+        $('#data3').text(marketCap);
+        $('#data4').text(data.latestVersion);;
+    }
+    $.getJSON('https://www.nodeexplorer.com/api_network_status_jsonp?callback=?');
+
+})
 
 $.i18n.init({
 		ns: { namespaces: ['en', 'cn', 'ja', 'fi'], defaultNs: 'en'},
