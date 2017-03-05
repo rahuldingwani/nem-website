@@ -46,7 +46,7 @@ $(function() {
         $('#data1').text(data.nodesOnlineQuantity);
         $('#data2').text(data.currentBlockHeight);
         $('#data3').text(marketCap);
-        $('#data4').text(data.latestVersion);;
+        $('#data4').text(data.latestVersion);
     }
     $.getJSON('https://www.nodeexplorer.com/api_network_status_jsonp?callback=?');
 
