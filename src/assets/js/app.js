@@ -206,6 +206,7 @@ $.i18n.init({
     $('#devResourcesContent6').i18n();
     $('#devResourcesContent7').i18n();
     $('#devResourcesContent8').i18n();
+    $('#devResourcesContent9').i18n();
 
     $('#devGuides').text($.t('devGuides'));
     $('#devGuidesContent').i18n();
