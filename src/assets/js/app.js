@@ -42,13 +42,13 @@ SVGInjector(mySVGsToInject, injectorOptions, function (totalSVGsInjected) {
 $(function() {
     window.nodeexplorer = function(data) {
 
-        var marketCap = numeral(data.marketcapUSD).format('($0.00a)');
+        var marketCap = numeral(data.market_cap_usd).format('($0.00a)');
         $('#data1').text(data.nodesOnlineQuantity);
         $('#data2').text(data.currentBlockHeight);
-        $('#data3').text(marketCap);
+        $('#data3').text('N/A');
         $('#data4').text(data.latestVersion);
     }
-    $.getJSON('https://nodeexplorer.com/api_network_status_jsonp?callback=?');
+    $.getJSON('https://nodeexplorer.com/api_network_status_jsonp?callback=?', 'https://api.coinmarketcap.com/v1/ticker/nem/?convert=USD');
 
 })
 
