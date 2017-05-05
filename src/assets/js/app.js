@@ -42,10 +42,10 @@ SVGInjector(mySVGsToInject, injectorOptions, function (totalSVGsInjected) {
 $(function() {
     window.nodeexplorer = function(data) {
 
-        var marketCap = numeral(data.marketcapUSD).format('($0.00a)');
+        var marketCap = numeral(data.market_cap_usd).format('($0.00a)');
         $('#data1').text(data.nodesOnlineQuantity);
         $('#data2').text(data.currentBlockHeight);
-        $('#data3').text(marketCap);
+        $('#data3').text('N/A');
         $('#data4').text(data.latestVersion);
     }
     $.getJSON('https://nodeexplorer.com/api_network_status_jsonp?callback=?');
@@ -206,6 +206,7 @@ $.i18n.init({
     $('#devResourcesContent6').i18n();
     $('#devResourcesContent7').i18n();
     $('#devResourcesContent8').i18n();
+    $('#devResourcesContent9').i18n();
 
     $('#devGuides').text($.t('devGuides'));
     $('#devGuidesContent').i18n();
@@ -224,6 +225,8 @@ $.i18n.init({
     $('#topBlogsContent5').i18n();
     $('#topBlogsContent6').i18n();
     $('#topBlogsContent7').i18n();
+    $('#topBlogsContent8').i18n();
+
 
     <!-- INSTALL PAGE -->
     $('.getClient').text($.t('getClient'));
