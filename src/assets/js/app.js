@@ -48,7 +48,7 @@ $(function() {
         $('#data3').text('N/A');
         $('#data4').text(data.latestVersion);
     }
-    $.getJSON('https://nodeexplorer.com/api_network_status_jsonp?callback=?');
+    $.getJSON('https://nodeexplorer.com/api_network_status_jsonp?callback=?', 'https://api.coinmarketcap.com/v1/ticker/nem/?convert=USD');
 
 })
 
