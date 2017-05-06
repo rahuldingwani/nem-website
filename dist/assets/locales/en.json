@@ -373,7 +373,7 @@
  "whyNemContent9": "Mobile wallets for Android and iOS as well as a pure javascript light wallet for desktops. ",
  "windows32": "Windows: Please follow the community-made <a href=\"http://blog.nem.io/windows-installation-guide-standalone/\">tutorial.</a>",
  "xem": "XEM is the fuel of the NEM ecosystem. It can be used to pay transaction fees on the NEM network, or used on its own as a cryptocurrency. It is also the first mosaic on the NEM blockchain, nem:xem, and therefore can be used like any other mosaic.\n A finite supply of 9 billion XEM were created during the Genesis block and no more will ever be made. ",
- "xemCash": "Buy XEM directly with cash",
+ "xemCash": "Buy XEM directly with USD, JPY, or EUR",
  "xemCirculation": "How many XEM are in circulation?",
  "xemCirculationContent": "The total amount is 8,999,999,999 XEM.",
  "xemFaucet": "Get some XEM from our faucet",
