@@ -326,6 +326,10 @@ nav .submenu li:last-child{
       padding-left: $pad * 3;
       padding-right: $pad * 3;
     }
+    p#tgzSig{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
   }
   .desktop{
     margin-bottom: $pad * 3;
